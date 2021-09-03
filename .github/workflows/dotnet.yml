@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
 env:
-  AZURE_WEBAPP_NAME: testmyappyyyyy
+  AZURE_WEBAPP_NAME: yohoho123 
 jobs:
   build:
 
