@@ -57,6 +57,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Line.Messaging": {
+              "target": "Package",
+              "version": "[1.4.5, )"
+            },
+            "LineBotSDK": {
+              "target": "Package",
+              "version": "[2.1.21, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

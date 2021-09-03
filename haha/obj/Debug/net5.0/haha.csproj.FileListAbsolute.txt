@@ -208,3 +208,7 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\ref\haha.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.pdb
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.genruntimeconfig.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\bin\Debug\net5.0\Line.Messaging.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\bin\Debug\net5.0\LineBotSDK.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
