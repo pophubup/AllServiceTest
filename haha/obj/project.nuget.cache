@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YsRk6ucBkUkU0rGi53spYkRtHqUMWf0epas36EhlqViZtbzxEzwvMbapxsNfgWdx52UHDUwLyJjG9fz9F4fqUA==",
+  "dgSpecHash": "YboIenrEJOdzhbVOa9yxkofWo9Q3EJO6ng9YRBfuN306kJhHdtY3m58CnQMw3nNxGkbwtaWWljeCmASEmJfcCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\haha\\haha.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\haha\\haha.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\azure.core\\1.15.0\\azure.core.1.15.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\azure.storage.blobs\\12.9.1\\azure.storage.blobs.12.9.1.nupkg.sha512",
@@ -36,6 +36,7 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\5.0.0\\microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.json\\5.0.0\\microsoft.extensions.configuration.json.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",

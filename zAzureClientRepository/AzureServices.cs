@@ -14,8 +14,8 @@ namespace zAzureClientRepository
      
             service.AddScoped<IAzureStorage<ProductsBlob>, AzureStroageRepository>();
 
-            //var builder = service.BuildServiceProvider();
-            //var result = builder.GetService<IAzureStorage<ProductsBlob>>().DownloadLoadPicturesAsBase64("123kitten.png");
+            var builder = service.BuildServiceProvider();
+            var result = builder.GetService<IAzureStorage<ProductsBlob>>().DownloadLoadPicturesAsBase64("123kitten.png");
             return service;
         }
     }

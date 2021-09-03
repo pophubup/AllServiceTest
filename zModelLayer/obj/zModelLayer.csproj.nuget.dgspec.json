@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj": {}
+    "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj": {
+    "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj",
         "projectName": "zModelLayer",
-        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -46,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.9, )"
@@ -66,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

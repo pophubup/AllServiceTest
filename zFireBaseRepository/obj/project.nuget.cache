@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3oAO36o8zhb74REoX1imCj0ICoJtmSf0bV3s8PnCi07yfayTJyd+pUrZ6kV4PwwznYb2Qpy3oh26L+eeilF3Eg==",
+  "dgSpecHash": "M/MifBvbaASa72Cs4TBWYeUoiFZPp5vX0VxL8CbGtB9U79dG7gxGv2qHLyzg5hcWjR/ExUivILohk8vQtrHJRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zFireBaseRepository\\zFireBaseRepository.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zFireBaseRepository\\zFireBaseRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\google.api.commonprotos\\1.7.0\\google.api.commonprotos.1.7.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\google.api.gax\\2.10.0\\google.api.gax.2.10.0.nupkg.sha512",
@@ -20,6 +20,7 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\5.0.0\\microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.json\\5.0.0\\microsoft.extensions.configuration.json.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",

@@ -1,4 +1,5 @@
 ﻿using Azure.Storage.Blobs;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
 using zAzureClientRepository.IRepositories;
@@ -8,16 +9,21 @@ namespace zAzureClientRepository.Repositories
 {
     public class AzureStroageRepository : IAzureStorage<ProductsBlob>
     {
-        public ProductsBlob TargetDetil => new ProductsBlob();
+        IConfiguration _Configuration;
+        public AzureStroageRepository(IConfiguration Configuration)
+        {
+            _Configuration = Configuration;
+        }
+        public ProductsBlob TargetDetil => new ProductsBlob("products", _Configuration["Azure:connectionstring"]);
 
         public BlobContainerClient GetContainer()
         {
-            return new BlobServiceClient(TargetDetil.endpoint).GetBlobContainerClient(TargetDetil.BlobName);
+            return new BlobServiceClient(TargetDetil._endpoint).GetBlobContainerClient(TargetDetil._blobName);
         }
 
         public BlobContainerClient CreateContainer()
         {
-            return new BlobServiceClient(TargetDetil.endpoint).CreateBlobContainer(TargetDetil.BlobName);
+            return new BlobServiceClient(TargetDetil._endpoint).CreateBlobContainer(TargetDetil._blobName);
         }
 
         public string DownloadLoadPicturesAsBase64(string fileName)

@@ -1,18 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Neo4jClientRepository;
 using SQLClientRepository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using zAzureClientRepository;
 using zFireBaseRepository;
+using zModelLayer;
 
 namespace haha
 {
@@ -28,8 +24,8 @@ namespace haha
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           // services.AddNeo4jCleint();
-            services.AddMSQLjCleint();
+            services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
+            services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddAzureServices();
             services.AddFireBaseService();
             services.AddCors(options =>
