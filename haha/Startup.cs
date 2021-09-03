@@ -66,6 +66,7 @@ namespace haha
 
             app.UseAuthorization();
 
+            app.UseCors();
             app.UseSwagger();
 
             app.UseSwaggerUI(c => {
