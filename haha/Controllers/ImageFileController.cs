@@ -24,9 +24,9 @@ namespace haha.Controllers
         }
         // GET: api/<ImageFileController>
         [HttpGet]
-        public IEnumerable<Label> GetData()
+        public IEnumerable<ImageFile> GetData()
         {
-            return _serviceProvider.GetService<MYDBContext>().Labels.AsEnumerable();
+            return _serviceProvider.GetService<MYDBContext>().ImageFiles.AsEnumerable();
         }
 
         // GET api/<ImageFileController>/5
@@ -36,9 +36,9 @@ namespace haha.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public Label GetSingleData(int id)
+        public ImageFile GetSingleData(int id)
         {
-            return _serviceProvider.GetService<MYDBContext>().Labels.FirstOrDefault(g=>g.Id == id);
+            return _serviceProvider.GetService<MYDBContext>().ImageFiles.FirstOrDefault(g=>g.Id == id);
         }
 
         // POST api/<ImageFileController>
