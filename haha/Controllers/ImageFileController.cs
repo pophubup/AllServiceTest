@@ -36,7 +36,7 @@ namespace haha.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public ImageFile GetSingleData(int id)
+        public ImageFile GetSingleData(Guid id)
         {
             return _serviceProvider.GetService<MYDBContext>().ImageFiles.FirstOrDefault(g=>g.Id == id);
         }
