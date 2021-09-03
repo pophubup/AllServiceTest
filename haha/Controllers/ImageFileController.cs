@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SQLClientRepository.Entities;
@@ -24,9 +25,21 @@ namespace haha.Controllers
         }
         // GET: api/<ImageFileController>
         [HttpGet]
-        public IEnumerable<ImageFile> GetData()
+        public IEnumerable<ImageFile> GetFirstImageFileFromEveryGroup()
         {
-            return _serviceProvider.GetService<MYDBContext>().ImageFiles.AsEnumerable();
+           
+            IEnumerable<ImageFile> imageFiles = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).ToList().GroupBy(g => g.Label.Group.Id).Select(x => new ImageFile()
+            {
+                Id = x.FirstOrDefault().Id,
+                FileName = x.FirstOrDefault().FileName,
+                CreateDate = x.FirstOrDefault().CreateDate, 
+                Description = x.FirstOrDefault().Description,
+                Label = x.FirstOrDefault().Label,
+                ModifyDate = x.FirstOrDefault().ModifyDate,
+                Name = x.FirstOrDefault().Name,
+                LabelId = x.FirstOrDefault().LabelId,
+            });
+            return imageFiles; 
         }
 
         // GET api/<ImageFileController>/5
