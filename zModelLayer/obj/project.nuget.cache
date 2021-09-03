@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8Z1EsU+AHDFLzy4/T8Mnh5e3JgToTjdf8XhSR9cC4FahVcAkdsX9I8nHRNa++BKlNz05Zm3l+f2GK581dfmUjA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

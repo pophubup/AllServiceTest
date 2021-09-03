@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <ProjectReference Include="..\Neo4jClientRepository\Neo4jClientRepository.csproj" />
+    <ProjectReference Include="..\SQLClientRepository\SQLClientRepository.csproj" />
+    <ProjectReference Include="..\zAzureClientRepository\zAzureClientRepository.csproj" />
+    <ProjectReference Include="..\zFireBaseRepository\zFireBaseRepository.csproj" />
+  </ItemGroup>
+
+</Project>
