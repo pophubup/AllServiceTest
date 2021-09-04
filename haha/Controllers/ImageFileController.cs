@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using zGoogleCloudStorageClient;
 using zModelLayer;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,18 +28,22 @@ namespace haha.Controllers
         [HttpGet]
         public IEnumerable<ImageFile> GetFirstDataEveryGroup()
         {
+            
+            IEnumerable<ImageFile> imageFiles = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).ToList().GroupBy(g => g.Label.Group.Id).Select(x => {
 
-            IEnumerable<ImageFile> imageFiles = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).ToList().GroupBy(g => g.Label.Group.Id).Select(x => new ImageFile()
-            {
-                Id = x.FirstOrDefault().Id,
-                FileName = $"data:image/{Path.GetFileName(x.FirstOrDefault().FileName).Split('.')[1]};base64,{Convert.ToBase64String(System.IO.File.ReadAllBytes($"{_Configuration["imgpath"]}\\{x.FirstOrDefault().Label.LabelName}\\{x.FirstOrDefault().FileName}"))}",
-                CreateDate = x.FirstOrDefault().CreateDate, 
-                Description = x.FirstOrDefault().Description,
-                Label = x.FirstOrDefault().Label,
-                ModifyDate = x.FirstOrDefault().ModifyDate,
-                Name = x.FirstOrDefault().Name,
-                LabelId = x.FirstOrDefault().LabelId,
-            });
+             
+                return new ImageFile()
+                {
+                    Id = x.FirstOrDefault().Id,
+                    FileName = $"data:image/{Path.GetFileName(x.FirstOrDefault().FileName).Split('.')[1]};base64,{Convert.ToBase64String(System.IO.File.ReadAllBytes($"{_Configuration["imgpath"]}\\{x.FirstOrDefault().Label.LabelName}\\{x.FirstOrDefault().FileName}"))}",
+                    CreateDate = x.FirstOrDefault().CreateDate,
+                    Description = x.FirstOrDefault().Description,
+                    Label = x.FirstOrDefault().Label,
+                    ModifyDate = x.FirstOrDefault().ModifyDate,
+                    Name = x.FirstOrDefault().Name,
+                    LabelId = x.FirstOrDefault().LabelId,
+                };
+                });
             return imageFiles; 
         }
 
@@ -60,16 +65,22 @@ namespace haha.Controllers
         {
             
             var context = _serviceProvider.GetService<MYDBContext>();
-            var guid = Guid.NewGuid();
+           
             var createtime =  DateTime.Now;
-          
-            string LabelName = context.Labels.FirstOrDefault(x => x.Id == dataModel.labeId).LabelName;
+
+            Label Label = context.Labels.FirstOrDefault(x => x.Id == dataModel.labeId);
+            var imagesData = new List<ImageContainer>();
             List<ImageFile> imageFiles = dataModel.files.Select(x =>
             {
 
-                string filePath = $"{_Configuration["imgpath"]}\\{LabelName}\\{x.FileName}";
-                Stream fileStream = new FileStream(filePath, FileMode.Create);
-                x.CopyToAsync(fileStream).GetAwaiter().GetResult();
+                var guid = Guid.NewGuid();
+                imagesData.Add(new ImageContainer()
+                {
+                    objName = x.FileName,
+                    stream = x.OpenReadStream()
+
+                });
+           
                 return new ImageFile()
                 {
                     Id = guid,
@@ -81,7 +92,7 @@ namespace haha.Controllers
                 };
 
             }).ToList();
-
+            _serviceProvider.GetService<IGoogleStorageRepository>().CreateFiles(imagesData, Label.BucketId);
             using (var tran = context.Database.BeginTransaction())
             {
                 try

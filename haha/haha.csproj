@@ -12,6 +12,7 @@
     <ProjectReference Include="..\SQLClientRepository\SQLClientRepository.csproj" />
     <ProjectReference Include="..\zAzureClientRepository\zAzureClientRepository.csproj" />
     <ProjectReference Include="..\zFireBaseRepository\zFireBaseRepository.csproj" />
+    <ProjectReference Include="..\zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj" />
   </ItemGroup>
 
 </Project>

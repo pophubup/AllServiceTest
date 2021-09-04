@@ -12,9 +12,7 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\SQLClientRepository\obj\Debug\ne
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.pdb
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\SQLClientRepository.deps.json
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\SQLClientRepository.dll
-C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\ref\SQLClientRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\SQLClientRepository.pdb
-C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.csproj.AssemblyReference.cache
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.AssemblyInfoInputs.cache
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.AssemblyInfo.cs
@@ -22,3 +20,8 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQ
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\ref\SQLClientRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.csproj.AssemblyReference.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\SQLClientRepository.runtimeconfig.json
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\SQLClientRepository.runtimeconfig.dev.json
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.genruntimeconfig.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\ref\SQLClientRepository.dll

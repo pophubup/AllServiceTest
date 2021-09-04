@@ -1,0 +1,14 @@
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\bin\Debug\net5.0\zGoogleCloudStorageClient.deps.json
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\bin\Debug\net5.0\zGoogleCloudStorageClient.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\bin\Debug\net5.0\ref\zGoogleCloudStorageClient.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\bin\Debug\net5.0\zGoogleCloudStorageClient.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\bin\Debug\net5.0\zModelLayer.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\bin\Debug\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.csproj.AssemblyReference.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.AssemblyInfoInputs.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.AssemblyInfo.cs
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.csproj.CoreCompileInputs.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\ref\zGoogleCloudStorageClient.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.pdb

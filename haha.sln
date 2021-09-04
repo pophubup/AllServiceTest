@@ -1,19 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "haha", "haha\haha.csproj", "{850DB3F7-FD6E-4D26-9301-A0E9590787D1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClientRepository", "Neo4jClientRepository\Neo4jClientRepository.csproj", "{DB57C39C-DE25-4C53-B913-C6A0BE620F08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zModelLayer", "zModelLayer\zModelLayer.csproj", "{186FB966-549A-4CEC-995E-2E605DDA0DFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zModelLayer", "zModelLayer\zModelLayer.csproj", "{186FB966-549A-4CEC-995E-2E605DDA0DFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLClientRepository", "SQLClientRepository\SQLClientRepository.csproj", "{6130A553-2DBF-4D28-B9A9-807FCF2DC3D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLClientRepository", "SQLClientRepository\SQLClientRepository.csproj", "{6130A553-2DBF-4D28-B9A9-807FCF2DC3D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zAzureClientRepository", "zAzureClientRepository\zAzureClientRepository.csproj", "{1AF9C979-9D08-453F-A724-8C6EEB26B072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zAzureClientRepository", "zAzureClientRepository\zAzureClientRepository.csproj", "{1AF9C979-9D08-453F-A724-8C6EEB26B072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zFireBaseRepository", "zFireBaseRepository\zFireBaseRepository.csproj", "{D781ACB2-3ABA-4517-899B-3975A5AD83E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zFireBaseRepository", "zFireBaseRepository\zFireBaseRepository.csproj", "{D781ACB2-3ABA-4517-899B-3975A5AD83E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zGoogleCloudStorageClient", "zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj", "{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D781ACB2-3ABA-4517-899B-3975A5AD83E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D781ACB2-3ABA-4517-899B-3975A5AD83E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D781ACB2-3ABA-4517-899B-3975A5AD83E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

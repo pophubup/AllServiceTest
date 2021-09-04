@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.IO;
 using SQLClientRepository.Entities;
 using zModelLayer;
+using zGoogleCloudStorageClient;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace haha.Controllers
@@ -53,12 +54,14 @@ namespace haha.Controllers
                 {
                     var today = DateTime.Now;
                    IEnumerable<Label> labels= value.Select(g => {
-                       string dir = $"{_Configuration["imgpath"]}\\{g.LabelName}";
-                       Directory.CreateDirectory(dir);
+                      
+                      Guid buckid = Guid.NewGuid();
+                       _serviceProvider.GetService<IGoogleStorageRepository>().CreateFolder(buckid.ToString());
                        return new Label()
                        {
                            CreateDate = today,
                            LabelName = g.LabelName,
+                           BucketId = buckid.ToString(),
                            GroupId = g.GroupID
                        };
                    });

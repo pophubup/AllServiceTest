@@ -8,6 +8,7 @@ using Neo4jClientRepository;
 using SQLClientRepository;
 using zAzureClientRepository;
 using zFireBaseRepository;
+using zGoogleCloudStorageClient;
 using zModelLayer;
 
 namespace haha
@@ -29,6 +30,7 @@ namespace haha
             services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddAzureServices();
             services.AddFireBaseService();
+            services.AddGoogleStorageService();
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(

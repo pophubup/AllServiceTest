@@ -24,7 +24,7 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0\zAzureClientRepository.AssemblyInfoInputs.cache
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0\zAzureClientRepository.AssemblyInfo.cs
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0\zAzureClientRepository.csproj.CoreCompileInputs.cache
-C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0\zAzureClientRepository.csproj.CopyComplete
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0\zAzureClientRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0\ref\zAzureClientRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0\zAzureClientRepository.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zAzureClientRepository\obj\Debug\net5.0\zAzureClientRepository.csproj.CopyComplete

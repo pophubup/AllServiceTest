@@ -16,6 +16,7 @@ namespace SQLClientRepository.Entities
         public string LabelName { get; set; }
         public DateTime CreateDate { get; set; }
         public int GroupId { get; set; }
+        public string BucketId { get; set; }
 
         public virtual Group Group { get; set; }
         public virtual ICollection<ImageFile> ImageFiles { get; set; }

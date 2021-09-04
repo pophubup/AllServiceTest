@@ -22,11 +22,6 @@ namespace SQLClientRepository.Entities
         public virtual DbSet<Label> Labels { get; set; }
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server=35.239.20.109;Database=MYDB;User Id=home7996;Password=Home2426;");
-            base.OnConfiguring(optionsBuilder);
-        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
@@ -76,6 +71,10 @@ namespace SQLClientRepository.Entities
                 entity.ToTable("Label");
 
                 entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.BucketId)
+                    .IsRequired()
+                    .HasColumnName("BucketID");
 
                 entity.Property(e => e.CreateDate).HasColumnType("datetime");
 

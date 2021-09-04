@@ -30,6 +30,7 @@ namespace zAzureClientRepository.Repositories
         {
             
             BlobClient blobClient = GetContainer().GetBlobClient(fileName);
+         
             using (var memoryStream = new MemoryStream())
             {
                 blobClient.DownloadTo(memoryStream);

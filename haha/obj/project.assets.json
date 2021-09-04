@@ -59,11 +59,11 @@
           "lib/netstandard2.0/Google.Api.CommonProtos.dll": {}
         }
       },
-      "Google.Api.Gax/2.10.0": {
+      "Google.Api.Gax/3.3.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
-          "System.Interactive.Async": "[3.2.0, 4.0.0)"
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Google.Api.Gax.dll": {}
@@ -88,11 +88,23 @@
           "lib/netstandard2.0/Google.Api.Gax.Grpc.dll": {}
         }
       },
-      "Google.Apis/1.42.0": {
+      "Google.Api.Gax.Rest/3.3.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.42.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Google.Api.Gax": "3.3.0",
+          "Google.Apis.Auth": "[1.48.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {}
+        }
+      },
+      "Google.Apis/1.51.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Core": "1.51.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.dll": {}
@@ -101,11 +113,11 @@
           "lib/netstandard2.0/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.42.0": {
+      "Google.Apis.Auth/1.51.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.42.0",
-          "Google.Apis.Core": "1.42.0"
+          "Google.Apis": "1.51.0",
+          "Google.Apis.Core": "1.51.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
@@ -116,16 +128,29 @@
           "lib/netstandard2.0/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.42.0": {
+      "Google.Apis.Core/1.51.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.Core.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        }
+      },
+      "Google.Apis.Storage.v1/1.51.0.2234": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.51.0",
+          "Google.Apis.Auth": "1.51.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Storage.v1.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Storage.v1.dll": {}
         }
       },
       "Google.Cloud.Firestore/1.1.0": {
@@ -154,6 +179,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Google.Cloud.Firestore.V1.dll": {}
+        }
+      },
+      "Google.Cloud.Storage.V1/3.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Rest": "[3.3.0, 4.0.0)",
+          "Google.Apis.Storage.v1": "[1.51.0.2234, 2.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Cloud.Storage.V1.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.Storage.V1.dll": {}
         }
       },
       "Google.LongRunning/1.1.0": {
@@ -3120,6 +3158,25 @@
           "bin/placeholder/zFireBaseRepository.dll": {}
         }
       },
+      "zGoogleCloudStorageClient/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Google.Cloud.Storage.V1": "3.5.0",
+          "Microsoft.Extensions.Configuration": "5.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "5.0.0",
+          "Microsoft.Extensions.Configuration.Json": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "zModelLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/zGoogleCloudStorageClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/zGoogleCloudStorageClient.dll": {}
+        }
+      },
       "zModelLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -3212,22 +3269,20 @@
         "lib/netstandard2.0/Google.Api.CommonProtos.xml"
       ]
     },
-    "Google.Api.Gax/2.10.0": {
-      "sha512": "3zcUP57Fn7sRcJfon41N1/F0Lcv59k4bameEDSmPDHEs/sjOViwu0Codur2UOCPpiduXCz2A34QTBoyewtSemg==",
+    "Google.Api.Gax/3.3.0": {
+      "sha512": "l23HaRgpvNMIULAWhih11CMukWflA2o4/mourEpB+7tVwheJsF8mWUmtKYcc6U19WagzJFm6Pzm3zAqCxl5k/w==",
       "type": "package",
-      "path": "google.api.gax/2.10.0",
+      "path": "google.api.gax/3.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "google.api.gax.2.10.0.nupkg.sha512",
+        "NuGetIcon.png",
+        "google.api.gax.3.3.0.nupkg.sha512",
         "google.api.gax.nuspec",
-        "lib/net45/Google.Api.Gax.dll",
-        "lib/net45/Google.Api.Gax.pdb",
-        "lib/net45/Google.Api.Gax.xml",
-        "lib/netstandard1.3/Google.Api.Gax.dll",
-        "lib/netstandard1.3/Google.Api.Gax.pdb",
-        "lib/netstandard1.3/Google.Api.Gax.xml",
+        "lib/net461/Google.Api.Gax.dll",
+        "lib/net461/Google.Api.Gax.pdb",
+        "lib/net461/Google.Api.Gax.xml",
         "lib/netstandard2.0/Google.Api.Gax.dll",
         "lib/netstandard2.0/Google.Api.Gax.pdb",
         "lib/netstandard2.0/Google.Api.Gax.xml"
@@ -3254,15 +3309,35 @@
         "lib/netstandard2.0/Google.Api.Gax.Grpc.xml"
       ]
     },
-    "Google.Apis/1.42.0": {
-      "sha512": "0xvGzOv3XDmifq9SXws9MjWttiIwsOtCQ93ic1eUFBSrO/4wFRaEFi6myRs34mGGOhf6ROk2gJ4WgZg2TBpbEg==",
+    "Google.Api.Gax.Rest/3.3.0": {
+      "sha512": "/D3FTV5FH3I4vzbLSRWmeU/1ckFP6kk195Wga51UTWip7EYRUSEFEQzCWb+VHcB7HgCYp98KvIxg3B6cDKPJQQ==",
       "type": "package",
-      "path": "google.apis/1.42.0",
+      "path": "google.api.gax.rest/3.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "google.apis.1.42.0.nupkg.sha512",
+        "NuGetIcon.png",
+        "google.api.gax.rest.3.3.0.nupkg.sha512",
+        "google.api.gax.rest.nuspec",
+        "lib/net461/Google.Api.Gax.Rest.dll",
+        "lib/net461/Google.Api.Gax.Rest.pdb",
+        "lib/net461/Google.Api.Gax.Rest.xml",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.dll",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.pdb",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.xml"
+      ]
+    },
+    "Google.Apis/1.51.0": {
+      "sha512": "4QL7S1PnDN/VumfzrLOGw8tiFLYRL/oPVQkCuIVltAh/gSPWxLu7UFZeum4S3B/ry7794Wigg53jclLlYX/haQ==",
+      "type": "package",
+      "path": "google.apis/1.51.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.1.51.0.nupkg.sha512",
         "google.apis.nuspec",
         "lib/net45/Google.Apis.PlatformServices.dll",
         "lib/net45/Google.Apis.dll",
@@ -3276,15 +3351,16 @@
         "lib/netstandard2.0/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.42.0": {
-      "sha512": "oXzljSx9Skx08Jp+kQfBUj/UqT/0x6IdfFZL/mnjTLa4y07KYVvhxHcx5T4VYQ79NaDstygSyU2ZYn6RLrLBOw==",
+    "Google.Apis.Auth/1.51.0": {
+      "sha512": "rwyLkiXev6esCRXq+srUcEb8zWylNg7eyE9zO8GxiQplrn1+Jhn8WlwhyJ/xXM83Mrd7Fi0p/UpnOo+m8NBI2g==",
       "type": "package",
-      "path": "google.apis.auth/1.42.0",
+      "path": "google.apis.auth/1.51.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "google.apis.auth.1.42.0.nupkg.sha512",
+        "NuGetIcon.png",
+        "google.apis.auth.1.51.0.nupkg.sha512",
         "google.apis.auth.nuspec",
         "lib/net45/Google.Apis.Auth.PlatformServices.dll",
         "lib/net45/Google.Apis.Auth.dll",
@@ -3300,15 +3376,16 @@
         "lib/netstandard2.0/Google.Apis.Auth.xml"
       ]
     },
-    "Google.Apis.Core/1.42.0": {
-      "sha512": "6h04xA9Ez83OUDNU68NOG4eQtm3uxSqhqHlV+lefF8tvbOiEVPfreJzXjCDmnsgJVjIdSIoMdKr9Kt8yIqx+fg==",
+    "Google.Apis.Core/1.51.0": {
+      "sha512": "2HBwN81SB5DBI/TKbJr6y6u2I5sBlLxUHYUkc26Y4FSFachdDlWISZZreO0AVKdJrHsbmKDhHdqkRjkLSGeiNw==",
       "type": "package",
-      "path": "google.apis.core/1.42.0",
+      "path": "google.apis.core/1.51.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
-        "google.apis.core.1.42.0.nupkg.sha512",
+        "NuGetIcon.png",
+        "google.apis.core.1.51.0.nupkg.sha512",
         "google.apis.core.nuspec",
         "lib/net45/Google.Apis.Core.dll",
         "lib/net45/Google.Apis.Core.pdb",
@@ -3319,6 +3396,34 @@
         "lib/netstandard2.0/Google.Apis.Core.dll",
         "lib/netstandard2.0/Google.Apis.Core.pdb",
         "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
+    "Google.Apis.Storage.v1/1.51.0.2234": {
+      "sha512": "l50ucoQRH4p2itqrdxjn9nyA7MNv1zXmWPZPkzASxGP9N/5jnZJ8ZAoRqXXPEDkQ7+1DK+O188iNfJ+WtZ4ELQ==",
+      "type": "package",
+      "path": "google.apis.storage.v1/1.51.0.2234",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.storage.v1.1.51.0.2234.nupkg.sha512",
+        "google.apis.storage.v1.nuspec",
+        "lib/net40/Google.Apis.Storage.v1.dll",
+        "lib/net40/Google.Apis.Storage.v1.pdb",
+        "lib/net40/Google.Apis.Storage.v1.xml",
+        "lib/net45/Google.Apis.Storage.v1.dll",
+        "lib/net45/Google.Apis.Storage.v1.pdb",
+        "lib/net45/Google.Apis.Storage.v1.xml",
+        "lib/netstandard1.0/Google.Apis.Storage.v1.dll",
+        "lib/netstandard1.0/Google.Apis.Storage.v1.pdb",
+        "lib/netstandard1.0/Google.Apis.Storage.v1.xml",
+        "lib/netstandard1.3/Google.Apis.Storage.v1.dll",
+        "lib/netstandard1.3/Google.Apis.Storage.v1.pdb",
+        "lib/netstandard1.3/Google.Apis.Storage.v1.xml",
+        "lib/netstandard2.0/Google.Apis.Storage.v1.dll",
+        "lib/netstandard2.0/Google.Apis.Storage.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.Storage.v1.xml"
       ]
     },
     "Google.Cloud.Firestore/1.1.0": {
@@ -3355,6 +3460,25 @@
         "lib/netstandard2.0/Google.Cloud.Firestore.V1.dll",
         "lib/netstandard2.0/Google.Cloud.Firestore.V1.pdb",
         "lib/netstandard2.0/Google.Cloud.Firestore.V1.xml"
+      ]
+    },
+    "Google.Cloud.Storage.V1/3.5.0": {
+      "sha512": "43R4eBJqJCTSN8kVh9apl3CgvwJwS2senmgbgppp1VLibmZgvaM27k5F7PXJU9IWN+ZsF4MujjPCvxlHyIFfTA==",
+      "type": "package",
+      "path": "google.cloud.storage.v1/3.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.cloud.storage.v1.3.5.0.nupkg.sha512",
+        "google.cloud.storage.v1.nuspec",
+        "lib/net461/Google.Cloud.Storage.V1.dll",
+        "lib/net461/Google.Cloud.Storage.V1.pdb",
+        "lib/net461/Google.Cloud.Storage.V1.xml",
+        "lib/netstandard2.0/Google.Cloud.Storage.V1.dll",
+        "lib/netstandard2.0/Google.Cloud.Storage.V1.pdb",
+        "lib/netstandard2.0/Google.Cloud.Storage.V1.xml"
       ]
     },
     "Google.LongRunning/1.1.0": {
@@ -9795,6 +9919,11 @@
       "path": "../zFireBaseRepository/zFireBaseRepository.csproj",
       "msbuildProject": "../zFireBaseRepository/zFireBaseRepository.csproj"
     },
+    "zGoogleCloudStorageClient/1.0.0": {
+      "type": "project",
+      "path": "../zGoogleCloudStorageClient/zGoogleCloudStorageClient.csproj",
+      "msbuildProject": "../zGoogleCloudStorageClient/zGoogleCloudStorageClient.csproj"
+    },
     "zModelLayer/1.0.0": {
       "type": "project",
       "path": "../zModelLayer/zModelLayer.csproj",
@@ -9809,7 +9938,8 @@
       "SQLClientRepository >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "zAzureClientRepository >= 1.0.0",
-      "zFireBaseRepository >= 1.0.0"
+      "zFireBaseRepository >= 1.0.0",
+      "zGoogleCloudStorageClient >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9855,6 +9985,9 @@
             },
             "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zFireBaseRepository\\zFireBaseRepository.csproj": {
               "projectPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zFireBaseRepository\\zFireBaseRepository.csproj"
+            },
+            "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
+              "projectPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj"
             }
           }
         }
