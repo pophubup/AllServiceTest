@@ -25,7 +25,7 @@ namespace haha.Controllers
         }
         // GET: api/<ImageFileController>
         [HttpGet]
-        public IEnumerable<ImageFile> GetFirstImageFileFromEveryGroup()
+        public IEnumerable<ImageFile> GetFirstDataEveryGroup()
         {
            
             IEnumerable<ImageFile> imageFiles = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).ToList().GroupBy(g => g.Label.Group.Id).Select(x => new ImageFile()
