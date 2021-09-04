@@ -10,7 +10,8 @@ using zAzureClientRepository;
 using zFireBaseRepository;
 using zGoogleCloudStorageClient;
 using zModelLayer;
-
+using System.Text.Json;
+using Newtonsoft.Json;
 namespace haha
 {
     public class Startup
@@ -39,8 +40,20 @@ namespace haha
                                       builder.AllowAnyOrigin();
                                   });
             });
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options  => {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+              
+             });
+           
+            //.AddJsonOptions(options =>
+            // {
+            //     options.JsonSerializerOptions.IgnoreNullValues = true;
 
+
+
+            // }).
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "myDotNet", Version = "v1" });

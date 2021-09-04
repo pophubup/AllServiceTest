@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using zGoogleCloudStorageClient;
 using zModelLayer;
+using zModelLayer.ViewModels;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace haha.Controllers
@@ -26,24 +27,24 @@ namespace haha.Controllers
         }
         // GET: api/<ImageFileController>
         [HttpGet]
-        public IEnumerable<ImageFile> GetFirstDataEveryGroup()
+        public List<ImageViewModel> GetFirstDataEveryGroup()
         {
             
-            IEnumerable<ImageFile> imageFiles = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).ToList().GroupBy(g => g.Label.Group.Id).Select(x => {
+            List<ImageViewModel> imageFiles = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).ToList().GroupBy(g => g.Label.Group.Id).Select(x => {
 
-             
-                return new ImageFile()
+                return new ImageViewModel()
                 {
-                    Id = x.FirstOrDefault().Id,
-                    FileName = $"data:image/{Path.GetFileName(x.FirstOrDefault().FileName).Split('.')[1]};base64,{Convert.ToBase64String(System.IO.File.ReadAllBytes($"{_Configuration["imgpath"]}\\{x.FirstOrDefault().Label.LabelName}\\{x.FirstOrDefault().FileName}"))}",
-                    CreateDate = x.FirstOrDefault().CreateDate,
-                    Description = x.FirstOrDefault().Description,
-                    Label = x.FirstOrDefault().Label,
-                    ModifyDate = x.FirstOrDefault().ModifyDate,
-                    Name = x.FirstOrDefault().Name,
-                    LabelId = x.FirstOrDefault().LabelId,
+                    ImageId = x.FirstOrDefault().Id.ToString(),
+                    name = x.FirstOrDefault().Name,
+                    url = $"{_Configuration["imageurl"]}/{x.FirstOrDefault().Label.BucketId}/{x.FirstOrDefault().FileName}",
+                    description = x.FirstOrDefault().Description,
+                    LabelId = x.FirstOrDefault().Label.Id,
+                    GroupId = x.FirstOrDefault().Label.GroupId,
+              
                 };
-                });
+                }).ToList();
+
+            
             return imageFiles; 
         }
 
@@ -54,9 +55,19 @@ namespace haha.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public ImageFile GetSingleData(Guid id)
+        public ImageViewModel GetSingleData(Guid id)
         {
-            return _serviceProvider.GetService<MYDBContext>().ImageFiles.FirstOrDefault(g=>g.Id == id);
+           var data = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).FirstOrDefault(g => g.Id == id);
+            return new ImageViewModel()
+            { 
+                ImageId = data.Id.ToString(),
+                name = data.Name,
+                description = data.Description,
+                url = $"{_Configuration["imageurl"]}/{data.Label.BucketId}/{data.FileName}",
+                LabelId = data.Label.Id,
+                GroupId = data.Label.GroupId,
+
+            };
         }
 
         // POST api/<ImageFileController>
@@ -80,7 +91,7 @@ namespace haha.Controllers
                     stream = x.OpenReadStream()
 
                 });
-           
+         
                 return new ImageFile()
                 {
                     Id = guid,
@@ -147,7 +158,8 @@ namespace haha.Controllers
             {
                 try
                 {
-                    ImageFile obj = context.ImageFiles.FirstOrDefault(x => x.Id == id);
+                    ImageFile obj = context.ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).FirstOrDefault(x => x.Id == id);
+                    _serviceProvider.GetService<IGoogleStorageRepository>().DeleteFile(obj.Label.BucketId, obj.FileName);
                     context.ImageFiles.Remove(obj);
                     context.SaveChanges();
                     tran.Commit();

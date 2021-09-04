@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "r25o7uiJJmNMSRuqAlp2DFT3lJTTBdGRPiBdHliAIXdO3Wpbasn/JxyD6pUGFg6Db3v6GFFFZ3LMqqNSdc5hzQ==",
+  "dgSpecHash": "5HE2KglDdxzzi4x3ZTmCOsWrBCde1XTK31FLIsKPvNy/5mt35EPI0q/5XXbA+mZnZ2eeOo3TOTsiShiDb5vARA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\haha\\haha.csproj",
   "expectedPackageFiles": [
@@ -36,8 +36,10 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.9\\microsoft.aspnetcore.jsonpatch.5.0.9.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.5\\microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.9\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.9.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.2.0\\microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
@@ -91,6 +93,7 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\neo4jclient\\4.1.6\\neo4jclient.4.1.6.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

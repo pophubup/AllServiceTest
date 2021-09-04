@@ -43,10 +43,16 @@ namespace zGoogleCloudStorageClient
             return true;
           
         }
+       public bool DeleteFile(string bucketid,string labelName)
+        {
+            Client.DeleteObject(bucketid, labelName);
+            return true;
+        }
 
         public bool CreateFolder(string labelName)
         {
-            Client.CreateBucket("getproducts-92bee", labelName);
+           
+            Client.CreateBucket(_configuration["Firebase:project_id"], labelName);
             return true;
         }
     }

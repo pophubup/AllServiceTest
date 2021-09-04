@@ -12,3 +12,4 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\ref\zGoogleCloudStorageClient.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.csproj.CopyComplete

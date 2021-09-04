@@ -11,5 +11,8 @@ namespace zGoogleCloudStorageClient
         StorageClient Client { get; }
         public bool CreateFolder(string labelName);
         public bool CreateFiles(List<ImageContainer> localpath, string labelName);
+        public bool DeleteFile(string bucketid, string labelName);
+
+
     }
 }
