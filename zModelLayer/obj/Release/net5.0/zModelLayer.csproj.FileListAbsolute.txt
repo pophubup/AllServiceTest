@@ -1,0 +1,12 @@
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\bin\Release\net5.0\zModelLayer.deps.json
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\bin\Release\net5.0\zModelLayer.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\bin\Release\net5.0\ref\zModelLayer.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\bin\Release\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Release\net5.0\zModelLayer.csproj.AssemblyReference.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Release\net5.0\zModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Release\net5.0\zModelLayer.AssemblyInfoInputs.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Release\net5.0\zModelLayer.AssemblyInfo.cs
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Release\net5.0\zModelLayer.csproj.CoreCompileInputs.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Release\net5.0\zModelLayer.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Release\net5.0\ref\zModelLayer.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Release\net5.0\zModelLayer.pdb

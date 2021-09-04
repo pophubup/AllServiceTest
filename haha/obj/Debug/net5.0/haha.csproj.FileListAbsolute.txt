@@ -200,10 +200,8 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.csproj.CoreC
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\staticwebassets\haha.StaticWebAssets.Manifest.cache
-C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\staticwebassets\haha.StaticWebAssets.xml
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\scopedcss\bundle\haha.styles.css
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.RazorTargetAssemblyInfo.cache
-C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.csproj.CopyComplete
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\ref\haha.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.pdb

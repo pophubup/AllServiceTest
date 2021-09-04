@@ -17,10 +17,24 @@ namespace haha
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
+            Host.CreateDefaultBuilder(args).ConfigureAppConfiguration((hostContext, config) =>
+            {
+                var env = hostContext.HostingEnvironment;
+                if (env.IsDevelopment())
                 {
+                    config.AddJsonFile(@"C:\Users\Yohoo\Desktop\key.json", optional: true, reloadOnChange: true);
+                   
+                }
+                if (env.IsProduction())
+                {
+                    config.AddJsonFile(@"D:\home\key.json", optional: true, reloadOnChange: true);
+                   
+                }
+               
+            })
+             .ConfigureWebHostDefaults(webBuilder =>
+              {
                     webBuilder.UseStartup<Startup>();
-                });
+            });
     }
 }

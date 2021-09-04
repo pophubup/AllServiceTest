@@ -1,0 +1,15 @@
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\bin\Release\net5.0\Neo4jClientRepository.deps.json
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\bin\Release\net5.0\Neo4jClientRepository.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\bin\Release\net5.0\ref\Neo4jClientRepository.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\bin\Release\net5.0\Neo4jClientRepository.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\bin\Release\net5.0\zModelLayer.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\bin\Release\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\Neo4jClientRepository.csproj.AssemblyReference.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\Neo4jClientRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\Neo4jClientRepository.AssemblyInfoInputs.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\Neo4jClientRepository.AssemblyInfo.cs
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\Neo4jClientRepository.csproj.CoreCompileInputs.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\Neo4jClientRepository.csproj.CopyComplete
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\Neo4jClientRepository.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\ref\Neo4jClientRepository.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Release\net5.0\Neo4jClientRepository.pdb

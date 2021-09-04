@@ -24,7 +24,8 @@ namespace haha
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
+         
+           // services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
             services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddAzureServices();
             services.AddFireBaseService();
