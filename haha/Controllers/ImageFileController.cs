@@ -31,7 +31,7 @@ namespace haha.Controllers
             IEnumerable<ImageFile> imageFiles = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).ToList().GroupBy(g => g.Label.Group.Id).Select(x => new ImageFile()
             {
                 Id = x.FirstOrDefault().Id,
-                FileName = Convert.ToBase64String( System.IO.File.ReadAllBytes($"{_Configuration["imgpath"]}\\{x.FirstOrDefault().Label.LabelName}\\{x.FirstOrDefault().FileName}")),
+                FileName = $"data:image/{Path.GetFileName(x.FirstOrDefault().FileName).Split('.')[1]};base64,{Convert.ToBase64String(System.IO.File.ReadAllBytes($"{_Configuration["imgpath"]}\\{x.FirstOrDefault().Label.LabelName}\\{x.FirstOrDefault().FileName}"))}",
                 CreateDate = x.FirstOrDefault().CreateDate, 
                 Description = x.FirstOrDefault().Description,
                 Label = x.FirstOrDefault().Label,
