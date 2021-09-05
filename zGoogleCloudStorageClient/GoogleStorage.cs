@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Google.Cloud.Storage.V1;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace zGoogleCloudStorageClient
@@ -24,7 +25,7 @@ namespace zGoogleCloudStorageClient
             //foreach (var storageObject in storageObjects)
             //{
             //    Console.WriteLine(storageObject.Name);
-      
+
             //}
             return service;
         }

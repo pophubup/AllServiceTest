@@ -20,3 +20,4 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Debug\net5.0\zModelLaye
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Debug\net5.0\zModelLayer.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Debug\net5.0\ref\zModelLayer.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Debug\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\zModelLayer\obj\Debug\net5.0\zModelLayer.csproj.AssemblyReference.cache

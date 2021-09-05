@@ -35,10 +35,11 @@ namespace zGoogleCloudStorageClient
 
         public bool CreateFiles(List<ImageContainer> localpath, string labelName)
         {
+           
             var storage = Client;
             localpath.ForEach(g =>
             {
-                storage.UploadObject(labelName, g.objName,g.FileExtension, g.stream);
+                storage.UploadObject(labelName, g.objName ,g.FileExtension, g.stream, new UploadObjectOptions() { PredefinedAcl = PredefinedObjectAcl.PublicRead }) ;
             });
             return true;
           
