@@ -1,12 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using SQLClientRepository.Entities;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
 using zGoogleCloudStorageClient;
 using zModelLayer;
 using zModelLayer.ViewModels;
@@ -34,9 +38,9 @@ namespace haha.Controllers
 
                 return new ImageViewModel()
                 {
-                    ImageId = x.FirstOrDefault().Id.ToString(),
+                    id = x.FirstOrDefault().Id.ToString(),
                     name = x.FirstOrDefault().Name,
-                    url = $"{_Configuration["imageurl"]}/{x.FirstOrDefault().Label.BucketId}/{x.FirstOrDefault().FileName}",
+                    image = $"{_Configuration["imageurl"]}/{x.FirstOrDefault().Label.BucketId}/{x.FirstOrDefault().FileName}",
                     description = x.FirstOrDefault().Description,
                     LabelId = x.FirstOrDefault().Label.Id,
                     GroupId = x.FirstOrDefault().Label.GroupId,
@@ -60,10 +64,10 @@ namespace haha.Controllers
            var data = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(g => g.Label.Group).FirstOrDefault(g => g.Id == id);
             return new ImageViewModel()
             { 
-                ImageId = data.Id.ToString(),
+                id = data.Id.ToString(),
                 name = data.Name,
                 description = data.Description,
-                url = $"{_Configuration["imageurl"]}/{data.Label.BucketId}/{data.FileName}",
+                image = $"{_Configuration["imageurl"]}/{data.Label.BucketId}/{data.FileName}",
                 LabelId = data.Label.Id,
                 GroupId = data.Label.GroupId,
 
@@ -79,8 +83,19 @@ namespace haha.Controllers
            
             var createtime =  DateTime.Now;
 
-            Label Label = context.Labels.FirstOrDefault(x => x.Id == dataModel.labeId);
-            var imagesData = new List<ImageContainer>();
+            string url = $"{_Configuration["domain"]}/api/Label/InsertData";
+            var label = new List<CreateLabelDataModel>(){
+                new CreateLabelDataModel()
+                {
+                    GroupID = Convert.ToInt32( _Configuration["DefaultGroup"]),
+                    LabelName = dataModel.labelName
+                }
+            };
+           var client = new  HttpClient();
+           var res = client.PostAsync(url, new StringContent(JsonConvert.SerializeObject(label),Encoding.UTF8, "application/json")).GetAwaiter().GetResult();
+           var data = res.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+           var final = JsonConvert.DeserializeObject<ResponseModel>(data);
+           var imagesData = new List<ImageContainer>();
             List<ImageFile> imageFiles = dataModel.files.Select(x =>
             {
 
@@ -99,15 +114,17 @@ namespace haha.Controllers
                     CreateDate = createtime,
                     Description = dataModel.description,
                     Name = dataModel.name,
-                    LabelId= dataModel.labeId
+                    LabelId=Convert.ToInt32(final.Message)
                 };
 
             }).ToList();
-            _serviceProvider.GetService<IGoogleStorageRepository>().CreateFiles(imagesData, Label.BucketId);
+         
             using (var tran = context.Database.BeginTransaction())
             {
                 try
                 {
+                    var BucketId =  context.Labels.FirstOrDefault(g => g.Id == Convert.ToInt32(final.Message)).BucketId;
+                    _serviceProvider.GetService<IGoogleStorageRepository>().CreateFiles(imagesData, BucketId);
                     context.ImageFiles.AddRange(imageFiles);
                     context.SaveChanges();
                     tran.Commit();
@@ -173,5 +190,6 @@ namespace haha.Controllers
 
             }
         }
+       
     }
 }

@@ -55,5 +55,10 @@ namespace zGoogleCloudStorageClient
             Client.CreateBucket(_configuration["Firebase:project_id"], labelName);
             return true;
         }
+        public bool DeleteFolder(string labelName)
+        {
+            Client.DeleteBucket(labelName);
+            return true;
+        }
     }
 }

@@ -10,6 +10,7 @@ using System.IO;
 using SQLClientRepository.Entities;
 using zModelLayer;
 using zGoogleCloudStorageClient;
+using Microsoft.EntityFrameworkCore;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace haha.Controllers
@@ -45,39 +46,88 @@ namespace haha.Controllers
         }
         // POST api/<LabelController>
         [HttpPost]
-        public ResponseModel InsertData([FromBody]List<CreateLabelDataModel> value)
+        public ResponseModel InsertLabel([FromBody]List<CreateLabelDataModel> value)
         {
             var context = _serviceProvider.GetService<MYDBContext>();
+            bool isSuccess = false;
+            string msg = string.Empty;
             using (var tran = context.Database.BeginTransaction())
             {
                 try
                 {
                     var today = DateTime.Now;
-                   IEnumerable<Label> labels= value.Select(g => {
-                      
-                      Guid buckid = Guid.NewGuid();
-                       _serviceProvider.GetService<IGoogleStorageRepository>().CreateFolder(buckid.ToString());
-                       return new Label()
-                       {
-                           CreateDate = today,
-                           LabelName = g.LabelName,
-                           BucketId = buckid.ToString(),
-                           GroupId = g.GroupID
-                       };
-                   });
+                    List<Label> labels = value.Select(g =>
+                    {
+
+                        Guid buckid = Guid.NewGuid();
+                        _serviceProvider.GetService<IGoogleStorageRepository>().CreateFolder(buckid.ToString());
+                        return new Label()
+                        {
+                            CreateDate = today,
+                            LabelName = g.LabelName,
+                            BucketId = buckid.ToString(),
+                            GroupId = g.GroupID
+                        };
+                    }).ToList();
                     context.Labels.AddRange(labels);
                     context.SaveChanges();
                     tran.Commit();
-                    return new ResponseModel() { isSuccess = true, Message = $"{string.Join(",", value.Select(x => x).ToList())} 新增成功" };
+                    isSuccess = true;
+
+                    msg = $"{string.Join(",", labels.Select(g => g.Id))}";
                 }
                 catch (Exception ex)
                 {
                     tran.Rollback();
-                    return new ResponseModel() { isSuccess = false, Message = ex.Message };
-
+                    msg = ex.Message;
                 }
+                return new ResponseModel() { isSuccess = isSuccess, Message = msg };
+            }
+        }
+        [HttpDelete]
+        public ResponseModel DeleteLabel([FromQuery] int LabelId)
+        {
+           var data = _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(g=>g.Label).Where(g => g.LabelId == LabelId);
+           if (data.Count()  == 0 )
+            {
+                var context = _serviceProvider.GetService<MYDBContext>();
+                bool isSuccess = false;
+                string msg = string.Empty;
+                using (var tran = context.Database.BeginTransaction())
+               {
+                   try
+                   {
+                        var target = context.Labels.FirstOrDefault(g => g.Id == LabelId);
+                        bool result = _serviceProvider.GetService<IGoogleStorageRepository>().DeleteFolder(target.BucketId);
+                        context.Labels.Remove(target);
+                        context.SaveChanges();
+                        tran.Commit();
+                        isSuccess = true;
+                        msg = $"{data.FirstOrDefault().Label.LabelName} 刪除成功";
+                   }
+                   catch (Exception ex)
+                   {
+
+                        msg = ex.Message;
+                   }
+                    return new ResponseModel()
+                    {
+                        isSuccess = isSuccess,
+                        Message = msg
+                    };
+                };
 
             }
+            else
+            {
+                return new ResponseModel()
+                {
+                    isSuccess = false,
+                    Message = $"無法刪除標籤 {data.FirstOrDefault().Name}，其資料{string.Join(",", data.Select(g=>g.FileName))}仍是此標籤"
+
+                };
+            }
+            
         }
 
     }

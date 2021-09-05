@@ -36,6 +36,8 @@ namespace haha.Controllers
         public ResponseModel InsertData([FromBody] List<string> groups)
         {
             var context = _serviceProvider.GetService<MYDBContext>();
+            bool isSuccess = false;
+            string msg = string.Empty;
             using (var tran = context.Database.BeginTransaction())
             {
                 try
@@ -44,14 +46,15 @@ namespace haha.Controllers
                     context.Groups.AddRange(groups.Select(g => new Group { GroupName = g, CreateDate = current }));
                     context.SaveChanges();
                     tran.Commit();
-                    return new ResponseModel() { isSuccess = true, Message = $"{string.Join(",", groups)} 新增成功" } ;
+                    isSuccess = true;
+                    msg =  $"{string.Join(",", groups)} 新增成功";
                 }
                 catch (Exception ex)
                 {
                     tran.Rollback();
-                    return new ResponseModel() { isSuccess = false,  Message = ex.Message } ;
+                    msg = ex.Message;
                 }
-             
+                return new ResponseModel() { isSuccess = false, Message = msg };
             }
            
         }
@@ -61,6 +64,8 @@ namespace haha.Controllers
         public ResponseModel EditData(int id, [FromBody] string value)
         {
             var context = _serviceProvider.GetService<MYDBContext>();
+            bool isSuccess = false;
+            string msg = string.Empty;
             using (var tran = context.Database.BeginTransaction())
             {
                 try
@@ -69,14 +74,16 @@ namespace haha.Controllers
                     group.GroupName = value;
                     context.SaveChanges();
                     tran.Commit();
-                    return new ResponseModel() { isSuccess = true, Message = $"{value} 修改成功" };
+                    isSuccess = true;
+                    msg = $"{value} 修改成功";
+                  
                 }
                 catch (Exception ex)
                 {
                     tran.Rollback();
-                    return new ResponseModel() { isSuccess = false, Message = ex.Message };
+                    msg = ex.Message;
                 }
-
+                return new ResponseModel() { isSuccess = isSuccess, Message = msg };
             }
         }
 
@@ -85,6 +92,8 @@ namespace haha.Controllers
         public ResponseModel DeleteData(int id)
         {
             var context = _serviceProvider.GetService<MYDBContext>();
+            bool isSuccess = false;
+            string msg = string.Empty;
             using (var tran = context.Database.BeginTransaction())
             {
                 try
@@ -97,14 +106,16 @@ namespace haha.Controllers
                 
                     context.SaveChanges();
                     tran.Commit();
-                    return new ResponseModel() { isSuccess = true, Message = $"{group.GroupName} 移除成功" };
+                    isSuccess = true;
+                    msg = $"{group.GroupName} 移除成功";
+               
                 }
                 catch (Exception ex)
                 {
                     tran.Rollback();
-                    return new ResponseModel() { isSuccess = false, Message = ex.Message };
+                    msg = ex.Message;
                 }
-
+                return new ResponseModel() { isSuccess = isSuccess, Message = msg };
             }
         }
     }
