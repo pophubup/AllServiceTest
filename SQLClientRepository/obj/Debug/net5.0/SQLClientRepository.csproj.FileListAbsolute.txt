@@ -25,3 +25,8 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\SQ
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.genruntimeconfig.cache
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\ref\SQLClientRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.csproj.AssemblyReference.cache
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\zGoogleCloudStorageClient.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\zModelLayer.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\zGoogleCloudStorageClient.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\bin\Debug\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\Desktop\my\AllServiceTest\SQLClientRepository\obj\Debug\net5.0\SQLClientRepository.csproj.CopyComplete

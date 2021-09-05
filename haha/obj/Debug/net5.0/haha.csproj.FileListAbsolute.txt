@@ -218,3 +218,4 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\bin\Debug\net5.0\zGoogleCloudStora
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Yohoo\Desktop\my\AllServiceTest\haha\obj\Debug\net5.0\haha.csproj.CopyComplete

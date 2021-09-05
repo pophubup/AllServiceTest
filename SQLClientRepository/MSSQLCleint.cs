@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Logging;
 using SQLClientRepository.Entities;
 using Microsoft.EntityFrameworkCore;
+using SQLClientRepository.IServices;
+using SQLClientRepository.Services;
 
 namespace SQLClientRepository
 {
@@ -12,6 +14,7 @@ namespace SQLClientRepository
             service.AddDbContext<MYDBContext>(options => options
     .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()))
     .UseSqlServer(connectionstring));
+            service.AddScoped<ILabel, LabelService>();
             return service;
         }
     }

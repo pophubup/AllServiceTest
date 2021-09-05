@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using SQLClientRepository.Entities;
+using SQLClientRepository.IServices;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -82,20 +83,15 @@ namespace haha.Controllers
             var context = _serviceProvider.GetService<MYDBContext>();
            
             var createtime =  DateTime.Now;
-
-            string url = $"{_Configuration["domain"]}/api/Label/InsertLabel";
-            var label = new List<CreateLabelDataModel>(){
-                new CreateLabelDataModel()
-                {
-                    GroupID = Convert.ToInt32( _Configuration["DefaultGroup"]),
-                    LabelName = dataModel.labelName
-                }
-            };
-           var client = new  HttpClient();
-           var res = client.PostAsync(url, new StringContent(JsonConvert.SerializeObject(label),Encoding.UTF8, "application/json")).GetAwaiter().GetResult();
-           var data = res.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-           var final = JsonConvert.DeserializeObject<ResponseModel>(data);
-           var imagesData = new List<ImageContainer>();
+            var service = _serviceProvider.GetService<ILabel>();
+            var (isSuccess, msg) = service.CreateLabel(new List<CreateLabelDataModel>() { 
+               new CreateLabelDataModel()
+               {
+                    LabelName = dataModel.labelName,
+               }
+            
+            });
+            var imagesData = new List<ImageContainer>();
             List<ImageFile> imageFiles = dataModel.files.Select(x =>
             {
 
@@ -114,7 +110,7 @@ namespace haha.Controllers
                     CreateDate = createtime,
                     Description = dataModel.description,
                     Name = dataModel.name,
-                    LabelId=Convert.ToInt32(final.Message)
+                    LabelId=Convert.ToInt32(msg)
                 };
 
             }).ToList();
@@ -123,7 +119,7 @@ namespace haha.Controllers
             {
                 try
                 {
-                    var BucketId =  context.Labels.FirstOrDefault(g => g.Id == Convert.ToInt32(final.Message)).BucketId;
+                    var BucketId =  context.Labels.FirstOrDefault(g => g.Id == Convert.ToInt32(msg)).BucketId;
                     _serviceProvider.GetService<IGoogleStorageRepository>().CreateFiles(imagesData, BucketId);
                     context.ImageFiles.AddRange(imageFiles);
                     context.SaveChanges();

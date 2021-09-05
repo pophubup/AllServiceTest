@@ -206,7 +206,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

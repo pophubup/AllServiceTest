@@ -11,6 +11,7 @@ using SQLClientRepository.Entities;
 using zModelLayer;
 using zGoogleCloudStorageClient;
 using Microsoft.EntityFrameworkCore;
+using SQLClientRepository.IServices;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace haha.Controllers
@@ -48,41 +49,10 @@ namespace haha.Controllers
         [HttpPost]
         public ResponseModel InsertLabel([FromBody]List<CreateLabelDataModel> value)
         {
-            var context = _serviceProvider.GetService<MYDBContext>();
-            bool isSuccess = false;
-            string msg = string.Empty;
-            using (var tran = context.Database.BeginTransaction())
-            {
-                try
-                {
-                    var today = DateTime.Now;
-                    List<Label> labels = value.Select(g =>
-                    {
-
-                        Guid buckid = Guid.NewGuid();
-                        _serviceProvider.GetService<IGoogleStorageRepository>().CreateFolder(buckid.ToString());
-                        return new Label()
-                        {
-                            CreateDate = today,
-                            LabelName = g.LabelName,
-                            BucketId = buckid.ToString(),
-                            GroupId = g.GroupID
-                        };
-                    }).ToList();
-                    context.Labels.AddRange(labels);
-                    context.SaveChanges();
-                    tran.Commit();
-                    isSuccess = true;
-
-                    msg = $"{string.Join(",", labels.Select(g => g.Id))}";
-                }
-                catch (Exception ex)
-                {
-                    tran.Rollback();
-                    msg = ex.Message;
-                }
-                return new ResponseModel() { isSuccess = isSuccess, Message = msg };
-            }
+            var service = _serviceProvider.GetService<ILabel>();
+            var (isSuccess, msg) = service.CreateLabel(value);
+            return new ResponseModel() { isSuccess = isSuccess, Message = msg };
+          
         }
         [HttpDelete]
         public ResponseModel DeleteLabel([FromQuery] int LabelId)

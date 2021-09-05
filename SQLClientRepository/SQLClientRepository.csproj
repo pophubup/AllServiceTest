@@ -16,4 +16,7 @@
   <ItemGroup>
     <Folder Include="Entities\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj" />
+  </ItemGroup>
 </Project>
