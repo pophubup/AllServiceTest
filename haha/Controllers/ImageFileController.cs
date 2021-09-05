@@ -83,7 +83,7 @@ namespace haha.Controllers
            
             var createtime =  DateTime.Now;
 
-            string url = $"{_Configuration["domain"]}/api/Label/InsertData";
+            string url = $"{_Configuration["domain"]}/api/Label/InsertLabel";
             var label = new List<CreateLabelDataModel>(){
                 new CreateLabelDataModel()
                 {

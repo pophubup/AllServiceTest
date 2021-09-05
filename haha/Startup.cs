@@ -37,7 +37,7 @@ namespace haha
                 options.AddDefaultPolicy(
                                   builder =>
                                   {
-                                      builder.AllowAnyOrigin();
+                                      builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyHeader();
                                   });
             });
             services.AddControllers().AddNewtonsoftJson(options  => {
