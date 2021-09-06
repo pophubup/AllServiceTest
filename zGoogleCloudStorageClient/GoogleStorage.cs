@@ -27,6 +27,7 @@ namespace zGoogleCloudStorageClient
             //    Console.WriteLine(storageObject.Name);
 
             //}
+           //string url =  builder.GetService<IGoogleStorageRepository>().GetPublicUrl("95d9d95c-b376-4d01-bc61-de911426790a", "test.jpg");
             return service;
         }
     }

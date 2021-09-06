@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace haha.Controllers
 {
+    
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class LineBotApiController : ControllerBase
@@ -20,6 +21,10 @@ namespace haha.Controllers
         {
             _Configuration = Configuration;
         }
+        /// <summary>
+        /// LineBot Webhook 的 URL 詳細設定請至 https://developers.line.biz/zh-hant/
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> POST()
         {

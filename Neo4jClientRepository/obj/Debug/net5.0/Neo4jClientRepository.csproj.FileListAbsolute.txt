@@ -1,6 +1,5 @@
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\bin\Debug\net5.0\Neo4jClientRepository.deps.json
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\bin\Debug\net5.0\Neo4jClientRepository.dll
-C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\bin\Debug\net5.0\ref\Neo4jClientRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\bin\Debug\net5.0\Neo4jClientRepository.pdb
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\bin\Debug\net5.0\zModelLayer.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\bin\Debug\net5.0\zModelLayer.pdb
@@ -9,7 +8,6 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\net5.0\Neo4jClientRepository.AssemblyInfoInputs.cache
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\net5.0\Neo4jClientRepository.AssemblyInfo.cs
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\net5.0\Neo4jClientRepository.csproj.CoreCompileInputs.cache
-C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\net5.0\Neo4jClientRepository.csproj.CopyComplete
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\net5.0\Neo4jClientRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\net5.0\ref\Neo4jClientRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\net5.0\Neo4jClientRepository.pdb
@@ -28,3 +26,4 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Debug\net5.0\
 C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Debug\net5.0\Neo4jClientRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Debug\net5.0\ref\Neo4jClientRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\Neo4jClientRepository\obj\Debug\net5.0\Neo4jClientRepository.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\Neo4jClientRepository\obj\Debug\net5.0\refint\Neo4jClientRepository.dll

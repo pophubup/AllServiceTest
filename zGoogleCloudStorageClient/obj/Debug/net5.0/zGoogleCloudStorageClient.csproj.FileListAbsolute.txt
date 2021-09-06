@@ -12,3 +12,17 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\ref\zGoogleCloudStorageClient.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\bin\Debug\net5.0\zGoogleCloudStorageClient.deps.json
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\bin\Debug\net5.0\zGoogleCloudStorageClient.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\bin\Debug\net5.0\zGoogleCloudStorageClient.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\bin\Debug\net5.0\zModelLayer.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\bin\Debug\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.csproj.AssemblyReference.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.AssemblyInfoInputs.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.AssemblyInfo.cs
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.csproj.CoreCompileInputs.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\ref\zGoogleCloudStorageClient.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\zGoogleCloudStorageClient.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zGoogleCloudStorageClient\obj\Debug\net5.0\refint\zGoogleCloudStorageClient.dll

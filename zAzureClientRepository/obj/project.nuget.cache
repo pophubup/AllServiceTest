@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "100IoZYLDD41lnsaO9pw1yfqM4/VYeiL5MHI/5em7VM2hZv5xesb5BlpdscK/fkN8XIgaI78ys6Ko0cW5Rw46w==",
+  "dgSpecHash": "ooipKS439CD5f1fk1QUg+Dvpe9dLrFZdRpE2+JW45C939zOjXlsyVQkjJ6WCtYsl6uqWqtIjYy2i6TNZAku+gQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zAzureClientRepository\\zAzureClientRepository.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zAzureClientRepository\\zAzureClientRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\azure.core\\1.15.0\\azure.core.1.15.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\azure.storage.blobs\\12.9.1\\azure.storage.blobs.12.9.1.nupkg.sha512",

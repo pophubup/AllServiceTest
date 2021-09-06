@@ -19,6 +19,7 @@ using zModelLayer.ViewModels;
 
 namespace haha.Controllers
 {
+
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class ImageFileController : ControllerBase
@@ -30,7 +31,13 @@ namespace haha.Controllers
             _serviceProvider = serviceProvider;
             _Configuration = Configuration;
         }
-        // GET: api/<ImageFileController>
+        /// <summary>
+        /// 取得每個團體的第一筆 ImageFile 資料
+        /// </summary>
+        /// <remarks>取得每個團體的第一筆 ImageFile 資料</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<ImageViewModel>))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet]
         public List<ImageViewModel> GetFirstDataEveryGroup()
         {
@@ -55,10 +62,13 @@ namespace haha.Controllers
 
         // GET api/<ImageFileController>/5
         /// <summary>
-        /// 取得資料 by id 
+        /// 取得單筆資料 by ImageFile ID 
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">GUID </param>
+        /// <remarks>取得單筆資料 by ImageFile ID </remarks>
         /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ImageViewModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("{id}")]
         public ImageViewModel GetSingleData(Guid id)
         {
@@ -75,7 +85,14 @@ namespace haha.Controllers
             };
         }
 
-        // POST api/<ImageFileController>
+        /// <summary>
+        ///  multipart/form-data 方式回存圖片、名稱、標籤及內容
+        /// </summary>
+        /// <param name="id">GUID </param>
+        /// <remarks>  multipart/form-data 方式回存圖片、名稱、標籤及內容</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPost]
         public ResponseModel InsertData([FromForm] ImageFileDataModel dataModel)
         {
@@ -135,7 +152,15 @@ namespace haha.Controllers
             }
         }
 
-        // PUT api/<ImageFileController>/5
+        /// <summary>
+        ///  multipart/form-data 方式修改 圖片、名稱、標籤及內容
+        /// </summary>
+        /// <param name="id">GUID Querystring</param>
+        /// <param name="dataModel">ImageFileDataModel</param>
+        /// <remarks>multipart/form-data 方式修改 圖片、名稱、標籤及內容</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ImageFileDataModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPut("{id}")]
         public ResponseModel EditData(Guid id, [FromForm] ImageFileDataModel dataModel)
         {
@@ -161,9 +186,15 @@ namespace haha.Controllers
                 }
             }
         }
-
-        // DELETE api/<ImageFileController>/5
+        /// <summary>
+        /// 刪除單筆 ImageFile 資料
+        /// </summary>
+        /// <param name="id">ImageFileID( GUID )</param>
+        /// <remarks>刪除單筆 ImageFile 資料</remarks>
+        /// <returns></returns>
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ResponseModel DeleteData(Guid id)
         {
             var context = _serviceProvider.GetService<MYDBContext>();

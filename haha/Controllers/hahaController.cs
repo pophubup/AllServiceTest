@@ -18,6 +18,11 @@ namespace haha.Controllers
         {
             _Configuration = Configuration;
         }
+        /// <summary>
+        /// key/Value secrect 確認
+        /// </summary>
+        /// <param name="name">key 值</param>
+        /// <returns></returns>
         // GET api/<hahaController>/5
         [HttpGet("{name}")]
         public string Getyyyy(string name)

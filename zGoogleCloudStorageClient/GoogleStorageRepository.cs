@@ -55,5 +55,22 @@ namespace zGoogleCloudStorageClient
             Client.DeleteBucket(labelName);
             return true;
         }
+
+        public string GetPublicUrl(string buckid, string filename)
+        {
+            var storageObjects =Client.ListObjects(buckid);
+            string url = string.Empty;
+            foreach (var storageObject in storageObjects)
+            {
+                if(storageObject.Name == filename)
+                {
+                    url = storageObject.SelfLink;
+                    break;
+                }
+                
+
+            }
+            return url;
+        }
     }
 }

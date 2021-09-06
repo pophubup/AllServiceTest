@@ -9,6 +9,7 @@ namespace zGoogleCloudStorageClient
     public interface IGoogleStorageRepository
     {
         StorageClient Client { get; }
+        public string GetPublicUrl(string buckid, string labelname);
         public bool CreateFolder(string labelName);
         public bool DeleteFolder(string labelName);
         public bool CreateFiles(List<ImageContainer> localpath, string labelName);

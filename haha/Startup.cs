@@ -12,6 +12,10 @@ using zGoogleCloudStorageClient;
 using zModelLayer;
 using System.Text.Json;
 using Newtonsoft.Json;
+using System.IO;
+using System;
+using System.Reflection;
+
 namespace haha
 {
     public class Startup
@@ -46,17 +50,13 @@ namespace haha
                 options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
               
              });
-           
-            //.AddJsonOptions(options =>
-            // {
-            //     options.JsonSerializerOptions.IgnoreNullValues = true;
 
-
-
-            // }).
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "myDotNet", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API_Resources", Version = "v1", Description ="Connect mutiple service such as CLoudSQL¡BGoogleSTorage¡BAzuerStorage¡BFireStore...." });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
         }
 

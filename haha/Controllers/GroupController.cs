@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using SQLClientRepository.Entities;
 using zModelLayer;
+using Microsoft.AspNetCore.Http;
 
 namespace haha.Controllers
 {
@@ -18,20 +19,42 @@ namespace haha.Controllers
         {
             _serviceProvider = serviceProvider;
         }
-        // GET: api/<GroupController>
+        /// <summary>
+        /// 取得所有群體
+        /// </summary>
+        /// <remarks>取得所有群體</remarks>
+        /// <returns></returns>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Group>))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IEnumerable<Group>  GetGroups()
         {
 
             return _serviceProvider.GetService<MYDBContext>().Groups.AsEnumerable();
         }
+        /// <summary>
+        /// 取得個別 Group 
+        /// </summary>
+        /// <param name="id">GroupID</param>
+        /// <remarks>取得個別 Group </remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Group))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("{id}")]
         public Group GetSingleGroup(int id)
         {
+           
             return _serviceProvider.GetService<MYDBContext>().Groups.AsQueryable().FirstOrDefault(g=>g.Id == id);
         }
 
-        // POST api/<GroupController>
+        /// <summary>
+        ///  新增多筆Group
+        /// </summary>
+        /// <param name="groups">string[] Group 名稱</param>
+        /// <remarks >增多筆Group</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPost]
         public ResponseModel InsertData([FromBody] List<string> groups)
         {
@@ -54,12 +77,19 @@ namespace haha.Controllers
                     tran.Rollback();
                     msg = ex.Message;
                 }
-                return new ResponseModel() { isSuccess = false, Message = msg };
+                return new ResponseModel() { isSuccess = isSuccess, Message = msg };
             }
            
         }
-
-        // PUT api/<GroupController>/5
+        /// <summary>
+        /// 單筆修改特定的 group
+        /// </summary>
+        /// <param name="id">GroupID</param>
+        /// <param name="value">需要修改成的 group 名稱</param>
+        /// <remarks>單筆修改特定的 group</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPut("{id}")]
         public ResponseModel EditData(int id, [FromBody] string value)
         {
@@ -87,7 +117,14 @@ namespace haha.Controllers
             }
         }
 
-        // DELETE api/<GroupController>/5
+        /// <summary>
+        /// 刪除特定的 Group 及其 Label 和 ImageFile
+        /// </summary>
+        /// <param name="id">GroupID</param>
+        /// <remarks>刪除特定的 Group 及其 Label 和 ImageFile</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpDelete("{id}")]
         public ResponseModel DeleteData(int id)
         {

@@ -27,25 +27,52 @@ namespace haha.Controllers
             _serviceProvider = serviceProvider;
             _Configuration = Configuration;
         }
-        // GET: api/<LabelController>
+        /// <summary>
+        /// 取得所有標籤
+        /// </summary>
+        /// <returns></returns>
+        /// <remarks>取得所有標籤</remarks>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Label>))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet]
         public IEnumerable<Label> GetData()
         {
             return _serviceProvider.GetService<MYDBContext>().Labels.AsEnumerable();
         }
 
-        // GET api/<LabelController>/5
+        /// <summary>
+        /// 取得單筆 Label
+        /// </summary>
+        /// <param name="id">LabelId QueryString</param>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Label))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("{id}")]
         public Label GetSingleData(int id)
         {
             return _serviceProvider.GetService<MYDBContext>().Labels.AsQueryable().FirstOrDefault(g=>g.Id == id);
         }
+        /// <summary>
+        /// 確認名稱是否重複
+        /// </summary>
+        /// <param name="name">Label 名稱 QueryString</param>
+        /// <remarks>確認名稱是否重複</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(bool))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("{name}")]
-        public Label CheckbyName(string name)
+        public bool CheckbyName(string name)
         {
-            return _serviceProvider.GetService<MYDBContext>().Labels.AsQueryable().FirstOrDefault(g => g.LabelName == name);
+            return _serviceProvider.GetService<MYDBContext>().Labels.AsQueryable().Any(g => g.LabelName == name);
         }
-        // POST api/<LabelController>
+        /// <summary>
+        /// 插入多筆標籤
+        /// </summary>
+        /// <param name="value">預設 Group 暫定是 2 未分類</param>
+        /// <remarks> 插入多筆標籤</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPost]
         public ResponseModel InsertLabel([FromBody]List<CreateLabelDataModel> value)
         {
@@ -54,6 +81,14 @@ namespace haha.Controllers
             return new ResponseModel() { isSuccess = isSuccess, Message = msg };
           
         }
+        /// <summary>
+        /// 刪除特地 Label 將其相關 ImageFile 資料刪除
+        /// </summary>
+        /// <param name="LabelId">Label ID QueryString</param>
+        /// <remarks>刪除特地 Label 將其相關 ImageFile 資料刪除</remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseModel))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpDelete]
         public ResponseModel DeleteLabel([FromQuery] int LabelId)
         {
@@ -68,7 +103,9 @@ namespace haha.Controllers
                    try
                    {
                         var target = context.Labels.FirstOrDefault(g => g.Id == LabelId);
-                        bool result = _serviceProvider.GetService<IGoogleStorageRepository>().DeleteFolder(target.BucketId);
+                        var imageFiles = context.ImageFiles.Where(g => g.LabelId == LabelId).ToList();
+                         _serviceProvider.GetService<IGoogleStorageRepository>().DeleteFolder(target.BucketId);
+                        context.ImageFiles.RemoveRange(imageFiles);
                         context.Labels.Remove(target);
                         context.SaveChanges();
                         tran.Commit();

@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>haha</name>
+    </assembly>
+    <members>
+        <member name="M:haha.Controllers.GroupController.GetGroups">
+            <summary>
+            取得所有群體
+            </summary>
+            <remarks>取得所有群體</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.GroupController.GetSingleGroup(System.Int32)">
+            <summary>
+            取得個別 Group 
+            </summary>
+            <param name="id">GroupID</param>
+            <remarks>取得個別 Group </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.GroupController.InsertData(System.Collections.Generic.List{System.String})">
+            <summary>
+             新增多筆Group
+            </summary>
+            <param name="groups">string[] Group 名稱</param>
+            <remarks >增多筆Group</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.GroupController.EditData(System.Int32,System.String)">
+            <summary>
+            單筆修改特定的 group
+            </summary>
+            <param name="id">GroupID</param>
+            <param name="value">需要修改成的 group 名稱</param>
+            <remarks>單筆修改特定的 group</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.GroupController.DeleteData(System.Int32)">
+            <summary>
+            刪除特定的 Group 及其 Label 和 ImageFile
+            </summary>
+            <param name="id">GroupID</param>
+            <remarks>刪除特定的 Group 及其 Label 和 ImageFile</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.hahaController.Getyyyy(System.String)">
+            <summary>
+            key/Value secrect 確認
+            </summary>
+            <param name="name">key 值</param>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.ImageFileController.GetFirstDataEveryGroup">
+            <summary>
+            取得每個團體的第一筆 ImageFile 資料
+            </summary>
+            <remarks>取得每個團體的第一筆 ImageFile 資料</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.ImageFileController.GetSingleData(System.Guid)">
+            <summary>
+            取得單筆資料 by ImageFile ID 
+            </summary>
+            <param name="id">GUID </param>
+            <remarks>取得單筆資料 by ImageFile ID </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.ImageFileController.InsertData(zModelLayer.ImageFileDataModel)">
+            <summary>
+             multipart/form-data 方式回存圖片、名稱、標籤及內容
+            </summary>
+            <param name="id">GUID </param>
+            <remarks>  multipart/form-data 方式回存圖片、名稱、標籤及內容</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.ImageFileController.EditData(System.Guid,zModelLayer.ImageFileDataModel)">
+            <summary>
+             multipart/form-data 方式修改 圖片、名稱、標籤及內容
+            </summary>
+            <param name="id">GUID Querystring</param>
+            <param name="dataModel">ImageFileDataModel</param>
+            <remarks>multipart/form-data 方式修改 圖片、名稱、標籤及內容</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.ImageFileController.DeleteData(System.Guid)">
+            <summary>
+            刪除單筆 ImageFile 資料
+            </summary>
+            <param name="id">ImageFileID( GUID )</param>
+            <remarks>刪除單筆 ImageFile 資料</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.LabelController.GetData">
+            <summary>
+            取得所有標籤
+            </summary>
+            <returns></returns>
+            <remarks>取得所有標籤</remarks>
+        </member>
+        <member name="M:haha.Controllers.LabelController.GetSingleData(System.Int32)">
+            <summary>
+            取得單筆 Label
+            </summary>
+            <param name="id">LabelId QueryString</param>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.LabelController.CheckbyName(System.String)">
+            <summary>
+            確認名稱是否重複
+            </summary>
+            <param name="name">Label 名稱 QueryString</param>
+            <remarks>確認名稱是否重複</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.LabelController.InsertLabel(System.Collections.Generic.List{zModelLayer.CreateLabelDataModel})">
+            <summary>
+            插入多筆標籤
+            </summary>
+            <param name="value">預設 Group 暫定是 2 未分類</param>
+            <remarks> 插入多筆標籤</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.LabelController.DeleteLabel(System.Int32)">
+            <summary>
+            刪除特地 Label 將其相關 ImageFile 資料刪除
+            </summary>
+            <param name="LabelId">Label ID QueryString</param>
+            <remarks>刪除特地 Label 將其相關 ImageFile 資料刪除</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.LineBotApiController.POST">
+            <summary>
+            LineBot Webhook 的 URL 詳細設定請至 https://developers.line.biz/zh-hant/
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,39 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {}
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
         "projectName": "zGoogleCloudStorageClient",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zGoogleCloudStorageClient\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zGoogleCloudStorageClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj"
               }
             }
           }
@@ -92,28 +95,31 @@
         }
       }
     },
-    "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj",
         "projectName": "zModelLayer",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\zModelLayer.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\zModelLayer.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\my\\AllServiceTest\\zModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

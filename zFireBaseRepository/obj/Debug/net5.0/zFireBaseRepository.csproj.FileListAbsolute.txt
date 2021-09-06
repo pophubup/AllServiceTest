@@ -1,6 +1,5 @@
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\bin\Debug\net5.0\zFireBaseRepository.deps.json
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\bin\Debug\net5.0\zFireBaseRepository.dll
-C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\bin\Debug\net5.0\ref\zFireBaseRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\bin\Debug\net5.0\zFireBaseRepository.pdb
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\bin\Debug\net5.0\zModelLayer.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\bin\Debug\net5.0\zModelLayer.pdb
@@ -9,7 +8,6 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\ne
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\net5.0\zFireBaseRepository.AssemblyInfoInputs.cache
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\net5.0\zFireBaseRepository.AssemblyInfo.cs
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\net5.0\zFireBaseRepository.csproj.CoreCompileInputs.cache
-C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\net5.0\zFireBaseRepository.csproj.CopyComplete
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\net5.0\zFireBaseRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\net5.0\ref\zFireBaseRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\net5.0\zFireBaseRepository.pdb
@@ -28,3 +26,4 @@ C:\Users\Yohoo\Desktop\my\AllServiceTest\zFireBaseRepository\obj\Debug\net5.0\zF
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zFireBaseRepository\obj\Debug\net5.0\zFireBaseRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zFireBaseRepository\obj\Debug\net5.0\ref\zFireBaseRepository.dll
 C:\Users\Yohoo\Desktop\my\AllServiceTest\zFireBaseRepository\obj\Debug\net5.0\zFireBaseRepository.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\haha\zFireBaseRepository\obj\Debug\net5.0\refint\zFireBaseRepository.dll
