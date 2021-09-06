@@ -87,7 +87,7 @@ namespace haha
             app.UseSwagger();
 
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "myDotNet development");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API_Resources");
                 c.RoutePrefix = string.Empty;
             });
            
