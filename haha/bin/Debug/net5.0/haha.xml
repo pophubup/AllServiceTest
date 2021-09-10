@@ -11,6 +11,13 @@
             <remarks>取得所有群體</remarks>
             <returns></returns>
         </member>
+        <member name="M:haha.Controllers.GroupController.GetOrganizationViewModels">
+            <summary>
+            取得樹狀圖資料
+            </summary>
+            <remarks>取得樹狀圖資料</remarks>
+            <returns></returns>
+        </member>
         <member name="M:haha.Controllers.GroupController.GetSingleGroup(System.Int32)">
             <summary>
             取得個別 Group 

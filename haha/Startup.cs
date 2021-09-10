@@ -31,7 +31,7 @@ namespace haha
         public void ConfigureServices(IServiceCollection services)
         {
          
-           // services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
+           //services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
             services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddAzureServices();
             services.AddFireBaseService();

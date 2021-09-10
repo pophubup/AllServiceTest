@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gx/rycAG85eW0Liz/zU4Y4A+eDQX8FdlYLUwnlQPY6217FT+Tx2ktozjzrN4abQ7cN8NKQ8W/E0i4yFo3ZUqDw==",
+  "dgSpecHash": "7gdM+fq1qCVKITIV1t45J3C47YWqXE9WP/YeCwaanjbXU6bYV0naY8YY25ScBw0Z8htHD+Nnqi5TUr/LAKdtSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\SQLClientRepository\\SQLClientRepository.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\SQLClientRepository\\SQLClientRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\google.api.commonprotos\\1.7.0\\google.api.commonprotos.1.7.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\google.api.gax\\3.3.0\\google.api.gax.3.3.0.nupkg.sha512",

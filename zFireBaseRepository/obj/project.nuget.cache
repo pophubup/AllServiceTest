@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hUvCxF7traSxQMKzaqLN8op3Dc5QnyCchFfTty1SfKofPkzBDZw50wAWRJxN0e0PA+qi5UHvyPWi1utNNxkShQ==",
+  "dgSpecHash": "SaeHQBlIidK9a12n183YTrsiXnc5R8O0V8uQZ1ObmneanC2Ugn/NgnVmPPf/qBG45Uod8bB2Cu+rtF9JLScPUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\haha\\zFireBaseRepository\\zFireBaseRepository.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zFireBaseRepository\\zFireBaseRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\google.api.commonprotos\\1.7.0\\google.api.commonprotos.1.7.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\google.api.gax\\2.10.0\\google.api.gax.2.10.0.nupkg.sha512",

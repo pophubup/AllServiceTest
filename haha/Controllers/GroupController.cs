@@ -7,6 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using SQLClientRepository.Entities;
 using zModelLayer;
 using Microsoft.AspNetCore.Http;
+using zModelLayer.ViewModels;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace haha.Controllers
 {
@@ -15,9 +18,11 @@ namespace haha.Controllers
     public class GroupController : ControllerBase
     {
         private IServiceProvider _serviceProvider;
-        public GroupController(IServiceProvider serviceProvider)
+        private IConfiguration _Configuration;
+        public GroupController(IServiceProvider serviceProvider, IConfiguration Configuration)
         {
             _serviceProvider = serviceProvider;
+            _Configuration = Configuration;
         }
         /// <summary>
         /// 取得所有群體
@@ -27,10 +32,62 @@ namespace haha.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Group>))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IEnumerable<Group>  GetGroups()
+        public IEnumerable<Group> GetGroups()
         {
 
             return _serviceProvider.GetService<MYDBContext>().Groups.AsEnumerable();
+        }
+        /// <summary>
+        /// 取得樹狀圖資料
+        /// </summary>
+        /// <remarks>取得樹狀圖資料</remarks>
+        /// <returns></returns>
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GroupData>))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet]
+        public List<GroupData> GetOrganizationViewModels()
+        {
+            List<GroupData> organizationViewModels = new List<GroupData>();
+            _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(x => x.Label.Group).ToList().GroupBy(g=>g.Label.Group.Id).ToList().ForEach(g => {
+
+               
+                var labels = g.Select(y => {
+                    var images = _serviceProvider.GetService<MYDBContext>().ImageFiles.Where(x => x.LabelId == y.LabelId).Select(x => new ImageData
+                    {
+                        FileName = x.FileName,
+                        url = $"{_Configuration["imageurl"]}/{x.Label.BucketId}/{x.FileName}",
+                        CreateDate = x.CreateDate,
+                        description = x.Description,
+                        ID = x.Id.ToString()
+
+
+                    }).ToList();
+                    return new LableViewModel()
+                    {
+                        CreateDate = y.CreateDate,
+                        labelId = y.Label.Id,
+                        labelName = y.Label.LabelName,
+                        imageDatas = images
+                    };
+                } ).ToList();
+                
+                organizationViewModels.Add(new GroupData()
+                {
+                    groupID = g.Key,
+                    groupName = g.FirstOrDefault().Label.Group.GroupName,
+                    CreateDate = g.FirstOrDefault().Label.Group.CreateDate,
+                    LableViewModels = labels
+
+                });;
+
+            });
+
+        
+
+          
+            return organizationViewModels;
+
         }
         /// <summary>
         /// 取得個別 Group 
