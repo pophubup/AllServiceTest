@@ -12,6 +12,7 @@ using zModelLayer;
 using zGoogleCloudStorageClient;
 using Microsoft.EntityFrameworkCore;
 using SQLClientRepository.IServices;
+using zModelLayer.ViewModels;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace haha.Controllers
@@ -39,7 +40,18 @@ namespace haha.Controllers
         {
             return _serviceProvider.GetService<MYDBContext>().Labels.AsEnumerable();
         }
-
+        /// <summary>
+        /// 排除ImageFile 自身 label 取剩餘的label
+        /// </summary>
+        /// <returns></returns>
+        /// <remarks>取得所有標籤</remarks>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Label>))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPost]
+        public IEnumerable<Label> GetData([FromBody] string id)
+        {
+            return _serviceProvider.GetService<MYDBContext>().Labels.Include(g=>g.ImageFiles).Where(g=>g.ImageFiles.Any(x=>x.Id.ToString() != id)).AsEnumerable();
+        }
         /// <summary>
         /// 取得單筆 Label
         /// </summary>

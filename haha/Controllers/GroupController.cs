@@ -55,17 +55,17 @@ namespace haha.Controllers
                 var labels = g.Select(y => {
                     var images = _serviceProvider.GetService<MYDBContext>().ImageFiles.Where(x => x.LabelId == y.LabelId).Select(x => new ImageData
                     {
-                        FileName = x.FileName,
+                        fileName = x.FileName,
                         url = $"{_Configuration["imageurl"]}/{x.Label.BucketId}/{x.FileName}",
-                        CreateDate = x.CreateDate,
+                        createDate = x.CreateDate,
                         description = x.Description,
-                        ID = x.Id.ToString()
+                        id = x.Id.ToString()
 
 
                     }).ToList();
                     return new LableViewModel()
                     {
-                        CreateDate = y.CreateDate,
+                        createDate = y.CreateDate,
                         labelId = y.Label.Id,
                         labelName = y.Label.LabelName,
                         imageDatas = images

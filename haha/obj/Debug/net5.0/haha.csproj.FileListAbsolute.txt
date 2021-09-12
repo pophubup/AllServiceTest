@@ -352,4 +352,5 @@ C:\Users\Yohoo\Desktop\myAllTest\haha\obj\Debug\net5.0\ref\haha.dll
 C:\Users\Yohoo\Desktop\myAllTest\haha\obj\Debug\net5.0\haha.xml
 C:\Users\Yohoo\Desktop\myAllTest\haha\obj\Debug\net5.0\haha.pdb
 C:\Users\Yohoo\Desktop\myAllTest\haha\obj\Debug\net5.0\haha.genruntimeconfig.cache
+C:\Users\Yohoo\Desktop\myAllTest\haha\obj\Debug\net5.0\staticwebassets\haha.StaticWebAssets.xml
 C:\Users\Yohoo\Desktop\myAllTest\haha\obj\Debug\net5.0\haha.csproj.CopyComplete

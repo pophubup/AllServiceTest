@@ -22,16 +22,16 @@ namespace zModelLayer.ViewModels
         public int index { get; set; }
         public int labelId { get; set; }
         public string labelName { get; set; }
-        public DateTime CreateDate { get; set; }
+        public DateTime createDate { get; set; }
         public List<ImageData> imageDatas {get;set;}
     }
     public class ImageData
     {
         public string description { get; set; }
-        public string FileName { get; set; }
+        public string fileName { get; set; }
         public string url { get; set; }
-        public string ID { get; set; }
-        public DateTime CreateDate { get; set; }
+        public string id { get; set; }
+        public DateTime createDate { get; set; }
     }
   
 

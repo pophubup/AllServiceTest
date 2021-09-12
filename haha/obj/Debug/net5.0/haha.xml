@@ -105,6 +105,13 @@
             <returns></returns>
             <remarks>取得所有標籤</remarks>
         </member>
+        <member name="M:haha.Controllers.LabelController.GetData(System.String)">
+            <summary>
+            排除ImageFile 自身 label 取剩餘的label
+            </summary>
+            <returns></returns>
+            <remarks>取得所有標籤</remarks>
+        </member>
         <member name="M:haha.Controllers.LabelController.GetSingleData(System.Int32)">
             <summary>
             取得單筆 Label
