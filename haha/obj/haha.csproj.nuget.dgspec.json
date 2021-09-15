@@ -1,51 +1,54 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yohoo\\Desktop\\myAllTest\\haha\\haha.csproj": {}
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\haha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yohoo\\Desktop\\myAllTest\\haha\\haha.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\haha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\haha\\haha.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\haha.csproj",
         "projectName": "haha",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\haha\\haha.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\haha.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\haha\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj"
               },
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\SQLClientRepository\\SQLClientRepository.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\SQLClientRepository\\SQLClientRepository.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\SQLClientRepository\\SQLClientRepository.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\SQLClientRepository\\SQLClientRepository.csproj"
               },
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zAzureClientRepository\\zAzureClientRepository.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zAzureClientRepository\\zAzureClientRepository.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zAzureClientRepository\\zAzureClientRepository.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zAzureClientRepository\\zAzureClientRepository.csproj"
               },
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zFireBaseRepository\\zFireBaseRepository.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zFireBaseRepository\\zFireBaseRepository.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zFireBaseRepository\\zFireBaseRepository.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zFireBaseRepository\\zFireBaseRepository.csproj"
               },
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj"
               }
             }
           }
@@ -99,40 +102,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yohoo\\Desktop\\myAllTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj",
         "projectName": "Neo4jClientRepository",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\Neo4jClientRepository\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\Neo4jClientRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj"
               }
             }
           }
@@ -179,40 +185,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yohoo\\Desktop\\myAllTest\\SQLClientRepository\\SQLClientRepository.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\SQLClientRepository\\SQLClientRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\SQLClientRepository\\SQLClientRepository.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\SQLClientRepository\\SQLClientRepository.csproj",
         "projectName": "SQLClientRepository",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\SQLClientRepository\\SQLClientRepository.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\SQLClientRepository\\SQLClientRepository.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\SQLClientRepository\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\SQLClientRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj"
               }
             }
           }
@@ -265,40 +274,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zAzureClientRepository\\zAzureClientRepository.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zAzureClientRepository\\zAzureClientRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zAzureClientRepository\\zAzureClientRepository.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zAzureClientRepository\\zAzureClientRepository.csproj",
         "projectName": "zAzureClientRepository",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zAzureClientRepository\\zAzureClientRepository.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zAzureClientRepository\\zAzureClientRepository.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zAzureClientRepository\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zAzureClientRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj"
               }
             }
           }
@@ -349,40 +361,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zFireBaseRepository\\zFireBaseRepository.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zFireBaseRepository\\zFireBaseRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zFireBaseRepository\\zFireBaseRepository.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zFireBaseRepository\\zFireBaseRepository.csproj",
         "projectName": "zFireBaseRepository",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zFireBaseRepository\\zFireBaseRepository.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zFireBaseRepository\\zFireBaseRepository.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zFireBaseRepository\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zFireBaseRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj"
               }
             }
           }
@@ -453,40 +468,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
         "projectName": "zGoogleCloudStorageClient",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj": {
-                "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj"
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj"
               }
             }
           }
@@ -541,32 +559,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj": {
+    "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj",
         "projectName": "zModelLayer",
-        "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\zModelLayer.csproj",
+        "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\zModelLayer.csproj",
         "packagesPath": "C:\\Users\\Yohoo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Yohoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -609,7 +630,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

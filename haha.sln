@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31612.314
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "haha", "haha\haha.csproj", "{850DB3F7-FD6E-4D26-9301-A0E9590787D1}"
 EndProject
@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zAzureClientRepository", "z
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zFireBaseRepository", "zFireBaseRepository\zFireBaseRepository.csproj", "{D781ACB2-3ABA-4517-899B-3975A5AD83E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zGoogleCloudStorageClient", "zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj", "{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zGoogleCloudStorageClient", "zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj", "{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zKGIRepository", "zKGIRepository\zKGIRepository.csproj", "{0400822C-1050-446F-8010-CEE28ED8DFDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zSinoPacRepository", "zSinoPacRepository\zSinoPacRepository.csproj", "{9B711796-357F-44DC-A172-9C6B5411D2A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0400822C-1050-446F-8010-CEE28ED8DFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0400822C-1050-446F-8010-CEE28ED8DFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0400822C-1050-446F-8010-CEE28ED8DFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0400822C-1050-446F-8010-CEE28ED8DFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B711796-357F-44DC-A172-9C6B5411D2A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B711796-357F-44DC-A172-9C6B5411D2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B711796-357F-44DC-A172-9C6B5411D2A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B711796-357F-44DC-A172-9C6B5411D2A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
