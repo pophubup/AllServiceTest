@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GsZgkZFJgi6W+2UnRAvw5VaymVowbBbKHuXAKeNkFsUl2qSzV9cOt49hxqsWzPoMdkKHX9IR/04CaMzwZh1WAw==",
+  "dgSpecHash": "VLDGTKaCqJ3VQUqIb/a+YZ3F5L2yAGHnmGIK9cgvZuEclUk5meY/kaVU2fbkf2p9Xo0G7Gb0uSfqBsjGQ5Y3Ow==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zWebCrawlingRepository\\zWebCrawlingRepository.csproj",
   "expectedPackageFiles": [
@@ -43,8 +43,8 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Yohoo\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
-    "C:\\Users\\Yohoo\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\selenium.support\\2.52.0\\selenium.support.2.52.0.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\selenium.webdriver\\2.52.0\\selenium.webdriver.2.52.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
@@ -103,5 +103,26 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.Support 2.52.0'。此套件與您的專案並非完全相容。",
+      "libraryId": "Selenium.Support",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.WebDriver 2.52.0'。此套件與您的專案並非完全相容。",
+      "libraryId": "Selenium.WebDriver",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

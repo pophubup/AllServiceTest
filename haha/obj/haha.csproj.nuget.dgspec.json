@@ -748,11 +748,11 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[3.141.0, )"
+              "version": "[2.52.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[3.141.0, )"
+              "version": "[2.52.0, )"
             }
           },
           "imports": [

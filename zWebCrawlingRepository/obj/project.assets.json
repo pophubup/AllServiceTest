@@ -515,28 +515,25 @@
           }
         }
       },
-      "Selenium.Support/3.141.0": {
+      "Selenium.Support/2.52.0": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "3.141.0"
+          "Selenium.WebDriver": "2.52.0"
         },
         "compile": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
+          "lib/net40/WebDriver.Support.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/WebDriver.Support.dll": {}
+          "lib/net40/WebDriver.Support.dll": {}
         }
       },
-      "Selenium.WebDriver/3.141.0": {
+      "Selenium.WebDriver/2.52.0": {
         "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "10.0.3"
-        },
         "compile": {
-          "lib/netstandard2.0/WebDriver.dll": {}
+          "lib/net40/WebDriver.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/WebDriver.dll": {}
+          "lib/net40/WebDriver.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -2248,10 +2245,10 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Selenium.Support/3.141.0": {
-      "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
+    "Selenium.Support/2.52.0": {
+      "sha512": "CPfu1+WhM1v9C7aWuR5vjagKUai7NWpxqnHREBiixP3STBWXD57KRcqTNrGTb6MRPGCRtKh0zcq1nv/TS/Gw5g==",
       "type": "package",
-      "path": "selenium.support/3.141.0",
+      "path": "selenium.support/2.52.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2259,18 +2256,14 @@
         "lib/net35/WebDriver.Support.xml",
         "lib/net40/WebDriver.Support.dll",
         "lib/net40/WebDriver.Support.xml",
-        "lib/net45/WebDriver.Support.dll",
-        "lib/net45/WebDriver.Support.xml",
-        "lib/netstandard2.0/WebDriver.Support.dll",
-        "lib/netstandard2.0/WebDriver.Support.xml",
-        "selenium.support.3.141.0.nupkg.sha512",
+        "selenium.support.2.52.0.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
-    "Selenium.WebDriver/3.141.0": {
-      "sha512": "wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
+    "Selenium.WebDriver/2.52.0": {
+      "sha512": "KP4RIXej4fupdhGyPBbRdq7kFnDtRqQFQreuqBXiX9PXvLeKYhRU8WS3e2/Hj9Dna0tAJzAI/g6ZgwXaxeLxzA==",
       "type": "package",
-      "path": "selenium.webdriver/3.141.0",
+      "path": "selenium.webdriver/2.52.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2278,11 +2271,7 @@
         "lib/net35/WebDriver.xml",
         "lib/net40/WebDriver.dll",
         "lib/net40/WebDriver.xml",
-        "lib/net45/WebDriver.dll",
-        "lib/net45/WebDriver.xml",
-        "lib/netstandard2.0/WebDriver.dll",
-        "lib/netstandard2.0/WebDriver.xml",
-        "selenium.webdriver.3.141.0.nupkg.sha512",
+        "selenium.webdriver.2.52.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
@@ -5352,8 +5341,8 @@
       "Microsoft.Extensions.Configuration.Abstractions >= 5.0.0",
       "Microsoft.Extensions.DependencyInjection >= 5.0.2",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
-      "Selenium.Support >= 3.141.0",
-      "Selenium.WebDriver >= 3.141.0",
+      "Selenium.Support >= 2.52.0",
+      "Selenium.WebDriver >= 2.52.0",
       "zModelLayer >= 1.0.0"
     ]
   },
@@ -5419,11 +5408,11 @@
           },
           "Selenium.Support": {
             "target": "Package",
-            "version": "[3.141.0, )"
+            "version": "[2.52.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[3.141.0, )"
+            "version": "[2.52.0, )"
           }
         },
         "imports": [
@@ -5444,5 +5433,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.Support 2.52.0'。此套件與您的專案並非完全相容。",
+      "libraryId": "Selenium.Support",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.WebDriver 2.52.0'。此套件與您的專案並非完全相容。",
+      "libraryId": "Selenium.WebDriver",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

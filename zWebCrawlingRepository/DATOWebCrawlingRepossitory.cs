@@ -1,13 +1,12 @@
 ﻿using Microsoft.Extensions.Configuration;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using zModelLayer.ViewModels;
-
+using OpenQA.Selenium.PhantomJS;
 namespace zWebCrawlingRepository
 {
     class DATOWebCrawlingRepossitory : IWebCrawling<EveryPage>
@@ -21,13 +20,14 @@ namespace zWebCrawlingRepository
         {
             try
             {
+              
                 var list = new List<int>();
                 list.AddRange(Enumerable.Range(2, endpage));
-                var options = new ChromeOptions();
-                options.AddArgument("--headless");
-                options.AddArgument("--disable-dev-shm-usage");
-                options.AddArgument("--no-sandbox");
-                IWebDriver driver = new ChromeDriver(chromeDriverDirectory: _configuration["ChromeDriver"], options);
+                //var options = new ChromeOptions();
+                //options.AddArgument("--headless");
+                //options.AddArgument("--disable-dev-shm-usage");
+                //options.AddArgument("--no-sandbox");
+                IWebDriver driver = new PhantomJSDriver(phantomJSDriverServerDirectory: _configuration["ChromeDriver"]);
                 driver.Navigate().GoToUrl($"https://twlolstats.com/summoner/?summoner={value}");
                 List<EveryPage> everyPages = new List<EveryPage>();
                 ReadOnlyCollection<IWebElement> isWin;
