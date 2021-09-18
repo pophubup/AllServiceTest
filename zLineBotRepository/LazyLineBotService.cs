@@ -1,6 +1,5 @@
 ﻿using isRock.LineBot;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.Linq;
 
 namespace zLineBotRepository
@@ -17,7 +16,7 @@ namespace zLineBotRepository
         }
         public Bot Reply(string body)
         {
-            var receivedMessage = isRock.LineBot.Utility.Parsing(body);
+            var receivedMessage = Utility.Parsing(body);
             // 取得使用者資訊
             var lineReceuvedEvent = receivedMessage.events.FirstOrDefault();
 

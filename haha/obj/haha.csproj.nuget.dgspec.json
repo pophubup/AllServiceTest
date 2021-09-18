@@ -65,7 +65,10 @@
           "dependencies": {
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
-              "version": "[5.2.7, )"
+              "version": "[5.2.7, )",
+              "noWarn": [
+                "NU1701"
+              ]
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",

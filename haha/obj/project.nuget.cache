@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1U2jb7GIyJek9QeJqdosCHCIcedoGU4bCwRSsu/YW+aT4kNqPLH5+p+J3e3rt93CizRtVOv0XaYDltl9UGkdEA==",
+  "dgSpecHash": "bPMxex+0YNAiPb44piljZC55/Ge8fy1LwjM0RRf5E8zG660FvhhgfmSXt84N40dAjpYTg8YvhmCkiAX9kDPyyg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\haha\\haha.csproj",
   "expectedPackageFiles": [
@@ -211,16 +211,5 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Microsoft.AspNet.WebApi.Core 5.2.7'。此套件與您的專案並非完全相容。",
-      "libraryId": "Microsoft.AspNet.WebApi.Core",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }
