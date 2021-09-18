@@ -477,3 +477,7 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.genruntimeconfig.cache
 C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\zLineBotRepository.dll
 C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\zLineBotRepository.pdb
+C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\zWebCrawlingRepository.dll
+C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\zWebCrawlingRepository.pdb
+C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\WebDriver.dll
+C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\WebDriver.Support.dll

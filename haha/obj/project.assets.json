@@ -1519,6 +1519,30 @@
           }
         }
       },
+      "Selenium.Support/3.141.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {}
+        }
+      },
+      "Selenium.WebDriver/3.141.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/5.6.3": {
         "type": "package",
         "dependencies": {
@@ -3273,6 +3297,24 @@
         },
         "runtime": {
           "bin/placeholder/zModelLayer.dll": {}
+        }
+      },
+      "zWebCrawlingRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Selenium.Support": "3.141.0",
+          "Selenium.WebDriver": "3.141.0",
+          "zModelLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/zWebCrawlingRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/zWebCrawlingRepository.dll": {}
         }
       }
     }
@@ -5373,6 +5415,44 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "Selenium.Support/3.141.0": {
+      "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
+      "type": "package",
+      "path": "selenium.support/3.141.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/WebDriver.Support.dll",
+        "lib/net35/WebDriver.Support.xml",
+        "lib/net40/WebDriver.Support.dll",
+        "lib/net40/WebDriver.Support.xml",
+        "lib/net45/WebDriver.Support.dll",
+        "lib/net45/WebDriver.Support.xml",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.3.141.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/3.141.0": {
+      "sha512": "wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
+      "type": "package",
+      "path": "selenium.webdriver/3.141.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/WebDriver.dll",
+        "lib/net35/WebDriver.xml",
+        "lib/net40/WebDriver.dll",
+        "lib/net40/WebDriver.xml",
+        "lib/net45/WebDriver.dll",
+        "lib/net45/WebDriver.xml",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml",
+        "selenium.webdriver.3.141.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/5.6.3": {
@@ -10101,6 +10181,11 @@
       "type": "project",
       "path": "../zModelLayer/zModelLayer.csproj",
       "msbuildProject": "../zModelLayer/zModelLayer.csproj"
+    },
+    "zWebCrawlingRepository/1.0.0": {
+      "type": "project",
+      "path": "../zWebCrawlingRepository/zWebCrawlingRepository.csproj",
+      "msbuildProject": "../zWebCrawlingRepository/zWebCrawlingRepository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10113,7 +10198,8 @@
       "zAzureClientRepository >= 1.0.0",
       "zFireBaseRepository >= 1.0.0",
       "zGoogleCloudStorageClient >= 1.0.0",
-      "zLineBotRepository >= 1.0.0"
+      "zLineBotRepository >= 1.0.0",
+      "zWebCrawlingRepository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10165,6 +10251,9 @@
             },
             "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zLineBotRepository\\zLineBotRepository.csproj": {
               "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zLineBotRepository\\zLineBotRepository.csproj"
+            },
+            "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zWebCrawlingRepository\\zWebCrawlingRepository.csproj": {
+              "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zWebCrawlingRepository\\zWebCrawlingRepository.csproj"
             }
           }
         }

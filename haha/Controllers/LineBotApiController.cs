@@ -11,10 +11,10 @@ namespace haha.Controllers
     [ApiController]
     public class LineBotApiController : ControllerBase
     {
-        private ILineBot _LineBot;
-        public LineBotApiController(ILineBot LineBot)
+        private readonly OneToAllBot _delegate;
+        public LineBotApiController(ILineBot LineBot, OneToAllBot @delegate)
         {
-            _LineBot = LineBot;
+            _delegate = @delegate;
         }
         /// <summary>
         /// LineBot Webhook 的 URL 詳細設定請至 https://developers.line.biz/zh-hant/
@@ -28,7 +28,7 @@ namespace haha.Controllers
             {
                 body = await stream.ReadToEndAsync();
             }
-             _LineBot.Reply(body);
+            _delegate("Lazy").Reply(body);
             return Ok();
         }
             

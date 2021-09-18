@@ -1,0 +1,15 @@
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\bin\Debug\net5.0\zWebCrawlingRepository.deps.json
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\bin\Debug\net5.0\zWebCrawlingRepository.dll
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\bin\Debug\net5.0\ref\zWebCrawlingRepository.dll
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\bin\Debug\net5.0\zWebCrawlingRepository.pdb
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\zWebCrawlingRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\zWebCrawlingRepository.AssemblyInfoInputs.cache
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\zWebCrawlingRepository.AssemblyInfo.cs
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\zWebCrawlingRepository.csproj.CoreCompileInputs.cache
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\zWebCrawlingRepository.dll
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\ref\zWebCrawlingRepository.dll
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\zWebCrawlingRepository.pdb
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\bin\Debug\net5.0\zModelLayer.dll
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\bin\Debug\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\zWebCrawlingRepository.csproj.AssemblyReference.cache
+C:\Users\Yohoo\Desktop\myAllTest\zWebCrawlingRepository\obj\Debug\net5.0\zWebCrawlingRepository.csproj.CopyComplete

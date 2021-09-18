@@ -16,6 +16,8 @@ using System.IO;
 using System;
 using System.Reflection;
 using zLineBotRepository;
+using zWebCrawlingRepository;
+
 namespace haha
 {
     public class Startup
@@ -37,6 +39,7 @@ namespace haha
             services.AddFireBaseService();
             services.AddGoogleStorageService();
             services.AddLineBotService();
+            services.AddWebCrawlingService();
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(
