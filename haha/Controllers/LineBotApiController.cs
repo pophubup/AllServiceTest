@@ -1,6 +1,4 @@
-﻿using isRock.LineBot;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using System.Threading.Tasks;
 using zLineBotRepository;
@@ -13,11 +11,9 @@ namespace haha.Controllers
     [ApiController]
     public class LineBotApiController : ControllerBase
     {
-        private readonly IConfiguration _Configuration;
         private ILineBot _LineBot;
-        public LineBotApiController(IConfiguration Configuration, ILineBot LineBot)
+        public LineBotApiController(ILineBot LineBot)
         {
-            _Configuration = Configuration;
             _LineBot = LineBot;
         }
         /// <summary>
@@ -27,14 +23,12 @@ namespace haha.Controllers
         [HttpPost]
         public async Task<IActionResult> POST()
         {
-
             string body = "";
             using (StreamReader stream = new StreamReader(Request.Body))
             {
                 body = await stream.ReadToEndAsync();
             }
              _LineBot.Reply(body);
-            
             return Ok();
         }
             
