@@ -22,8 +22,10 @@ namespace haha
                 var env = hostContext.HostingEnvironment;
                 if (env.IsDevelopment())
                 {
-                    config.AddJsonFile(@"C:\Users\Yohoo\Desktop\key.json", optional: true, reloadOnChange: true);
-                   
+                   //Home
+                   config.AddJsonFile(@"C:\Users\Yohoo\Desktop\key.json", optional: true, reloadOnChange: true);
+                   //company
+                   //config.AddJsonFile(@"C:\Users\Yohoo\OneDrive\орн▒\key.json", optional: true, reloadOnChange: true);
                 }
                 if (env.IsProduction())
                 {

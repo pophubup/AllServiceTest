@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2/60P5y8wGpUrgddY88z2an+mAqbL9m6l4ewFbKXo3KWTG4hrM9QCdjJLjTUlMHaK6V+ECbtzSZj/70/6tQ+Yw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zKGIRepository\\zKGIRepository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
