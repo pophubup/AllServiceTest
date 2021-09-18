@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31612.314
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "haha", "haha\haha.csproj", "{850DB3F7-FD6E-4D26-9301-A0E9590787D1}"
 EndProject
@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zAzureClientRepository", "z
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zFireBaseRepository", "zFireBaseRepository\zFireBaseRepository.csproj", "{D781ACB2-3ABA-4517-899B-3975A5AD83E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zGoogleCloudStorageClient", "zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj", "{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zGoogleCloudStorageClient", "zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj", "{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zLineBotRepository", "zLineBotRepository\zLineBotRepository.csproj", "{F274ED51-EB96-4DDE-8AB7-1A4D18C7855D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEF0F31-305F-4E14-8F1C-8C289BE59E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F274ED51-EB96-4DDE-8AB7-1A4D18C7855D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F274ED51-EB96-4DDE-8AB7-1A4D18C7855D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F274ED51-EB96-4DDE-8AB7-1A4D18C7855D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F274ED51-EB96-4DDE-8AB7-1A4D18C7855D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

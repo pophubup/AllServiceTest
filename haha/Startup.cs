@@ -15,7 +15,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System;
 using System.Reflection;
-
+using zLineBotRepository;
 namespace haha
 {
     public class Startup
@@ -36,6 +36,7 @@ namespace haha
             services.AddAzureServices();
             services.AddFireBaseService();
             services.AddGoogleStorageService();
+            services.AddLineBotService();
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(

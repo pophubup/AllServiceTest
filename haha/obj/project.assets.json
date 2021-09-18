@@ -3245,6 +3245,22 @@
           "bin/placeholder/zGoogleCloudStorageClient.dll": {}
         }
       },
+      "zLineBotRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Line.Messaging": "1.4.5",
+          "LineBotSDK": "2.1.21",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/zLineBotRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/zLineBotRepository.dll": {}
+        }
+      },
       "zModelLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -10076,6 +10092,11 @@
       "path": "../zGoogleCloudStorageClient/zGoogleCloudStorageClient.csproj",
       "msbuildProject": "../zGoogleCloudStorageClient/zGoogleCloudStorageClient.csproj"
     },
+    "zLineBotRepository/1.0.0": {
+      "type": "project",
+      "path": "../zLineBotRepository/zLineBotRepository.csproj",
+      "msbuildProject": "../zLineBotRepository/zLineBotRepository.csproj"
+    },
     "zModelLayer/1.0.0": {
       "type": "project",
       "path": "../zModelLayer/zModelLayer.csproj",
@@ -10093,7 +10114,8 @@
       "Swashbuckle.AspNetCore >= 5.6.3",
       "zAzureClientRepository >= 1.0.0",
       "zFireBaseRepository >= 1.0.0",
-      "zGoogleCloudStorageClient >= 1.0.0"
+      "zGoogleCloudStorageClient >= 1.0.0",
+      "zLineBotRepository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10142,6 +10164,9 @@
             },
             "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj": {
               "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj"
+            },
+            "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zLineBotRepository\\zLineBotRepository.csproj": {
+              "projectPath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zLineBotRepository\\zLineBotRepository.csproj"
             }
           }
         }
