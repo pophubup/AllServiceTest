@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LtjVRUIbiohZTP5LVbxeNJZPD7QFCzO4fzIisEkEiExnGFNl6vZKo215fTYxKXRp4Zq3TmRejjbyuTXXPOdNzA==",
+  "dgSpecHash": "CwaULvhoyskzXTaZe/1s+ime/FrFWTVyZPEHYkUqjCw8L2+zDpdPHMJ9dnVXd+dVb7tD2QtP8/l76+DqzorMzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zSinoPacRepository\\zSinoPacRepository.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\Desktop\\myAllTest\\zSinoPacRepository\\zSinoPacRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\dynamiclanguageruntime\\1.3.0\\dynamiclanguageruntime.1.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\ironpython\\2.7.11\\ironpython.2.7.11.nupkg.sha512",
