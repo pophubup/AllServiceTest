@@ -13,7 +13,4 @@
   <ItemGroup>
     <ProjectReference Include="..\zModelLayer\zModelLayer.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="driver\" />
-  </ItemGroup>
 </Project>
