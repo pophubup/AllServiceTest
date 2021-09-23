@@ -15,6 +15,8 @@ using Newtonsoft.Json;
 using System.IO;
 using System;
 using System.Reflection;
+using zLineBotRepository;
+using zWebCrawlingRepository;
 
 namespace haha
 {
@@ -36,6 +38,8 @@ namespace haha
             services.AddAzureServices();
             services.AddFireBaseService();
             services.AddGoogleStorageService();
+            services.AddLineBotService();
+            services.AddWebCrawlingService();
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(

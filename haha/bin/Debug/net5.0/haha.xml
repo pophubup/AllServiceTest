@@ -149,5 +149,14 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:haha.Controllers.WebCrawlingController.Get(System.String,System.Int32)">
+            <summary>
+            撈取英雄聯盟頁面資訊
+            </summary>
+            <param name="name">遊戲者名稱</param>
+            <param name="startpage">起始頁面</param>
+            <param name="endpage">最後頁面</param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

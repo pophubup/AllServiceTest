@@ -26,7 +26,6 @@ C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\bin\Debug\net5.0\zModelLayer.deps.j
 C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\bin\Debug\net5.0\zModelLayer.dll
 C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\bin\Debug\net5.0\ref\zModelLayer.dll
 C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\bin\Debug\net5.0\zModelLayer.pdb
-C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\obj\Debug\net5.0\zModelLayer.csproj.AssemblyReference.cache
 C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\obj\Debug\net5.0\zModelLayer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\obj\Debug\net5.0\zModelLayer.AssemblyInfoInputs.cache
 C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\obj\Debug\net5.0\zModelLayer.AssemblyInfo.cs
@@ -46,3 +45,4 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zModelLayer\obj\Debug\
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zModelLayer\obj\Debug\net5.0\zModelLayer.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zModelLayer\obj\Debug\net5.0\ref\zModelLayer.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zModelLayer\obj\Debug\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\Desktop\myAllTest\zModelLayer\obj\Debug\net5.0\zModelLayer.csproj.AssemblyReference.cache

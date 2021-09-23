@@ -33,8 +33,6 @@
     ".NETCoreApp,Version=v5.0": {
       "haha/1.0.0": {
         "dependencies": {
-          "Line.Messaging": "1.4.5",
-          "LineBotSDK": "2.1.21",
           "Microsoft.AspNet.WebApi.Core": "5.2.7",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.9",
           "Neo4jClientRepository": "1.0.0",
@@ -43,6 +41,8 @@
           "zAzureClientRepository": "1.0.0",
           "zFireBaseRepository": "1.0.0",
           "zGoogleCloudStorageClient": "1.0.0",
+          "zLineBotRepository": "1.0.0",
+          "zWebCrawlingRepository": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -1503,6 +1503,31 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
+      "Selenium.Support/2.52.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "2.52.0"
+        },
+        "runtime": {
+          "lib/net40/WebDriver.Support.dll": {
+            "assemblyVersion": "2.52.0.0",
+            "fileVersion": "2.52.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/WebDriver.Support.dll": {}
+        }
+      },
+      "Selenium.WebDriver/2.52.0": {
+        "runtime": {
+          "lib/net40/WebDriver.dll": {
+            "assemblyVersion": "2.52.0.0",
+            "fileVersion": "2.52.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/WebDriver.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/5.6.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -2586,6 +2611,20 @@
           "zGoogleCloudStorageClient.dll": {}
         }
       },
+      "zLineBotRepository/1.0.0": {
+        "dependencies": {
+          "Line.Messaging": "1.4.5",
+          "LineBotSDK": "2.1.21",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "zLineBotRepository.dll": {}
+        },
+        "compile": {
+          "zLineBotRepository.dll": {}
+        }
+      },
       "zModelLayer/1.0.0": {
         "dependencies": {
           "Google.Cloud.Firestore": "1.1.0",
@@ -2596,6 +2635,22 @@
         },
         "compile": {
           "zModelLayer.dll": {}
+        }
+      },
+      "zWebCrawlingRepository/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Selenium.Support": "2.52.0",
+          "Selenium.WebDriver": "2.52.0",
+          "zModelLayer": "1.0.0"
+        },
+        "runtime": {
+          "zWebCrawlingRepository.dll": {}
+        },
+        "compile": {
+          "zWebCrawlingRepository.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -5037,6 +5092,20 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
+    "Selenium.Support/2.52.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CPfu1+WhM1v9C7aWuR5vjagKUai7NWpxqnHREBiixP3STBWXD57KRcqTNrGTb6MRPGCRtKh0zcq1nv/TS/Gw5g==",
+      "path": "selenium.support/2.52.0",
+      "hashPath": "selenium.support.2.52.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver/2.52.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KP4RIXej4fupdhGyPBbRdq7kFnDtRqQFQreuqBXiX9PXvLeKYhRU8WS3e2/Hj9Dna0tAJzAI/g6ZgwXaxeLxzA==",
+      "path": "selenium.webdriver/2.52.0",
+      "hashPath": "selenium.webdriver.2.52.0.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/5.6.3": {
       "type": "package",
       "serviceable": true,
@@ -5741,7 +5810,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "zLineBotRepository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "zModelLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "zWebCrawlingRepository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
