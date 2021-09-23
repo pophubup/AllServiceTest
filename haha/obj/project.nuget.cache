@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1ItbTKFdRuVPnkNl4L1HvZZRSGZ2ok/7fRI8O7dDOyFr1N9vetna9UV1w4drMGL4nwBECsiVEi8scANMRhlBig==",
+  "dgSpecHash": "FWt9c2LTRcwEjfxER1n29JkP1+Uv/N2hkrtlNjlexyN3ysRI2CxXiyjrUgVZSLGOQDf+svuhzvsK/Qkm95FBCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\haha.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,8 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\grpc.auth\\1.22.0\\grpc.auth.1.22.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\grpc.core\\1.22.1\\grpc.core.1.22.1.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\grpc.core.api\\1.22.1\\grpc.core.api.1.22.1.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\htmlagilitypack\\1.11.36\\htmlagilitypack.1.11.36.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\htmlagilitypack.cssselectors.netcore\\1.2.1\\htmlagilitypack.cssselectors.netcore.1.2.1.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\line.messaging\\1.4.5\\line.messaging.1.4.5.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\linebotsdk\\2.1.21\\linebotsdk.2.1.21.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
@@ -113,8 +115,6 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
-    "C:\\Users\\Yohoo\\.nuget\\packages\\selenium.support\\2.52.0\\selenium.support.2.52.0.nupkg.sha512",
-    "C:\\Users\\Yohoo\\.nuget\\packages\\selenium.webdriver\\2.52.0\\selenium.webdriver.2.52.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
@@ -213,26 +213,5 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.Support 2.52.0'。此套件與您的專案並非完全相容。",
-      "libraryId": "Selenium.Support",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.WebDriver 2.52.0'。此套件與您的專案並非完全相容。",
-      "libraryId": "Selenium.WebDriver",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

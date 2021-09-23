@@ -285,6 +285,27 @@
           "lib/netstandard2.0/Grpc.Core.Api.dll": {}
         }
       },
+      "HtmlAgilityPack/1.11.36": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {}
+        }
+      },
+      "HtmlAgilityPack.CssSelectors.NetCore/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.6.16"
+        },
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.CssSelectors.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.CssSelectors.NetCore.dll": {}
+        }
+      },
       "Line.Messaging/1.4.5": {
         "type": "package",
         "dependencies": {
@@ -1517,27 +1538,6 @@
             "assetType": "native",
             "rid": "ubuntu.16.10-x64"
           }
-        }
-      },
-      "Selenium.Support/2.52.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.WebDriver": "2.52.0"
-        },
-        "compile": {
-          "lib/net40/WebDriver.Support.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebDriver.Support.dll": {}
-        }
-      },
-      "Selenium.WebDriver/2.52.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/WebDriver.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebDriver.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/5.6.3": {
@@ -3300,11 +3300,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "HtmlAgilityPack": "1.11.36",
+          "HtmlAgilityPack.CssSelectors.NetCore": "1.2.1",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
-          "Selenium.Support": "2.52.0",
-          "Selenium.WebDriver": "2.52.0",
           "zModelLayer": "1.0.0"
         },
         "compile": {
@@ -3713,6 +3713,67 @@
         "lib/netstandard2.0/Grpc.Core.Api.dll",
         "lib/netstandard2.0/Grpc.Core.Api.pdb",
         "lib/netstandard2.0/Grpc.Core.Api.xml"
+      ]
+    },
+    "HtmlAgilityPack/1.11.36": {
+      "sha512": "dCuPhd6Mcdz0oyaSidPqZZiaKcVaBnIqCQlvgJx7Qr5PJAjSatSIVPmuOwpMjbtR8mqoXyUbWVKxuairGGauJg==",
+      "type": "package",
+      "path": "htmlagilitypack/1.11.36",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.11.36.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net35/HtmlAgilityPack.dll",
+        "lib/Net35/HtmlAgilityPack.pdb",
+        "lib/Net35/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.3/HtmlAgilityPack.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
+        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.6/HtmlAgilityPack.dll",
+        "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri"
+      ]
+    },
+    "HtmlAgilityPack.CssSelectors.NetCore/1.2.1": {
+      "sha512": "ES2Ht+wpgaLmyyyCP9cl3AT5U2BtTOCZ2pdFL8GYa27V8IAD9U77KOcuvi61k+nDE4kpU+EjwaBJepVFqLpmGA==",
+      "type": "package",
+      "path": "htmlagilitypack.cssselectors.netcore/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.cssselectors.netcore.1.2.1.nupkg.sha512",
+        "htmlagilitypack.cssselectors.netcore.nuspec",
+        "lib/netstandard1.5/HtmlAgilityPack.CssSelectors.NetCore.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.CssSelectors.NetCore.dll"
       ]
     },
     "Line.Messaging/1.4.5": {
@@ -5412,36 +5473,6 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
-      ]
-    },
-    "Selenium.Support/2.52.0": {
-      "sha512": "CPfu1+WhM1v9C7aWuR5vjagKUai7NWpxqnHREBiixP3STBWXD57KRcqTNrGTb6MRPGCRtKh0zcq1nv/TS/Gw5g==",
-      "type": "package",
-      "path": "selenium.support/2.52.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/WebDriver.Support.dll",
-        "lib/net35/WebDriver.Support.xml",
-        "lib/net40/WebDriver.Support.dll",
-        "lib/net40/WebDriver.Support.xml",
-        "selenium.support.2.52.0.nupkg.sha512",
-        "selenium.support.nuspec"
-      ]
-    },
-    "Selenium.WebDriver/2.52.0": {
-      "sha512": "KP4RIXej4fupdhGyPBbRdq7kFnDtRqQFQreuqBXiX9PXvLeKYhRU8WS3e2/Hj9Dna0tAJzAI/g6ZgwXaxeLxzA==",
-      "type": "package",
-      "path": "selenium.webdriver/2.52.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/WebDriver.dll",
-        "lib/net35/WebDriver.xml",
-        "lib/net40/WebDriver.dll",
-        "lib/net40/WebDriver.xml",
-        "selenium.webdriver.2.52.0.nupkg.sha512",
-        "selenium.webdriver.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/5.6.3": {
@@ -10298,27 +10329,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.Support 2.52.0'。此套件與您的專案並非完全相容。",
-      "libraryId": "Selenium.Support",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.WebDriver 2.52.0'。此套件與您的專案並非完全相容。",
-      "libraryId": "Selenium.WebDriver",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

@@ -659,6 +659,31 @@
           "lib/netstandard2.0/Grpc.Core.Api.dll": {}
         }
       },
+      "HtmlAgilityPack/1.11.36": {
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.36.0",
+            "fileVersion": "1.11.36.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {}
+        }
+      },
+      "HtmlAgilityPack.CssSelectors.NetCore/1.2.1": {
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.36"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.CssSelectors.NetCore.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.CssSelectors.NetCore.dll": {}
+        }
+      },
       "Line.Messaging/1.4.5": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -1503,31 +1528,6 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
-      "Selenium.Support/2.52.0": {
-        "dependencies": {
-          "Selenium.WebDriver": "2.52.0"
-        },
-        "runtime": {
-          "lib/net40/WebDriver.Support.dll": {
-            "assemblyVersion": "2.52.0.0",
-            "fileVersion": "2.52.0.0"
-          }
-        },
-        "compile": {
-          "lib/net40/WebDriver.Support.dll": {}
-        }
-      },
-      "Selenium.WebDriver/2.52.0": {
-        "runtime": {
-          "lib/net40/WebDriver.dll": {
-            "assemblyVersion": "2.52.0.0",
-            "fileVersion": "2.52.0.0"
-          }
-        },
-        "compile": {
-          "lib/net40/WebDriver.dll": {}
-        }
-      },
       "Swashbuckle.AspNetCore/5.6.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -2639,11 +2639,11 @@
       },
       "zWebCrawlingRepository/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack": "1.11.36",
+          "HtmlAgilityPack.CssSelectors.NetCore": "1.2.1",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
-          "Selenium.Support": "2.52.0",
-          "Selenium.WebDriver": "2.52.0",
           "zModelLayer": "1.0.0"
         },
         "runtime": {
@@ -4462,6 +4462,20 @@
       "path": "grpc.core.api/1.22.1",
       "hashPath": "grpc.core.api.1.22.1.nupkg.sha512"
     },
+    "HtmlAgilityPack/1.11.36": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dCuPhd6Mcdz0oyaSidPqZZiaKcVaBnIqCQlvgJx7Qr5PJAjSatSIVPmuOwpMjbtR8mqoXyUbWVKxuairGGauJg==",
+      "path": "htmlagilitypack/1.11.36",
+      "hashPath": "htmlagilitypack.1.11.36.nupkg.sha512"
+    },
+    "HtmlAgilityPack.CssSelectors.NetCore/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ES2Ht+wpgaLmyyyCP9cl3AT5U2BtTOCZ2pdFL8GYa27V8IAD9U77KOcuvi61k+nDE4kpU+EjwaBJepVFqLpmGA==",
+      "path": "htmlagilitypack.cssselectors.netcore/1.2.1",
+      "hashPath": "htmlagilitypack.cssselectors.netcore.1.2.1.nupkg.sha512"
+    },
     "Line.Messaging/1.4.5": {
       "type": "package",
       "serviceable": true,
@@ -5091,20 +5105,6 @@
       "sha512": "sha512-leXiwfiIkW7Gmn7cgnNcdtNAU70SjmKW3jxGj1iKHOvdn0zRWsgv/l2OJUO5zdGdiv2VRFnAsxxhDgMzofPdWg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
-    },
-    "Selenium.Support/2.52.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-CPfu1+WhM1v9C7aWuR5vjagKUai7NWpxqnHREBiixP3STBWXD57KRcqTNrGTb6MRPGCRtKh0zcq1nv/TS/Gw5g==",
-      "path": "selenium.support/2.52.0",
-      "hashPath": "selenium.support.2.52.0.nupkg.sha512"
-    },
-    "Selenium.WebDriver/2.52.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-KP4RIXej4fupdhGyPBbRdq7kFnDtRqQFQreuqBXiX9PXvLeKYhRU8WS3e2/Hj9Dna0tAJzAI/g6ZgwXaxeLxzA==",
-      "path": "selenium.webdriver/2.52.0",
-      "hashPath": "selenium.webdriver.2.52.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/5.6.3": {
       "type": "package",

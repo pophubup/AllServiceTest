@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7/q2japxO6Ze0ajQkQe0J+LlHg/oov/oH5uCng+nwLfyqo1I4d7HWaE50qlP+bv3FXOOdLnDGMV7peYiPNjnzA==",
+  "dgSpecHash": "pMhtVVud9WH2IiEFDmj+7sXtaZcwqWSyqTTcSCCh9/FuhmAl0fVx1Fo5UpghbuHThMeQGbqVm3GABb07LKb5KQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zWebCrawlingRepository\\zWebCrawlingRepository.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,8 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\grpc.auth\\1.22.0\\grpc.auth.1.22.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\grpc.core\\1.22.1\\grpc.core.1.22.1.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\grpc.core.api\\1.22.1\\grpc.core.api.1.22.1.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\htmlagilitypack\\1.11.36\\htmlagilitypack.1.11.36.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\htmlagilitypack.cssselectors.netcore\\1.2.1\\htmlagilitypack.cssselectors.netcore.1.2.1.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
@@ -43,8 +45,6 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Yohoo\\.nuget\\packages\\selenium.support\\2.52.0\\selenium.support.2.52.0.nupkg.sha512",
-    "C:\\Users\\Yohoo\\.nuget\\packages\\selenium.webdriver\\2.52.0\\selenium.webdriver.2.52.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
@@ -103,26 +103,5 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.Support 2.52.0'。此套件與您的專案並非完全相容。",
-      "libraryId": "Selenium.Support",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用 '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' 而非專案目標架構 'net5.0' 還原了套件 'Selenium.WebDriver 2.52.0'。此套件與您的專案並非完全相容。",
-      "libraryId": "Selenium.WebDriver",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

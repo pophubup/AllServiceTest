@@ -27,9 +27,9 @@ namespace haha.Controllers
        /// <param name="endpage">最後頁面</param>
        /// <returns></returns>
         [HttpGet]
-        public IEnumerable<EveryPage> Get([FromQuery] string name, [FromQuery] int endpage = 1)
+        public  IEnumerable<EveryPage> Get([FromQuery] string name = "c.y", [FromQuery] int endpage = 1)
         {
-            return _webCrawling.GetDataFromWebElement(name, endpage);
+            return  _webCrawling.GetDataFromWebElement(name, endpage);
         }
 
        

@@ -463,7 +463,6 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.AssemblyInfoInputs.cache
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.AssemblyInfo.cs
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.csproj.CoreCompileInputs.cache
-C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\staticwebassets\haha.StaticWebAssets.Manifest.cache
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\staticwebassets\haha.StaticWebAssets.xml
@@ -481,3 +480,10 @@ C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\zWebCrawlingRepository.dl
 C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\zWebCrawlingRepository.pdb
 C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\WebDriver.dll
 C:\Users\Yohoo\Desktop\myAllTest\haha\bin\Debug\net5.0\WebDriver.Support.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zLineBotRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zWebCrawlingRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zLineBotRepository.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zWebCrawlingRepository.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\HtmlAgilityPack.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\HtmlAgilityPack.CssSelectors.NetCore.dll

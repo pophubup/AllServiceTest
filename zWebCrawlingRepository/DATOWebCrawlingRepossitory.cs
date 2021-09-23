@@ -1,15 +1,23 @@
-﻿using Microsoft.Extensions.Configuration;
-using OpenQA.Selenium;
+﻿using HtmlAgilityPack;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using System.Threading;
+using System.Net.Http;
+using System.Threading.Tasks;
 using zModelLayer.ViewModels;
-using OpenQA.Selenium.PhantomJS;
+using HtmlAgilityPack.CssSelectors.NetCore;
+using System;
+
 namespace zWebCrawlingRepository
 {
-    class DATOWebCrawlingRepossitory : IWebCrawling<EveryPage>
+    public class HtmlContainer
+    {
+        public string posts_html { get; set; }
+
+    }
+    public class DATOWebCrawlingRepossitory : IWebCrawling<EveryPage>
     {
         private IConfiguration _configuration;
         public DATOWebCrawlingRepossitory(IConfiguration configuration)
@@ -18,93 +26,58 @@ namespace zWebCrawlingRepository
         }
         public List<EveryPage> GetDataFromWebElement(string value, int endpage)
         {
-            try
-            {
-              
-                var list = new List<int>();
-                list.AddRange(Enumerable.Range(2, endpage));
-                //var options = new ChromeOptions();
-                //options.AddArgument("--headless");
-                //options.AddArgument("--disable-dev-shm-usage");
-                //options.AddArgument("--no-sandbox");
-                IWebDriver driver = new PhantomJSDriver(phantomJSDriverServerDirectory: _configuration["ChromeDriver"]);
-                driver.Navigate().GoToUrl($"https://twlolstats.com/summoner/?summoner={value}");
+            try { 
+   
+              var urls = Enumerable.Range(1, endpage).Select(g => new { page = g, url = $"https://twlolstats.com/moreGames/833fb0e3-eeb4-55a3-9d20-c59a28d19305/game{g}" }).ToList();
+                List<int> pags = Enumerable.Range(1, endpage).ToList();
                 List<EveryPage> everyPages = new List<EveryPage>();
-                ReadOnlyCollection<IWebElement> isWin;
-                ReadOnlyCollection<IWebElement> Kind;
-                ReadOnlyCollection<IWebElement> FinshTime;
-                ReadOnlyCollection<IWebElement> TotalHour;
-                if (endpage != 1)
-                {
-                    foreach (var item in list)
+                Parallel.ForEach(urls, url => {
+                    var result = new HttpClient().GetAsync(url.url).GetAwaiter().GetResult();
+                    var cotent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                    HtmlContainer valus = JsonConvert.DeserializeObject<HtmlContainer>(cotent);
+                    var doc = new HtmlDocument();
+                    doc.LoadHtml(valus.posts_html);
+                    Console.WriteLine(Task.CurrentId);
+                    IList<HtmlNode> WinTexts = doc.QuerySelectorAll("td:nth-child(3) div:nth-child(1) b");
+                    IList<HtmlNode> KindTexts = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(2)");
+                    IList<HtmlNode> FinshTime = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(3)");
+                    IList<HtmlNode> TotalHour = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(4)");
+                    List<DATOViewModel> dATOViewModels = new List<DATOViewModel>();
+                    for (int i = 0; i < WinTexts.Count(); i++)
                     {
-                        List<DATOViewModel> dATOViewModels = new List<DATOViewModel>();
-                        ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollTo(0, document.body.scrollHeight);");
-                        Thread.Sleep(5000);
-                        driver.FindElements(By.CssSelector($"#game{item} input")).FirstOrDefault().Click();
-
-                        isWin = driver.FindElements(By.CssSelector($"#game{item} table tbody td:nth-child(3) div:nth-child(1) b"));
-                        Kind = driver.FindElements(By.CssSelector($"#game{item} table tbody td:nth-child(3) div:nth-child(2)"));
-                        FinshTime = driver.FindElements(By.CssSelector($"#game{item} table tbody td:nth-child(3) div:nth-child(3)"));
-                        TotalHour = driver.FindElements(By.CssSelector($"#game{item} table tbody td:nth-child(3) div:nth-child(4)"));
-                        for (int i = 0; i < isWin.Count; i++)
+                        dATOViewModels.Add(new DATOViewModel()
                         {
-
-                            dATOViewModels.Add(new DATOViewModel()
-                            {
-                                index = i + 1,
-                                finishTime = FinshTime[i].Text,
-                                isWinOrFail = isWin[i].Text,
-                                totalPlayHour = TotalHour[i].Text,
-                                type = Kind[i].Text
-                            });
-                        }
-                        everyPages.Add(new EveryPage()
-                        {
-                            page = item,
-                            result = dATOViewModels
+                            index = i + 1,
+                            isWinOrFail = WinTexts[i].InnerText,
+                            finishTime = FinshTime[i].InnerText,
+                            totalPlayHour = TotalHour[i].InnerText,
+                            type = KindTexts[i].InnerText
                         });
+
                     }
-                }
-
-                isWin = driver.FindElements(By.CssSelector("table:nth-child(2) tbody td:nth-child(3) div:nth-child(1) b"));
-                Kind = driver.FindElements(By.CssSelector("table:nth-child(2) tbody td:nth-child(3) div:nth-child(2)"));
-                FinshTime = driver.FindElements(By.CssSelector("table:nth-child(2) tbody td:nth-child(3) div:nth-child(3)"));
-                TotalHour = driver.FindElements(By.CssSelector("table:nth-child(2) tbody td:nth-child(3) div:nth-child(4)"));
-                List<DATOViewModel> dATOViewModels_FirstElement = new List<DATOViewModel>();
-                for (int i = 0; i < isWin.Count; i++)
-                {
-
-                    dATOViewModels_FirstElement.Add(new DATOViewModel()
+                    everyPages.Add(new EveryPage()
                     {
-                        index = i + 1,
-                        finishTime = FinshTime[i].Text,
-                        isWinOrFail = isWin[i].Text,
-                        totalPlayHour = TotalHour[i].Text,
-                        type = Kind[i].Text
+                        page = url.page,
+                        result = dATOViewModels
                     });
-                }
-                everyPages.Insert(0, new EveryPage()
-                {
-
-                    page = 1,
-                    result = dATOViewModels_FirstElement
                 });
 
                 return everyPages;
             }
             catch (System.Exception ex)
             {
-             
+
                 using (StreamWriter outputFile = new StreamWriter(Path.Combine(_configuration["Exception"], "WriteLines.txt")))
                 {
                     outputFile.WriteLine(ex.InnerException);
                     outputFile.WriteLine(ex.Message);
-                    
+
                 }
                 return null;
             }
-      
+
         }
+
+   
     }
 }

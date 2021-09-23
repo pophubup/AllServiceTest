@@ -1,11 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
 using zModelLayer.ViewModels;
 
 namespace zWebCrawlingRepository
@@ -15,7 +8,8 @@ namespace zWebCrawlingRepository
         public static IServiceCollection AddWebCrawlingService(this IServiceCollection service)
         {
             service.AddTransient<IWebCrawling<EveryPage>, DATOWebCrawlingRepossitory>();
-          
+            var builder = service.BuildServiceProvider();
+            //var result = builder.GetService<IWebCrawling<EveryPage>>().GetDataFromWebElement("c.y", 4);
             return service;
         }
     }
