@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using zLineBotRepository;
@@ -11,10 +13,14 @@ namespace haha.Controllers
     [ApiController]
     public class LineBotApiController : ControllerBase
     {
-        private readonly OneToAllBot _delegate;
-        public LineBotApiController(ILineBot LineBot, OneToAllBot @delegate)
+        private readonly Func<string, ILineBot> _func;
+      
+        public LineBotApiController( Func<string, ILineBot> func)
         {
-            _delegate = @delegate;
+      
+            _func = func;
+
+
         }
         /// <summary>
         /// LineBot Webhook 的 URL 詳細設定請至 https://developers.line.biz/zh-hant/
@@ -23,12 +29,14 @@ namespace haha.Controllers
         [HttpPost]
         public async Task<IActionResult> POST()
         {
+            
             string body = "";
             using (StreamReader stream = new StreamReader(Request.Body))
             {
                 body = await stream.ReadToEndAsync();
             }
-            _delegate("Lazy").Reply(body);
+            _func("Lazy").Reply(body);
+
             return Ok();
         }
             

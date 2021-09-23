@@ -23,9 +23,9 @@ namespace haha
                 if (env.IsDevelopment())
                 {
                    //Home
-                   config.AddJsonFile(@"C:\Users\Yohoo\Desktop\key.json", optional: true, reloadOnChange: true);
+                   //config.AddJsonFile(@"C:\Users\Yohoo\Desktop\key.json", optional: true, reloadOnChange: true);
                    //company
-                   //config.AddJsonFile(@"C:\Users\Yohoo\OneDrive\орн▒\key.json", optional: true, reloadOnChange: true);
+                   config.AddJsonFile(@"C:\Users\Yohoo\OneDrive\орн▒\key.json", optional: true, reloadOnChange: true);
                 }
                 if (env.IsProduction())
                 {
