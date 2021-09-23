@@ -54,7 +54,7 @@ namespace haha
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API_Resources", Version = "v1", Description ="Connect mutiple service such as CLoudSQL¡BGoogleStorage¡BAzuerStorage¡BFireStore...." });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API_Resources", Version = "v1", Description ="Connect mutiple service such as CLoudSQL, GoogleStorage, AzuerStorage, FireStore...." });
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
