@@ -1,5 +1,5 @@
 ﻿using isRock.LineBot;
-namespace zLineBotRepository
+namespace zLineBotRepository.Interface
 {
     public interface ILineBot
     {

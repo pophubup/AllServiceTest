@@ -1,20 +1,20 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
+using zLineBotRepository.Interface;
 
 namespace zLineBotRepository
 {
    
-    public static class LineBotService
+    public static class _LineBotAllService
     {
-        private delegate ILineBot OneToAllBot(string name);
-        public static IServiceCollection AddLineBotService(this IServiceCollection service)
+        public static IServiceCollection AddLineBotAllService(this IServiceCollection service)
         {
 
             service.AddScoped<LazyLineBotService>();
             service.AddScoped<Func<string, ILineBot>>(provider => name =>
             {
-                var type = Assembly.GetAssembly(typeof(OneToAllBot)).GetType($"zLineBotRepository.{name}LineBotService");
+                var type = Assembly.GetAssembly(typeof(ILineBot)).GetType($"zLineBotRepository.{name}LineBotService");
                 var instance = provider.GetService(type);
 
                 return instance as ILineBot;

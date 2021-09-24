@@ -37,7 +37,7 @@ namespace haha
             services.AddAzureServices();
             services.AddFireBaseService();
             services.AddGoogleStorageService();
-            services.AddLineBotService();
+            services.AddLineBotAllService();
             services.AddWebCrawlingService();
             services.AddCustomizedVaildator();
             services.AddAutoMapperService();

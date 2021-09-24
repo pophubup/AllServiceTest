@@ -1,6 +1,7 @@
 ﻿using isRock.LineBot;
 using Microsoft.Extensions.Configuration;
 using System.Linq;
+using zLineBotRepository.Interface;
 
 namespace zLineBotRepository
 {
