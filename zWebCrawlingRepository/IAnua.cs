@@ -9,7 +9,7 @@ namespace zWebCrawlingRepository
     public interface IAnua
     {
         public AnuaCurrent GetCurrentValueFromSpectificStock(string idorName);
-        public StockPastRecordBasedOnBuyers GetPastRecordBasedOnBuyersByTimeSpan(string idorName, TimeSpan start, TimeSpan end);
+        public StockPastRecordBasedOnBuyers GetPastRecordBasedOnBuyersByTimeSpan(string idorName, DateTime start, DateTime end);
         public StockPastRecordBasedOnBuyers GetPastRecordWitinWeek(string idorName);
     }
 }

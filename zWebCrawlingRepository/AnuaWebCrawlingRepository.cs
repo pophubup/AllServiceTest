@@ -77,17 +77,20 @@ namespace zWebCrawlingRepository
     public class AnuaWebCrawlingRepository : IAnua
     {
         
-        public StockPastRecordBasedOnBuyers GetPastRecordBasedOnBuyersByTimeSpan(string idorName, TimeSpan start, TimeSpan end)
+        public StockPastRecordBasedOnBuyers GetPastRecordBasedOnBuyersByTimeSpan(string idorName, DateTime start, DateTime end)
         {
-            //股票現行資料
-            //https://ws.api.cnyes.com/ws/api/v1/charting/history?resolution=1&symbol=TWS:1303:STOCK&quote=1
+            long spanStart = ((DateTimeOffset)start).ToUnixTimeSeconds();
+            long spanEnd = ((DateTimeOffset)end).ToUnixTimeSeconds();
+            //法人區間資料
+            //https://marketinfo.api.cnyes.com/mi/api/v1/investors/buysell/TWS%3A1303%3ASTOCK?from=1632528000&to=1609459200
             throw new NotImplementedException();
         }
 
         public AnuaCurrent GetCurrentValueFromSpectificStock(string idorName)
         {
-            //法人區間資料
-            //https://marketinfo.api.cnyes.com/mi/api/v1/investors/buysell/TWS%3A1303%3ASTOCK?from=1632528000&to=1609459200
+            //股票現行資料
+            //https://ws.api.cnyes.com/ws/api/v1/charting/history?resolution=1&symbol=TWS:1303:STOCK&quote=1
+          
             throw new NotImplementedException();
         }
 

@@ -14,8 +14,8 @@ namespace haha.Controllers
     [ApiController]
     public class WebCrawlingController : ControllerBase
     {
-        private IWebCrawling<EveryPage> _webCrawling;
-        public WebCrawlingController(IWebCrawling<EveryPage> webCrawling)
+        private IDATOWebCrawling _webCrawling;
+        public WebCrawlingController(IDATOWebCrawling webCrawling)
         {
             _webCrawling = webCrawling;
         }
