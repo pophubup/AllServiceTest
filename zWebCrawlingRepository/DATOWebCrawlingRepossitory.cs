@@ -17,7 +17,7 @@ namespace zWebCrawlingRepository
         public string posts_html { get; set; }
 
     }
-    public class DATOWebCrawlingRepossitory : IWebCrawling<EveryPage>
+    public class DATOWebCrawlingRepossitory : IDATOWebCrawling
     {
         private IConfiguration _configuration;
         public DATOWebCrawlingRepossitory(IConfiguration configuration)

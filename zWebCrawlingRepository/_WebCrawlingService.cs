@@ -3,11 +3,12 @@ using zModelLayer.ViewModels;
 
 namespace zWebCrawlingRepository
 {
-    public static class WebCrawlingService
+    public static class _WebCrawlingService
     {
         public static IServiceCollection AddWebCrawlingService(this IServiceCollection service)
         {
-            service.AddTransient<IWebCrawling<EveryPage>, DATOWebCrawlingRepossitory>();
+            service.AddTransient<IDATOWebCrawling, DATOWebCrawlingRepossitory>();
+            service.AddTransient<IAnua, AnuaWebCrawlingRepository>();
             var builder = service.BuildServiceProvider();
             //var result = builder.GetService<IWebCrawling<EveryPage>>().GetDataFromWebElement("c.y", 4);
             return service;
