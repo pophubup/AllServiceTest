@@ -11,8 +11,8 @@ namespace zLineBotRepository
         public static IServiceCollection AddLineBotAllService(this IServiceCollection service)
         {
 
-            service.AddScoped<LazyLineBotService>();
-            service.AddScoped<Func<string, ILineBot>>(provider => name =>
+            service.AddTransient<LazyLineBotService>();
+            service.AddTransient<Func<string, ILineBot>>(provider => name =>
             {
                 var type = Assembly.GetAssembly(typeof(ILineBot)).GetType($"zLineBotRepository.{name}LineBotService");
                 var instance = provider.GetService(type);
