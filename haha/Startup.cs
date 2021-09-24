@@ -9,8 +9,10 @@ using SQLClientRepository;
 using System;
 using System.IO;
 using System.Reflection;
+using zAutoMapperRepository;
 using zAzureClientRepository;
 using zFireBaseRepository;
+using zFluentAPIRepository;
 using zGoogleCloudStorageClient;
 using zLineBotRepository;
 using zWebCrawlingRepository;
@@ -37,6 +39,8 @@ namespace haha
             services.AddGoogleStorageService();
             services.AddLineBotService();
             services.AddWebCrawlingService();
+            services.AddCustomizedVaildator();
+            services.AddAutoMapperService();
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(

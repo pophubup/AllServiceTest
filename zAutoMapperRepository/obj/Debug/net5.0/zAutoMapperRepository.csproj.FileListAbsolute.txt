@@ -1,0 +1,15 @@
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\bin\Debug\net5.0\zAutoMapperRepository.deps.json
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\bin\Debug\net5.0\zAutoMapperRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\bin\Debug\net5.0\ref\zAutoMapperRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\bin\Debug\net5.0\zAutoMapperRepository.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\bin\Debug\net5.0\zModelLayer.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\bin\Debug\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\zAutoMapperRepository.csproj.AssemblyReference.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\zAutoMapperRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\zAutoMapperRepository.AssemblyInfoInputs.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\zAutoMapperRepository.AssemblyInfo.cs
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\zAutoMapperRepository.csproj.CoreCompileInputs.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\zAutoMapperRepository.csproj.CopyComplete
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\zAutoMapperRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\ref\zAutoMapperRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zAutoMapperRepository\obj\Debug\net5.0\zAutoMapperRepository.pdb

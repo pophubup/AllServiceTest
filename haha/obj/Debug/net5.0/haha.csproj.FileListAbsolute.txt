@@ -484,6 +484,15 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zWebCrawlingRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zLineBotRepository.pdb
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zWebCrawlingRepository.pdb
-C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\HtmlAgilityPack.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\HtmlAgilityPack.CssSelectors.NetCore.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zFluentAPIRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zFluentAPIRepository.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zAutoMapperRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zAutoMapperRepository.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\obj\Debug\net5.0\haha.MvcApplicationPartsAssemblyInfo.cs

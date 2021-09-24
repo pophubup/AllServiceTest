@@ -12,8 +12,10 @@
 	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.9" />
     <ProjectReference Include="..\Neo4jClientRepository\Neo4jClientRepository.csproj" />
     <ProjectReference Include="..\SQLClientRepository\SQLClientRepository.csproj" />
+    <ProjectReference Include="..\zAutoMapperRepository\zAutoMapperRepository.csproj" />
     <ProjectReference Include="..\zAzureClientRepository\zAzureClientRepository.csproj" />
     <ProjectReference Include="..\zFireBaseRepository\zFireBaseRepository.csproj" />
+    <ProjectReference Include="..\zFluentAPIRepository\zFluentAPIRepository.csproj" />
     <ProjectReference Include="..\zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj" />
     <ProjectReference Include="..\zLineBotRepository\zLineBotRepository.csproj" />
     <ProjectReference Include="..\zWebCrawlingRepository\zWebCrawlingRepository.csproj" />

@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zGoogleCloudStorageClient",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zLineBotRepository", "zLineBotRepository\zLineBotRepository.csproj", "{F274ED51-EB96-4DDE-8AB7-1A4D18C7855D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zWebCrawlingRepository", "zWebCrawlingRepository\zWebCrawlingRepository.csproj", "{9570DD3F-4595-4F1F-B607-3B35D9FDE796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zWebCrawlingRepository", "zWebCrawlingRepository\zWebCrawlingRepository.csproj", "{9570DD3F-4595-4F1F-B607-3B35D9FDE796}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zFluentAPIRepository", "zFluentAPIRepository\zFluentAPIRepository.csproj", "{BB6C989F-09E5-45A0-8E29-ED3C8792B839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zAutoMapperRepository", "zAutoMapperRepository\zAutoMapperRepository.csproj", "{A6227EC1-7690-495C-8DE4-298D9BC0BC21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{9570DD3F-4595-4F1F-B607-3B35D9FDE796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9570DD3F-4595-4F1F-B607-3B35D9FDE796}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9570DD3F-4595-4F1F-B607-3B35D9FDE796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB6C989F-09E5-45A0-8E29-ED3C8792B839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6C989F-09E5-45A0-8E29-ED3C8792B839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6C989F-09E5-45A0-8E29-ED3C8792B839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6C989F-09E5-45A0-8E29-ED3C8792B839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6227EC1-7690-495C-8DE4-298D9BC0BC21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6227EC1-7690-495C-8DE4-298D9BC0BC21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6227EC1-7690-495C-8DE4-298D9BC0BC21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6227EC1-7690-495C-8DE4-298D9BC0BC21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
