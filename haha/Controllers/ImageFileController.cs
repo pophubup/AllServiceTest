@@ -88,7 +88,6 @@ namespace haha.Controllers
         /// <summary>
         ///  multipart/form-data 方式回存圖片、名稱、標籤及內容
         /// </summary>
-        /// <param name="id">GUID </param>
         /// <remarks>  multipart/form-data 方式回存圖片、名稱、標籤及內容</remarks>
         /// <returns></returns>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseModel))]

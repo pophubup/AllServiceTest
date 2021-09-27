@@ -23,7 +23,8 @@ namespace haha
                 if (env.IsDevelopment())
                 {
                     //Allen Home
-                    if (System.IO.File.Exists(@"C:\Users\Yohoo\Desktop\key.json")){
+                    if (System.IO.File.Exists(@"C:\Users\Yohoo\Desktop\key.json"))
+                    {
                         config.AddJsonFile(@"C:\Users\Yohoo\Desktop\key.json", optional: true, reloadOnChange: true);
                     }
                     //Allen company

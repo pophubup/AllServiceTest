@@ -10,6 +10,10 @@
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" NoWarn="NU1701" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
 	  <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <ProjectReference Include="..\Neo4jClientRepository\Neo4jClientRepository.csproj" />
     <ProjectReference Include="..\SQLClientRepository\SQLClientRepository.csproj" />
     <ProjectReference Include="..\zAutoMapperRepository\zAutoMapperRepository.csproj" />
@@ -17,6 +21,7 @@
     <ProjectReference Include="..\zFireBaseRepository\zFireBaseRepository.csproj" />
     <ProjectReference Include="..\zFluentAPIRepository\zFluentAPIRepository.csproj" />
     <ProjectReference Include="..\zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj" />
+    <ProjectReference Include="..\zIdentityServerRepository\zIdentityServerRepository.csproj" />
     <ProjectReference Include="..\zLineBotRepository\zLineBotRepository.csproj" />
     <ProjectReference Include="..\zWebCrawlingRepository\zWebCrawlingRepository.csproj" />
 

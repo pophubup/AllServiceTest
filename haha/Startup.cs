@@ -14,6 +14,7 @@ using zAzureClientRepository;
 using zFireBaseRepository;
 using zFluentAPIRepository;
 using zGoogleCloudStorageClient;
+using zIdentityServerRepository;
 using zLineBotRepository;
 using zWebCrawlingRepository;
 
@@ -41,6 +42,7 @@ namespace haha
             services.AddWebCrawlingService();
             services.AddCustomizedVaildator();
             services.AddAutoMapperService();
+            services.AddIdentityServices(Configuration["SQL:IdentityConnection"]);
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(

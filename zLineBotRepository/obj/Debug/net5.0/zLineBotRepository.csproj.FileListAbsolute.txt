@@ -21,4 +21,3 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zLineBotRepository\obj
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\ref\zLineBotRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.pdb
-C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.csproj.AssemblyReference.cache

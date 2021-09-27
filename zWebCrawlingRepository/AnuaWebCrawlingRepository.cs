@@ -81,6 +81,7 @@ namespace zWebCrawlingRepository
         {
             long spanStart = ((DateTimeOffset)start).ToUnixTimeSeconds();
             long spanEnd = ((DateTimeOffset)end).ToUnixTimeSeconds();
+          
             //法人區間資料
             //https://marketinfo.api.cnyes.com/mi/api/v1/investors/buysell/TWS%3A1303%3ASTOCK?from=1632528000&to=1609459200
             throw new NotImplementedException();

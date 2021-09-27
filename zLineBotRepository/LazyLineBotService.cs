@@ -21,16 +21,16 @@ namespace zLineBotRepository
             // 取得使用者資訊
             var lineReceuvedEvent = receivedMessage.events.FirstOrDefault();
 
-            var userId = lineReceuvedEvent.source.userId;
+            //var userId = lineReceuvedEvent.source.userId;
             var replyToken = lineReceuvedEvent.replyToken;
 
-            string receivedMessageType = lineReceuvedEvent.type;
+            //string receivedMessageType = lineReceuvedEvent.type;
             //bot.ReplyMessage(replyToken, $"receivedMessageType: {receivedMessageType}; replyToken:{replyToken}; userId:{userId};");
 
             // 訊息
             // 傳入的對話型態
-            var conversationMode = lineReceuvedEvent.message.type.Trim().ToLower();
-            isRock.LineBot.TextMessage msg;
+            //var conversationMode = lineReceuvedEvent.message.type.Trim().ToLower();
+            //isRock.LineBot.TextMessage msg;
             string responseMsg = string.Empty;
             // 文字訊息
             switch (lineReceuvedEvent.message.text)
