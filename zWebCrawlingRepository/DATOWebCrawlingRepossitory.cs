@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using zModelLayer.ViewModels;
 using HtmlAgilityPack.CssSelectors.NetCore;
 using System;
+using System.Threading;
 
 namespace zWebCrawlingRepository
 {
@@ -33,35 +34,39 @@ namespace zWebCrawlingRepository
                 List<EveryPage> everyPages = new List<EveryPage>();
                 Parallel.ForEach(urls, url => {
                     var result = new HttpClient().GetAsync(url.url).GetAwaiter().GetResult();
-                    var cotent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-                    HtmlContainer valus = JsonConvert.DeserializeObject<HtmlContainer>(cotent);
-                    var doc = new HtmlDocument();
-                    doc.LoadHtml(valus.posts_html);
-                    Console.WriteLine(Task.CurrentId);
-                    IList<HtmlNode> WinTexts = doc.QuerySelectorAll("td:nth-child(3) div:nth-child(1) b");
-                    IList<HtmlNode> KindTexts = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(2)");
-                    IList<HtmlNode> FinshTime = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(3)");
-                    IList<HtmlNode> TotalHour = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(4)");
-                    List<DATOViewModel> dATOViewModels = new List<DATOViewModel>();
-                    for (int i = 0; i < WinTexts.Count(); i++)
+                    if(result.StatusCode != System.Net.HttpStatusCode.InternalServerError)
                     {
-                        dATOViewModels.Add(new DATOViewModel()
+                        var cotent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                        HtmlContainer valus = JsonConvert.DeserializeObject<HtmlContainer>(cotent);
+                        var doc = new HtmlDocument();
+                        doc.LoadHtml(valus.posts_html);
+                        Console.WriteLine(Task.CurrentId);
+                        IList<HtmlNode> WinTexts = doc.QuerySelectorAll("td:nth-child(3) div:nth-child(1) b");
+                        IList<HtmlNode> KindTexts = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(2)");
+                        IList<HtmlNode> FinshTime = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(3)");
+                        IList<HtmlNode> TotalHour = doc.QuerySelectorAll($"td:nth-child(3) div:nth-child(4)");
+                        List<DATOViewModel> dATOViewModels = new List<DATOViewModel>();
+                        for (int i = 0; i < WinTexts.Count(); i++)
                         {
-                            index = i + 1,
-                            isWinOrFail = WinTexts[i].InnerText,
-                            finishTime = FinshTime[i].InnerText,
-                            totalPlayHour = TotalHour[i].InnerText,
-                            type = KindTexts[i].InnerText
+                            dATOViewModels.Add(new DATOViewModel()
+                            {
+                                index = i + 1,
+                                isWinOrFail = WinTexts[i].InnerText,
+                                finishTime = FinshTime[i].InnerText,
+                                totalPlayHour = TotalHour[i].InnerText,
+                                type = KindTexts[i].InnerText
+                            });
+
+                        }
+                        everyPages.Add(new EveryPage()
+                        {
+                            page = url.page,
+                            result = dATOViewModels
                         });
-
                     }
-                    everyPages.Add(new EveryPage()
-                    {
-                        page = url.page,
-                        result = dATOViewModels
-                    });
+                   
                 });
-
+                Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
                 return everyPages;
             }
             catch (System.Exception ex)

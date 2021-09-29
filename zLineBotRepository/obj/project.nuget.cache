@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yB4golNDcf0HlmJD3x3LIbu7n8vFyf1VYmLnV16T79Gw/yF3azPrUUyfqvmfWtdx8YEhJZUUJkczNNDQubjSOQ==",
+  "dgSpecHash": "0FCquqBzeVdav6WwvvImsr7fedXER0xeiRNqHCuMO2hOKkCuaOqZcpZ9eiSP7iw0MRH8UTpzagy/r0f4IhQTKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zLineBotRepository\\zLineBotRepository.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\AllServiceTest\\zLineBotRepository\\zLineBotRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\line.messaging\\1.4.5\\line.messaging.1.4.5.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\linebotsdk\\2.1.21\\linebotsdk.2.1.21.nupkg.sha512",

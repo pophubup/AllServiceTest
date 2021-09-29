@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xq1rtFCu1X9dXDPiy5fxCMy9ahZnyTcJ4cjywSl9afyiIgMRjlgvGWwTBYxhpoN1jYXEPTDkl3HHwZSZjr8MYw==",
+  "dgSpecHash": "EC6tVIzorlbGYM2Dvc8M5PIG+9T0hnOliiW48OUxRV/BkmGgXu99+arPRwRKn/J131L30pA7+e3zdXSZAAZmUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zFluentAPIRepository\\zFluentAPIRepository.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\AllServiceTest\\zFluentAPIRepository\\zFluentAPIRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",

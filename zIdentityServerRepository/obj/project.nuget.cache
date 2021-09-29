@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cxDoHZozJogJKOEjA9kGKCazZYtnufwYZU+1RLlCGU87h+DFsJP6dDNSgdr6KP2Qhznx2grtipKocMl0EfWrKQ==",
+  "dgSpecHash": "M3wHc6kcAZ9YTkHA6lRRCDiJI4NWL9k0GpnhARSl1UMzHJgN+FNuSarVy1wuNU2ZwRkgKUZEa9BA0W6eozU/qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zIdentityServerRepository\\zIdentityServerRepository.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\AllServiceTest\\zIdentityServerRepository\\zIdentityServerRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

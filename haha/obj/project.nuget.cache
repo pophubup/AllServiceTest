@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7flZsZAjOIe2aWoyCP5Elyvbk8O2s0nSiClqscs+k8SzkkYra0Ay9o9x4j3MraQMIrL6BtGlNhCGGsUHX5ihfw==",
+  "dgSpecHash": "++b2/C5iJiYYlJAFkkJHqQ1SOnYvVvW26+gJT45YL2qHR4WE91jE/9Ied91t08g93ixppa6EdO7og/fqW0M7QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\haha.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\AllServiceTest\\haha\\haha.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

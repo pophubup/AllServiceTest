@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WjBYF41AAsfxttp/LPF5jp4/JO1bHgSnmHsttXQjvRB/bYqr3U1URr4vy+bwdAjUjGVKSt9WTZwREBQ2Ccs9rA==",
+  "dgSpecHash": "Nm/Kd/BVdWkVWulsuWtV5jXbMQNhTgVtPCS/DbySOngsVeFGS6BzmIxQf+jR1fygh/LW+hTMXwdtz1ff2FSC9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
+  "projectFilePath": "C:\\Users\\Yohoo\\AllServiceTest\\zGoogleCloudStorageClient\\zGoogleCloudStorageClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yohoo\\.nuget\\packages\\google.api.commonprotos\\1.7.0\\google.api.commonprotos.1.7.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\google.api.gax\\3.3.0\\google.api.gax.3.3.0.nupkg.sha512",
