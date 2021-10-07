@@ -1,0 +1,15 @@
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\zPostgreSQLRepository.deps.json
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\zPostgreSQLRepository.runtimeconfig.json
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\zPostgreSQLRepository.runtimeconfig.dev.json
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\zPostgreSQLRepository.dll
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\ref\zPostgreSQLRepository.dll
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\zPostgreSQLRepository.pdb
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.csproj.AssemblyReference.cache
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.AssemblyInfoInputs.cache
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.AssemblyInfo.cs
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.csproj.CoreCompileInputs.cache
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.dll
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\ref\zPostgreSQLRepository.dll
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.pdb
+C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.genruntimeconfig.cache

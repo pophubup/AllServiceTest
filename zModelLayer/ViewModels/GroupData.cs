@@ -31,6 +31,7 @@ namespace zModelLayer.ViewModels
         public string fileName { get; set; }
         public string url { get; set; }
         public string id { get; set; }
+        public int labelId { get; set; }
         public DateTime createDate { get; set; }
     }
   

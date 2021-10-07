@@ -650,3 +650,7 @@ C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\ref\haha.dll
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\haha.xml
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\haha.pdb
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\haha.genruntimeconfig.cache
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\Npgsql.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\zPostgreSQLRepository.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\zPostgreSQLRepository.pdb

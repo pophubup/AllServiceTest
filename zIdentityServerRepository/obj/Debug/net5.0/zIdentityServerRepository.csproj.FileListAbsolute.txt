@@ -19,7 +19,6 @@ C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdenti
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.dll
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\ref\zIdentityServerRepository.dll
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.pdb
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.csproj.AssemblyReference.cache
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.AssemblyInfoInputs.cache
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.AssemblyInfo.cs

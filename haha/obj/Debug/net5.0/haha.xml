@@ -51,13 +51,6 @@
             <remarks>刪除特定的 Group 及其 Label 和 ImageFile</remarks>
             <returns></returns>
         </member>
-        <member name="M:haha.Controllers.hahaController.Getyyyy(System.String)">
-            <summary>
-            key/Value secrect 確認
-            </summary>
-            <param name="name">key 值</param>
-            <returns></returns>
-        </member>
         <member name="M:haha.Controllers.ImageFileController.GetFirstDataEveryGroup">
             <summary>
             取得每個團體的第一筆 ImageFile 資料
@@ -65,7 +58,7 @@
             <remarks>取得每個團體的第一筆 ImageFile 資料</remarks>
             <returns></returns>
         </member>
-        <member name="M:haha.Controllers.ImageFileController.GetSingleData(System.Guid)">
+        <member name="M:haha.Controllers.ImageFileController.GetSingleData(System.Int32)">
             <summary>
             取得單筆資料 by ImageFile ID 
             </summary>
@@ -80,7 +73,7 @@
             <remarks>  multipart/form-data 方式回存圖片、名稱、標籤及內容</remarks>
             <returns></returns>
         </member>
-        <member name="M:haha.Controllers.ImageFileController.EditData(System.Guid,zModelLayer.ImageFileDataModel)">
+        <member name="M:haha.Controllers.ImageFileController.EditData(System.Int32,zModelLayer.ImageFileDataModel)">
             <summary>
              multipart/form-data 方式修改 圖片、名稱、標籤及內容
             </summary>
@@ -89,7 +82,7 @@
             <remarks>multipart/form-data 方式修改 圖片、名稱、標籤及內容</remarks>
             <returns></returns>
         </member>
-        <member name="M:haha.Controllers.ImageFileController.DeleteData(System.Guid)">
+        <member name="M:haha.Controllers.ImageFileController.DeleteData(System.Int32)">
             <summary>
             刪除單筆 ImageFile 資料
             </summary>
@@ -104,7 +97,7 @@
             <returns></returns>
             <remarks>取得所有標籤</remarks>
         </member>
-        <member name="M:haha.Controllers.LabelController.GetData(System.String)">
+        <member name="M:haha.Controllers.LabelController.GetData(System.Int32)">
             <summary>
             排除ImageFile 自身 label 取剩餘的label
             </summary>
@@ -124,14 +117,6 @@
             </summary>
             <param name="name">Label 名稱 QueryString</param>
             <remarks>確認名稱是否重複</remarks>
-            <returns></returns>
-        </member>
-        <member name="M:haha.Controllers.LabelController.InsertLabel(System.Collections.Generic.List{zModelLayer.CreateLabelDataModel})">
-            <summary>
-            插入多筆標籤
-            </summary>
-            <param name="value">預設 Group 暫定是 2 未分類</param>
-            <remarks> 插入多筆標籤</remarks>
             <returns></returns>
         </member>
         <member name="M:haha.Controllers.LabelController.DeleteLabel(System.Int32)">

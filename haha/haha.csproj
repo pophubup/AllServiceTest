@@ -23,6 +23,7 @@
     <ProjectReference Include="..\zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj" />
     <ProjectReference Include="..\zIdentityServerRepository\zIdentityServerRepository.csproj" />
     <ProjectReference Include="..\zLineBotRepository\zLineBotRepository.csproj" />
+    <ProjectReference Include="..\zPostgreSQLRepository\zPostgreSQLRepository.csproj" />
     <ProjectReference Include="..\zWebCrawlingRepository\zWebCrawlingRepository.csproj" />
 
   </ItemGroup>

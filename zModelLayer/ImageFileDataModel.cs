@@ -12,9 +12,9 @@ namespace zModelLayer
     public class ImageFileDataModel
     {
         public string labelName { get; set; }
-        public string name { get; set; }
+        public string groupIds { get; set; }
         public string description { get; set; }
-        //[AllowedExtensions(new string[] { ".jpg", ".png", ".jpeg"})]
+        [AllowedExtensions(new string[] { ".jpg", ".png", ".jpeg"})]
         public List<IFormFile> files { get; set; }
     }
 }

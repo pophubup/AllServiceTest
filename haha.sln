@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zFluentAPIRepository", "zFl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zAutoMapperRepository", "zAutoMapperRepository\zAutoMapperRepository.csproj", "{A6227EC1-7690-495C-8DE4-298D9BC0BC21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zIdentityServerRepository", "zIdentityServerRepository\zIdentityServerRepository.csproj", "{ABFF07A0-1120-4487-BAB7-8CD00D9F36CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "zIdentityServerRepository", "zIdentityServerRepository\zIdentityServerRepository.csproj", "{ABFF07A0-1120-4487-BAB7-8CD00D9F36CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zPostgreSQLRepository", "zPostgreSQLRepository\zPostgreSQLRepository.csproj", "{4E29981D-E313-44BF-8610-9C22C87925E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{ABFF07A0-1120-4487-BAB7-8CD00D9F36CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABFF07A0-1120-4487-BAB7-8CD00D9F36CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABFF07A0-1120-4487-BAB7-8CD00D9F36CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E29981D-E313-44BF-8610-9C22C87925E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E29981D-E313-44BF-8610-9C22C87925E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E29981D-E313-44BF-8610-9C22C87925E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E29981D-E313-44BF-8610-9C22C87925E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

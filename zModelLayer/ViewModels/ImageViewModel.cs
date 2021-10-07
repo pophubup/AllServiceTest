@@ -14,7 +14,7 @@ namespace zModelLayer.ViewModels
         public string image { get; set; }
         public string description { get; set; }
         public int LabelId { get; set; }
-        public int GroupId { get; set; }
+        public List<int> GroupId { get; set; }
 
     }
 }

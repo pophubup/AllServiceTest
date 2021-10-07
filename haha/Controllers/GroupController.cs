@@ -1,18 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
-using SQLClientRepository.Entities;
 using zModelLayer;
-using Microsoft.AspNetCore.Http;
 using zModelLayer.ViewModels;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+using zPostgreSQLRepository.Entities;
+using zPostgreSQLRepository.Entities_jsonb;
 
 namespace haha.Controllers
 {
+    public class temp
+    {
+        public Image image { get; set; }
+        public AssignCategory label { get; set; }
+        public List<AssignGroup> groups { get; set; }
+    }
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class GroupController : ControllerBase
@@ -30,13 +36,14 @@ namespace haha.Controllers
         /// <remarks>取得所有群體</remarks>
         /// <returns></returns>
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<Group>))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<AssignGroup>))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IEnumerable<Group> GetGroups()
+        public IEnumerable<AssignGroup> GetGroups()
         {
 
-            return _serviceProvider.GetService<MYDBContext>().Groups.AsEnumerable();
+            return _serviceProvider.GetService<Test2Context>().AssignGroups;
         }
+        
         /// <summary>
         /// 取得樹狀圖資料
         /// </summary>
@@ -49,39 +56,69 @@ namespace haha.Controllers
         public List<GroupData> GetOrganizationViewModels()
         {
             List<GroupData> organizationViewModels = new List<GroupData>();
-            _serviceProvider.GetService<MYDBContext>().ImageFiles.Include(x => x.Label).Include(x => x.Label.Group).ToList().GroupBy(g=>g.Label.Group.Id).ToList().ForEach(g => {
-
-               
-                var labels = g.Select(y => {
-                    var images = _serviceProvider.GetService<MYDBContext>().ImageFiles.Where(x => x.LabelId == y.LabelId).Select(x => new ImageData
-                    {
-                        fileName = x.FileName,
-                        url = $"{_Configuration["imageurl"]}/{x.Label.BucketId}/{x.FileName}",
-                        createDate = x.CreateDate,
-                        description = x.Description,
-                        id = x.Id.ToString()
-
-
-                    }).ToList();
-                    return new LableViewModel()
-                    {
-                        createDate = y.CreateDate,
-                        labelId = y.Label.Id,
-                        labelName = y.Label.LabelName,
-                        imageDatas = images
-                    };
-                } ).ToList();
-                
-                organizationViewModels.Add(new GroupData()
+            var raw = _serviceProvider.GetService<Test2Context>().Images
+                .Include(x => x.AssignCategory).ToList();
+            List<AssignGroup> assignGroups = new List<AssignGroup>();
+            List<temp> dynamics = new List<temp>();
+            raw.ForEach(g =>
+            {
+                assignGroups.AddRange(g.AssignCategory.assignGroups);
+                dynamics.Add(new temp()
                 {
-                    groupID = g.Key,
-                    groupName = g.FirstOrDefault().Label.Group.GroupName,
-                    CreateDate = g.FirstOrDefault().Label.Group.CreateDate,
-                    LableViewModels = labels
-
-                });;
-
+                    image = g,
+                    label = g.AssignCategory,
+                    groups =  g.AssignCategory.assignGroups
+                });
             });
+            var groupby = assignGroups.GroupBy(g => g.Id).ToList();
+
+             
+                groupby.ForEach(g => {
+                   
+                   var imagsLabels =   dynamics.Where(x => x.groups.Any(x => x.Id == g.Key));
+                    List<ImageData> imageDatas = new List<ImageData>();
+                    imagsLabels.ToList().ForEach(g =>
+                    {
+                       
+                       imageDatas.Add( new ImageData
+                       {
+                           fileName = g.image.FileName,
+                           url = $"{_Configuration["imageurl"]}/{g.label.BucketId}/{ g.image.FileName}",
+                           createDate = g.image.CreateDate,
+                           description = g.image.Description,
+                           labelId = g.label.LId,
+                           id = g.image.Id.ToString()
+                       });
+
+                    });
+                   var images=  imageDatas.GroupBy(x => x.labelId).ToList();
+
+                    var label2 = raw.Select(g => g.AssignCategory).ToList().Select(x =>
+                    {
+                        var data3  = imageDatas.Where(y => y.labelId == x.LId).Select(x=>x).ToList();
+                       
+                        return new LableViewModel()
+                        {
+                            createDate = x.CreateDate,
+                            labelId = x.LId,
+                            labelName = x.LabelName,
+                            imageDatas = data3
+                        };
+                    }).ToList();
+
+
+
+
+                    organizationViewModels.Add(new GroupData()
+                    {
+                    groupID = g.Key,
+                    groupName = g.FirstOrDefault().GroupName,
+                    CreateDate = g.FirstOrDefault().CreateDate,
+                    LableViewModels = label2
+
+                    });;
+
+               });
 
         
 
@@ -95,13 +132,13 @@ namespace haha.Controllers
         /// <param name="id">GroupID</param>
         /// <remarks>取得個別 Group </remarks>
         /// <returns></returns>
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Group))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(AssignGroup))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("{id}")]
-        public Group GetSingleGroup(int id)
+        public AssignGroup GetSingleGroup(int id)
         {
            
-            return _serviceProvider.GetService<MYDBContext>().Groups.AsQueryable().FirstOrDefault(g=>g.Id == id);
+            return _serviceProvider.GetService<Test2Context>().AssignGroups.FirstOrDefault(g=>g.Id == id);
         }
 
         /// <summary>
@@ -115,7 +152,7 @@ namespace haha.Controllers
         [HttpPost]
         public ResponseModel InsertData([FromBody] List<string> groups)
         {
-            var context = _serviceProvider.GetService<MYDBContext>();
+            var context = _serviceProvider.GetService<Test2Context>();
             bool isSuccess = false;
             string msg = string.Empty;
             using (var tran = context.Database.BeginTransaction())
@@ -123,7 +160,7 @@ namespace haha.Controllers
                 try
                 {
                     var current  = DateTime.Now;
-                    context.Groups.AddRange(groups.Select(g => new Group { GroupName = g, CreateDate = current }));
+                    context.AssignGroups.AddRange(groups.Select(g => new AssignGroup { GroupName = g, CreateDate = current }));
                     context.SaveChanges();
                     tran.Commit();
                     isSuccess = true;
@@ -150,14 +187,14 @@ namespace haha.Controllers
         [HttpPut("{id}")]
         public ResponseModel EditData(int id, [FromBody] string value)
         {
-            var context = _serviceProvider.GetService<MYDBContext>();
+            var context = _serviceProvider.GetService<Test2Context>();
             bool isSuccess = false;
             string msg = string.Empty;
             using (var tran = context.Database.BeginTransaction())
             {
                 try
                 {
-                    var group = context.Groups.FirstOrDefault(g => g.Id == id);
+                    var group = context.AssignGroups.FirstOrDefault(g => g.Id == id);
                     group.GroupName = value;
                     context.SaveChanges();
                     tran.Commit();
@@ -185,24 +222,25 @@ namespace haha.Controllers
         [HttpDelete("{id}")]
         public ResponseModel DeleteData(int id)
         {
-            var context = _serviceProvider.GetService<MYDBContext>();
+            var context = _serviceProvider.GetService<Test2Context>();
             bool isSuccess = false;
             string msg = string.Empty;
             using (var tran = context.Database.BeginTransaction())
             {
                 try
                 {
-                    var group = context.Groups.FirstOrDefault(g => g.Id == id);
-                   
-                    context.ImageFiles.ToList().ForEach(g=> { g.LabelId = 0; });
-                    context.Labels.RemoveRange(context.Labels.Where(g => g.GroupId == id));
-                    context.Groups.Remove(group);
+                    var group = context.AssignGroups.FirstOrDefault(x => x.Id == id);
+                    var raw = context.Images.Include(g => g.AssignCategory).Where(g => g.AssignCategory.assignGroups.Any(y=>y.Id == group.Id));
                 
+                    context.AssignGroups.Remove(group);
+                    context.AssignCategory.RemoveRange(raw.Select(g=>g.AssignCategory).ToList());
+                    context.Images.RemoveRange(raw);
                     context.SaveChanges();
                     tran.Commit();
                     isSuccess = true;
-                    msg = $"{group.GroupName} 移除成功";
-               
+                     
+                    msg = $"{group.GroupName}\n\r 刪除成功";
+
                 }
                 catch (Exception ex)
                 {
