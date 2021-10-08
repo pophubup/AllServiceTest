@@ -93,18 +93,23 @@ namespace haha.Controllers
                     });
                    var images=  imageDatas.GroupBy(x => x.labelId).ToList();
 
-                    var label2 = raw.Select(g => g.AssignCategory).ToList().Select(x =>
+                    List<LableViewModel> lableViewModels = new List<LableViewModel>();
+                    raw.Select(g => g.AssignCategory).ToList().ForEach(x =>
                     {
-                        var data3  = imageDatas.Where(y => y.labelId == x.LId).Select(x=>x).ToList();
-                       
-                        return new LableViewModel()
+
+                        var data3 = imageDatas.Where(y => y.labelId == x.LId).Select(x => x).ToList();
+                        if (data3.Count() != 0)
                         {
-                            createDate = x.CreateDate,
-                            labelId = x.LId,
-                            labelName = x.LabelName,
-                            imageDatas = data3
-                        };
-                    }).ToList();
+                            lableViewModels.Add(new LableViewModel()
+                            {
+                                createDate = x.CreateDate,
+                                labelId = x.LId,
+                                labelName = x.LabelName,
+                                imageDatas = data3
+                            });
+                        }
+                    });
+                    
 
 
 
@@ -114,9 +119,9 @@ namespace haha.Controllers
                     groupID = g.Key,
                     groupName = g.FirstOrDefault().GroupName,
                     CreateDate = g.FirstOrDefault().CreateDate,
-                    LableViewModels = label2
+                    LableViewModels = lableViewModels
 
-                    });;
+                    });
 
                });
 
