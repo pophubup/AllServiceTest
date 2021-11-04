@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Google.Cloud.Firestore" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.9" />
+    <PackageReference Include="MongoDB.Bson" Version="2.13.2" />
   </ItemGroup>
 
 </Project>
