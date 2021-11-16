@@ -644,7 +644,6 @@ C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\staticwebassets\haha.StaticW
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\staticwebassets\haha.StaticWebAssets.xml
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\scopedcss\bundle\haha.styles.css
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\haha.RazorTargetAssemblyInfo.cache
-C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\haha.csproj.CopyComplete
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\haha.dll
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\ref\haha.dll
 C:\Users\Yohoo\AllServiceTest\haha\obj\Debug\net5.0\haha.xml
@@ -654,9 +653,7 @@ C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\Npgsql.dll
 C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\zPostgreSQLRepository.dll
 C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\zPostgreSQLRepository.pdb
-<<<<<<< HEAD
 C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\System.Reactive.dll
-=======
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\DnsClient.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\MongoDB.Bson.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\MongoDB.Driver.dll
@@ -675,4 +672,17 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zPostgreSQLRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\MongodbClientRepository.pdb
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\haha\bin\Debug\net5.0\zPostgreSQLRepository.pdb
->>>>>>> 1f73682607af2c7c18bcbef9f368e4843b46cdf2
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\DnsClient.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\MongodbClientRepository.dll
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\MongodbClientRepository.pdb

@@ -25,7 +25,6 @@ C:\Users\Yohoo\AllServiceTest\zLineBotRepository\bin\Debug\net5.0\zLineBotReposi
 C:\Users\Yohoo\AllServiceTest\zLineBotRepository\bin\Debug\net5.0\zLineBotRepository.dll
 C:\Users\Yohoo\AllServiceTest\zLineBotRepository\bin\Debug\net5.0\ref\zLineBotRepository.dll
 C:\Users\Yohoo\AllServiceTest\zLineBotRepository\bin\Debug\net5.0\zLineBotRepository.pdb
-C:\Users\Yohoo\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.csproj.AssemblyReference.cache
 C:\Users\Yohoo\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Yohoo\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.AssemblyInfoInputs.cache
 C:\Users\Yohoo\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.AssemblyInfo.cs
@@ -34,3 +33,4 @@ C:\Users\Yohoo\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotReposi
 C:\Users\Yohoo\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\ref\zLineBotRepository.dll
 C:\Users\Yohoo\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.pdb
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.csproj.AssemblyReference.cache
+C:\Users\Yohoo\AllServiceTest\zLineBotRepository\obj\Debug\net5.0\zLineBotRepository.csproj.AssemblyReference.cache

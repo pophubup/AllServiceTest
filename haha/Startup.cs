@@ -41,7 +41,7 @@ namespace haha
        
             services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddPostgreSQLClient(Configuration);
-            services.AddMongoDBCleint(Configuration);
+            //services.AddMongoDBCleint(Configuration);
             services.AddAzureServices();
             services.AddFireBaseService();
             services.AddGoogleStorageService();
