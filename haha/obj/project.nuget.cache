@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zwxOrsHsSnTdAwFp+2r3BMBZLjkkl3oMRBfRbVYGOq2YjJr/wafI5J1rzlqOdg/Zz3VNqj5QCd5NQA3TaiWSEg==",
+  "dgSpecHash": "mdWpGIO8xBbvdzKRndB551ABMJMn+177oCqSwI6sCoYzR0fpn32nvbEeEtDidpRhGM1ZdvLGr7gkTnDIc9wbng==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\AllServiceTest\\haha\\haha.csproj",
   "expectedPackageFiles": [
@@ -183,6 +183,7 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.private.uri\\4.3.2\\system.private.uri.4.3.2.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",

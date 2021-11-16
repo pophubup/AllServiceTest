@@ -27,3 +27,4 @@ C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdenti
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\ref\zIdentityServerRepository.dll
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.pdb
 C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.genruntimeconfig.cache
+C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.csproj.AssemblyReference.cache

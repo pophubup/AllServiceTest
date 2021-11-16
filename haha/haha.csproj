@@ -14,6 +14,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
     <ProjectReference Include="..\Neo4jClientRepository\Neo4jClientRepository.csproj" />
     <ProjectReference Include="..\SQLClientRepository\SQLClientRepository.csproj" />
     <ProjectReference Include="..\zAutoMapperRepository\zAutoMapperRepository.csproj" />

@@ -654,3 +654,4 @@ C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\Npgsql.dll
 C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\zPostgreSQLRepository.dll
 C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\zPostgreSQLRepository.pdb
+C:\Users\Yohoo\AllServiceTest\haha\bin\Debug\net5.0\System.Reactive.dll

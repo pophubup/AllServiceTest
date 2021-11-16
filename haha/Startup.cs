@@ -18,6 +18,8 @@ using zIdentityServerRepository;
 using zLineBotRepository;
 using zWebCrawlingRepository;
 using zPostgreSQLRepository;
+using haha.Hubs;
+
 namespace haha
 {
     public class Startup
@@ -44,14 +46,22 @@ namespace haha
             services.AddCustomizedVaildator();
             services.AddAutoMapperService();
             services.AddIdentityServices(Configuration["SQL:IdentityConnection"]);
+            services.AddSignalR();
             services.AddCors(options =>
             {
-                options.AddDefaultPolicy(
-                                  builder =>
-                                  {
-                                      builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyHeader();
-                                  });
-            });
+                options.AddPolicy("Apis", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyHeader();
+                });
+                options.AddPolicy("Hub", builder =>
+                {
+                    builder.WithOrigins("http://localhost:8080/").AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials()
+        .SetIsOriginAllowed((host) => true);
+        });
+                });
+           
             services.AddControllers().AddNewtonsoftJson(options  => {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
@@ -91,7 +101,7 @@ namespace haha
             app.UseAuthorization();
 
             app.UseCors();
-
+         
             app.UseSwagger();
 
             app.UseSwaggerUI(c => {
@@ -102,7 +112,8 @@ namespace haha
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers().RequireCors("Apis");
+                endpoints.MapHub<ChatHub>("/chat").RequireCors("Hub");
             });
         }
     }
