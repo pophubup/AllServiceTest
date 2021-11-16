@@ -15,6 +15,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="System.Reactive" Version="5.0.0" />
+    <ProjectReference Include="..\MongodbClientRepository\MongodbClientRepository.csproj" />
     <ProjectReference Include="..\Neo4jClientRepository\Neo4jClientRepository.csproj" />
     <ProjectReference Include="..\SQLClientRepository\SQLClientRepository.csproj" />
     <ProjectReference Include="..\zAutoMapperRepository\zAutoMapperRepository.csproj" />

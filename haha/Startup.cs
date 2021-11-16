@@ -20,6 +20,8 @@ using zWebCrawlingRepository;
 using zPostgreSQLRepository;
 using haha.Hubs;
 
+using MongodbClientRepository;
+
 namespace haha
 {
     public class Startup
@@ -36,8 +38,10 @@ namespace haha
         {
          
            //services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
+       
             services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddPostgreSQLClient(Configuration);
+            services.AddMongoDBCleint(Configuration);
             services.AddAzureServices();
             services.AddFireBaseService();
             services.AddGoogleStorageService();

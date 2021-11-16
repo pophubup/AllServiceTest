@@ -1,0 +1,15 @@
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\bin\Debug\net5.0\MongodbClientRepository.deps.json
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\bin\Debug\net5.0\MongodbClientRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\bin\Debug\net5.0\ref\MongodbClientRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\bin\Debug\net5.0\MongodbClientRepository.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\bin\Debug\net5.0\zModelLayer.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\bin\Debug\net5.0\zModelLayer.pdb
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\MongodbClientRepository.csproj.AssemblyReference.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\MongodbClientRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\MongodbClientRepository.AssemblyInfoInputs.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\MongodbClientRepository.AssemblyInfo.cs
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\MongodbClientRepository.csproj.CoreCompileInputs.cache
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\MongodbClientRepository.csproj.CopyComplete
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\MongodbClientRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\ref\MongodbClientRepository.dll
+C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\MongodbClientRepository\obj\Debug\net5.0\MongodbClientRepository.pdb

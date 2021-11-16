@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WEnVvw5OQw6jvhoZfgt6z4KCRAd0ZqM95q/jMDsKcwhqhH4ZuPl45ixj4DDfTNgsxL3unOF+WNQzWW7mKBReYQ==",
+  "dgSpecHash": "ec/A5cXuOIHNVIWm+/xxLu4lvYVTH+XsPbUwRNg17Lf0KKRdsAkRpjzGFT0+DDsqgilra4gzDBz595jPhpxWGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\AllServiceTest\\Neo4jClientRepository\\Neo4jClientRepository.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\mongodb.bson\\2.13.2\\mongodb.bson.2.13.2.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\neo4j.driver\\4.1.1\\neo4j.driver.4.1.1.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\neo4j.driver.signed\\4.2.0\\neo4j.driver.signed.4.2.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\neo4jclient\\4.1.6\\neo4jclient.4.1.6.nupkg.sha512",
@@ -88,6 +89,7 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",
@@ -117,5 +119,12 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "讀取快取檔案 C:\\Users\\Yohoo\\AllServiceTest\\Neo4jClientRepository\\obj\\project.nuget.cache 時發生問題: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
