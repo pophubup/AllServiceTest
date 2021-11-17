@@ -19,6 +19,7 @@ using zLineBotRepository;
 using zWebCrawlingRepository;
 using zPostgreSQLRepository;
 using MongodbClientRepository;
+using zGrapQLRepository;
 
 namespace haha
 {
@@ -48,6 +49,7 @@ namespace haha
             services.AddCustomizedVaildator();
             services.AddAutoMapperService();
             services.AddIdentityServices(Configuration["SQL:IdentityConnection"]);
+            services.AddGrapQLClient(Configuration["SQL:NpqSQLConn"]);
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(
@@ -107,6 +109,7 @@ namespace haha
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapGraphQL();
             });
         }
     }
