@@ -4,7 +4,6 @@ C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\zPostgreSQL
 C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\zPostgreSQLRepository.dll
 C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\ref\zPostgreSQLRepository.dll
 C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\bin\Debug\net5.0\zPostgreSQLRepository.pdb
-C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.csproj.AssemblyReference.cache
 C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.AssemblyInfoInputs.cache
 C:\Users\Yohoo\AllServiceTest\zPostgreSQLRepository\obj\Debug\net5.0\zPostgreSQLRepository.AssemblyInfo.cs

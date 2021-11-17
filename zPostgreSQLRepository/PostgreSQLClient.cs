@@ -22,9 +22,9 @@ namespace zPostgreSQLRepository
    .UseNpgsql(configuration["SQL:NpqSQLConn2"]));
             var buidler = service.BuildServiceProvider();
             //buidler.GetService<TestContext>().Database.EnsureDeleted();
-            //buidler.GetService<TestContext>().Database.EnsureCreated();
+           // buidler.GetService<Test2Context>().Database.EnsureCreated();
             //buidler.GetService<Test2Context>().Database.EnsureDeleted();
-            //buidler.GetService<Test2Context>().Database.EnsureCreated();
+            buidler.GetService<Test2Context>().Database.EnsureCreated();
             //var data = buidler.GetService<Test2Context>().AssignGroups.ToList();
             //var dd = new AssignCategory()
             //{

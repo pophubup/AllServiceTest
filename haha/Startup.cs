@@ -18,6 +18,8 @@ using zIdentityServerRepository;
 using zLineBotRepository;
 using zWebCrawlingRepository;
 using zPostgreSQLRepository;
+using haha.Hubs;
+
 using MongodbClientRepository;
 using zGrapQLRepository;
 
@@ -40,7 +42,7 @@ namespace haha
        
             services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddPostgreSQLClient(Configuration);
-            services.AddMongoDBCleint(Configuration);
+            //services.AddMongoDBCleint(Configuration);
             services.AddAzureServices();
             services.AddFireBaseService();
             services.AddGoogleStorageService();
@@ -49,15 +51,23 @@ namespace haha
             services.AddCustomizedVaildator();
             services.AddAutoMapperService();
             services.AddIdentityServices(Configuration["SQL:IdentityConnection"]);
+            services.AddSignalR();
             services.AddGrapQLClient(Configuration["SQL:NpqSQLConn"]);
             services.AddCors(options =>
             {
-                options.AddDefaultPolicy(
-                                  builder =>
-                                  {
-                                      builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyHeader();
-                                  });
-            });
+                options.AddPolicy("Apis", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyHeader();
+                });
+                options.AddPolicy("Hub", builder =>
+                {
+                    builder.WithOrigins("http://localhost:8080/").AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials()
+        .SetIsOriginAllowed((host) => true);
+        });
+                });
+           
             services.AddControllers().AddNewtonsoftJson(options  => {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
@@ -97,7 +107,7 @@ namespace haha
             app.UseAuthorization();
 
             app.UseCors();
-
+         
             app.UseSwagger();
 
             app.UseSwaggerUI(c => {
@@ -109,7 +119,6 @@ namespace haha
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapGraphQL();
             });
         }
     }
