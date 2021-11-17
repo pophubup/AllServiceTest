@@ -877,7 +877,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zPostgreSQLRepository\\zPostgreSQLRepository.csproj": {
+                "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zPostgreSQLRepository\\zPostgreSQLRepository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,17 +1,22 @@
 ﻿using HotChocolate;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using zPostgreSQLRepository.Entities_jsonb;
 
 namespace zGrapQLRepository.GraphQL
 {
     public class Query
     {
-        public IQueryable<Group> GetGroups([Service] MYGraphQLContext context)
+        public IQueryable<AssignGroup> GetAssignGroups([Service] Test2Context context)
         {
-            return context.Groups;
+            return context.AssignGroups;
+        }
+        public IQueryable<Image> GetImage([Service] Test2Context context)
+        {
+            return context.Images;
+        }
+        public IQueryable<AssignCategory> GetAssignCategory([Service] Test2Context context)
+        {
+            return context.AssignCategory;
         }
     }
 }

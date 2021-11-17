@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KFruacpMZNJtfTW/sBYSp5Xd5nKuPFUVKxDhrKkycXHdhbqbQUmrIsbjaYn3MNCiPp/lc4IpmLe3jo6A9be9cA==",
+  "dgSpecHash": "WshcpzBJZCyzaC7qHz41fuD4XEic/w/cV6xlUysvQ5CZTarqbwFDZp3aOeggdxY15IUrXar4WEwSv5D49yynYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\haha.csproj",
   "expectedPackageFiles": [
@@ -270,12 +270,5 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "讀取快取檔案 C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\obj\\project.nuget.cache 時發生問題: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

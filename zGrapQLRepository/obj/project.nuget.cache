@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hfJeGodTFoPqPNttWeZIgUe+h95f7ruhGwODYXxtmPZQE+n3iKcGVWP1nzXhKgBa/85CrXjgonUCVG1QiWHJOA==",
+  "dgSpecHash": "zcch6n56aB7LchTeeuly/ay7Ej33HHTLULUTYzMGLqWxAAeRIKhB/MgOyjS1dEED5SUjntaDsfirrPoohZB8Jw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zGrapQLRepository\\zGrapQLRepository.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\Yohoo\\.nuget\\packages\\hotchocolate.utilities.introspection\\11.2.2\\hotchocolate.utilities.introspection.11.2.2.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\hotchocolate.validation\\11.2.2\\hotchocolate.validation.11.2.2.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.9\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.9.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Yohoo\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.10\\microsoft.entityframeworkcore.5.0.10.nupkg.sha512",

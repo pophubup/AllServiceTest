@@ -4118,7 +4118,8 @@
           "HotChocolate.Data.EntityFramework": "11.2.2",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10",
+          "zPostgreSQLRepository": "1.0.0"
         },
         "compile": {
           "bin/placeholder/zGrapQLRepository.dll": {}
@@ -12282,13 +12283,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "讀取快取檔案 C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\haha\\obj\\project.nuget.cache 時發生問題: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

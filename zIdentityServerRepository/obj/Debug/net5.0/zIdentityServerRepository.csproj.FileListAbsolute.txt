@@ -1,18 +1,3 @@
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.deps.json
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.runtimeconfig.json
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.runtimeconfig.dev.json
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.dll
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\ref\zIdentityServerRepository.dll
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.pdb
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.AssemblyInfoInputs.cache
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.AssemblyInfo.cs
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.csproj.CoreCompileInputs.cache
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.dll
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\ref\zIdentityServerRepository.dll
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.pdb
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.genruntimeconfig.cache
-<<<<<<< HEAD
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.deps.json
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.runtimeconfig.json
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zIdentityServerRepository\bin\Debug\net5.0\zIdentityServerRepository.runtimeconfig.dev.json
@@ -28,6 +13,3 @@ C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zIdentityServerReposit
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\ref\zIdentityServerRepository.dll
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.pdb
 C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.genruntimeconfig.cache
-=======
-C:\Users\Yohoo\AllServiceTest\zIdentityServerRepository\obj\Debug\net5.0\zIdentityServerRepository.csproj.AssemblyReference.cache
->>>>>>> 6760cab3214a4be100e5c3353f1214e3d84844e6

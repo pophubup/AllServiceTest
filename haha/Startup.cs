@@ -38,8 +38,7 @@ namespace haha
         public void ConfigureServices(IServiceCollection services)
         {
          
-           //services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
-       
+            //services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
             services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddPostgreSQLClient(Configuration);
             //services.AddMongoDBCleint(Configuration);
@@ -61,12 +60,9 @@ namespace haha
                 });
                 options.AddPolicy("Hub", builder =>
                 {
-                    builder.WithOrigins("http://localhost:8080/").AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowCredentials()
-        .SetIsOriginAllowed((host) => true);
-        });
+                    builder.WithOrigins("http://localhost:8080/").AllowAnyHeader().AllowAnyMethod().AllowCredentials().SetIsOriginAllowed((host) => true);
                 });
+            });
            
             services.AddControllers().AddNewtonsoftJson(options  => {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
@@ -119,6 +115,7 @@ namespace haha
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapGraphQL();
             });
         }
     }

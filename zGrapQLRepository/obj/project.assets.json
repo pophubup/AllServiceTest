@@ -319,6 +319,21 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/5.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.9"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "compile": {
@@ -638,6 +653,22 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "zPostgreSQLRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.9",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
+        },
+        "compile": {
+          "bin/placeholder/zPostgreSQLRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/zPostgreSQLRepository.dll": {}
         }
       }
     }
@@ -964,6 +995,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/5.0.9": {
+      "sha512": "IugxMkKJcxHANh44OhMj0XHxTwDCTTvioq8urm8e/W4r6X0/PZvFcnpJcmQ5R9YZBHV088o0rUhw23Xq8Z37aQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/5.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.xml",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.9.nupkg.sha512",
+        "microsoft.aspnetcore.diagnostics.entityframeworkcore.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -1686,6 +1732,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "zPostgreSQLRepository/1.0.0": {
+      "type": "project",
+      "path": "../zPostgreSQLRepository/zPostgreSQLRepository.csproj",
+      "msbuildProject": "../zPostgreSQLRepository/zPostgreSQLRepository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1696,7 +1747,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.9",
       "Microsoft.Extensions.DependencyInjection >= 5.0.2",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.10"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.10",
+      "zPostgreSQLRepository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1734,7 +1786,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zPostgreSQLRepository\\zPostgreSQLRepository.csproj": {
+              "projectPath": "C:\\Users\\Yohoo\\OneDrive\\桌面\\myDotnet123\\AllServiceTest\\zPostgreSQLRepository\\zPostgreSQLRepository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
