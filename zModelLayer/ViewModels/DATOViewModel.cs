@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace zModelLayer.ViewModels
 {
+    public class MyViewModel2
+    {
+        public int index { get; set; }
+        public string keyWords { get; set; }
+
+        public string linkforContent { get; set; }
+        public string title { get; set; }
+        public string content { get; set; }
+        public List<string> appendix { get; set; }
+
+    }
+  
     public class EveryPage
     {
         public int page { get; set; }
