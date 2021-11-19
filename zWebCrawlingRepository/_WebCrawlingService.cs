@@ -11,7 +11,7 @@ namespace zWebCrawlingRepository
             service.AddTransient<IDATOWebCrawling, DATOWebCrawlingRepossitory>();
             service.AddTransient<IAnua, AnuaWebCrawlingRepository>();
             service.AddTransient<CommonhealthCrawlingRepository>();
-           // var builder = service.BuildServiceProvider();
+           var builder = service.BuildServiceProvider();
             //DateTime result = Convert.ToDateTime("2021/01/01 08:00");
             // var see = ((DateTimeOffset)result).ToUnixTimeSeconds();
             //var result = builder.GetService<IDATOWebCrawling>().GetDataFromWebElement("c.y", 4);
@@ -19,7 +19,7 @@ namespace zWebCrawlingRepository
             //var end = DateTime.Now.AddDays(30);
 
             //var check =   builder.GetService<IAnua>().GetPastRecordBasedOnBuyersByTimeSpan("1303", start, end);
-           // builder.GetService<CommonhealthCrawlingRepository>().ConvertToTrainTxt();
+            builder.GetService<CommonhealthCrawlingRepository>().GetBullshitContent();
             return service;
         }
     }

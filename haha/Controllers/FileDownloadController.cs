@@ -27,7 +27,7 @@ namespace haha.Controllers
         /// <returns></returns>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(FileContentResult))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [HttpPost]
+        [HttpGet]
         public FileContentResult GetDataFromHealthData()
         {
 
@@ -46,6 +46,20 @@ namespace haha.Controllers
         {
             byte[] bytearr = _serviceProvider.GetService<CommonhealthCrawlingRepository>().ConvertToTrainTxt(file);
             return File(bytearr, "text/plain" , "train.txt");
+        }
+
+        /// <summary>
+        /// 轉換 Json 檔至 txt 檔
+        /// </summary>
+        /// <remarks> .txt file </remarks>
+        /// <returns></returns>
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(FileContentResult))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet]
+        public FileContentResult GetBullshitTrain()
+        {
+            byte[] bytearr = _serviceProvider.GetService<CommonhealthCrawlingRepository>().GetBullshitContent();
+            return File(bytearr, "text/plain", "train.txt");
         }
     }
 }
