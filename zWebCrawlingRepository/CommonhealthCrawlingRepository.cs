@@ -29,13 +29,14 @@ namespace zWebCrawlingRepository
 
                     data.ForEach(g =>
                     {
+                        
                         g.appendix.ForEach(x =>
                         {
-                            groups += x;
+                            groups += x + "\r\n";
                            
                         });
-                        groups += "\n";
 
+                        groups += Environment.NewLine;
                     });
                     
                
