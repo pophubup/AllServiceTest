@@ -17,35 +17,34 @@ namespace zWebCrawlingRepository
 {
     public class CommonhealthCrawlingRepository
     {
-        public byte[] ConvertToTrainTxt(IFormFile  file, string PathWithFileName)
+        public byte[] ConvertToTrainTxt(IFormFile  file)
         {
+            string groups = String.Empty;
             using (StreamReader r = new StreamReader(file.OpenReadStream()))
             {
                 string jsonString = r.ReadToEnd();
            
                 var data = JsonConvert.DeserializeObject<List<MyViewModel2>>(jsonString);
-                string groups = String.Empty;
+               
 
-                using (TextWriter tw = new StreamWriter(PathWithFileName)) 
-                {
-                   
                     data.ForEach(g =>
                     {
                         g.appendix.ForEach(x =>
                         {
-                            tw.WriteLine(x);
+                            groups += x;
+                           
                         });
-                        tw.WriteLine("\n");
+                        groups += "\n";
 
                     });
                     
                
-                } 
+                 
               
             }
-            return File.ReadAllBytes(PathWithFileName);
+            return Encoding.UTF8.GetBytes(groups);
         }
-        public byte[] GetAllDataFromTopic(string PathWithFileName)
+        public byte[] GetAllDataFromTopic()
         {
             var topics = new string[]{
                 "惡性腫瘤",
@@ -219,11 +218,7 @@ namespace zWebCrawlingRepository
 
 
             });
-
-
-            File.WriteAllText(PathWithFileName, JsonConvert.SerializeObject(myViewModel2s.OrderBy(g => g.index)));
-
-            return File.ReadAllBytes(PathWithFileName);
+            return Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(myViewModel2s.OrderBy(g => g.index)));
         }
 
     

@@ -31,7 +31,7 @@ namespace haha.Controllers
         public FileContentResult GetDataFromHealthData()
         {
 
-           byte[] bytearr = _serviceProvider.GetService<CommonhealthCrawlingRepository>().GetAllDataFromTopic(_Configuration["filepath1"]);
+           byte[] bytearr = _serviceProvider.GetService<CommonhealthCrawlingRepository>().GetAllDataFromTopic();
             return File(bytearr, "application/json", "source2.json");
         }
         /// <summary>
@@ -44,7 +44,7 @@ namespace haha.Controllers
         [HttpPost]
         public FileContentResult ConvertJsonToTrainTxt(IFormFile file)
         {
-            byte[] bytearr = _serviceProvider.GetService<CommonhealthCrawlingRepository>().ConvertToTrainTxt(file, _Configuration["filepath2"]);
+            byte[] bytearr = _serviceProvider.GetService<CommonhealthCrawlingRepository>().ConvertToTrainTxt(file);
             return File(bytearr, "text/plain" , "train.txt");
         }
     }
