@@ -14,7 +14,7 @@ namespace zModelLayer.ViewModels
         public string linkforContent { get; set; }
         public string title { get; set; }
         public string content { get; set; }
-        public List<string> appendix { get; set; }
+        public List<string> appendix { get; set; } = new List<string>();
 
     }
   

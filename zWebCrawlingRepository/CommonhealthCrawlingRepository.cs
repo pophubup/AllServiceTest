@@ -1,8 +1,11 @@
 ﻿using HtmlAgilityPack;
 using HtmlAgilityPack.CssSelectors.NetCore;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -14,7 +17,35 @@ namespace zWebCrawlingRepository
 {
     public class CommonhealthCrawlingRepository
     {
-        public void GetAllDataFromTopic()
+        public byte[] ConvertToTrainTxt(IFormFile  file, string PathWithFileName)
+        {
+            using (StreamReader r = new StreamReader(file.OpenReadStream()))
+            {
+                string jsonString = r.ReadToEnd();
+           
+                var data = JsonConvert.DeserializeObject<List<MyViewModel2>>(jsonString);
+                string groups = String.Empty;
+
+                using (TextWriter tw = new StreamWriter(PathWithFileName)) 
+                {
+                   
+                    data.ForEach(g =>
+                    {
+                        g.appendix.ForEach(x =>
+                        {
+                            tw.WriteLine(x);
+                        });
+                        tw.WriteLine("\n");
+
+                    });
+                    
+               
+                } 
+              
+            }
+            return File.ReadAllBytes(PathWithFileName);
+        }
+        public byte[] GetAllDataFromTopic(string PathWithFileName)
         {
             var topics = new string[]{
                 "惡性腫瘤",
@@ -190,9 +221,9 @@ namespace zWebCrawlingRepository
             });
 
 
-            System.IO.File.WriteAllText(@"C:\Users\Yohoo\OneDrive\桌面\myDotnet123\AllServiceTest\zWebCrawlingRepository\source.json", JsonConvert.SerializeObject(myViewModel2s.OrderBy(g => g.index)));
+            File.WriteAllText(PathWithFileName, JsonConvert.SerializeObject(myViewModel2s.OrderBy(g => g.index)));
 
-
+            return File.ReadAllBytes(PathWithFileName);
         }
 
     

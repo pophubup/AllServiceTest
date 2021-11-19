@@ -19,7 +19,7 @@ namespace zWebCrawlingRepository
             //var end = DateTime.Now.AddDays(30);
 
             //var check =   builder.GetService<IAnua>().GetPastRecordBasedOnBuyersByTimeSpan("1303", start, end);
-            //builder.GetService<CommonhealthCrawlingRepository>().GetAllDataFromTopic();
+           // builder.GetService<CommonhealthCrawlingRepository>().ConvertToTrainTxt();
             return service;
         }
     }
