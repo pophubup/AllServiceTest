@@ -27,7 +27,7 @@ namespace MongodbClientRepository
                 _MongoProduct.InsertMany(data);
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 return false;
@@ -41,7 +41,7 @@ namespace MongodbClientRepository
                 _MongoProduct.InsertOne(product);
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 return false;
@@ -62,7 +62,7 @@ namespace MongodbClientRepository
                     return false;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 return false;
