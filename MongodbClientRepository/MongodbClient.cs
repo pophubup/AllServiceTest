@@ -22,30 +22,30 @@ namespace MongodbClientRepository
             });
             service.AddSingleton<IMongoCollections>(sp => sp.GetRequiredService<IOptions<MongoDBSetting>>().Value);
             service.AddSingleton<MongoProductService>();
-            var buidler = service.BuildServiceProvider();
-            var vvvv = buidler.GetService<MongoProductService>();
-            //vvvv.Create(new List<MongoProduct>()
-            //{
-            //    new MongoProduct()
-            //    {
-            //        ProductID = "M456",
-            //        ProductName ="豬肉"
-            //    },
-            //    new MongoProduct()
-            //    {
-            //        ProductID = "M789",
-            //        ProductName ="雞肉"
-            //    },
-            //    new MongoProduct()
-            //    {
-            //        ProductID ="M012",
-            //        ProductName = "兔肉"
-            //    }
-            //});
-            var finall = vvvv.Get();
-            var findone = vvvv.Get("M789");
-            findone.ProductName = "肌肉雞肉";
-            vvvv.Update("M789", findone);
+            //var buidler = service.BuildServiceProvider();
+            //var vvvv = buidler.GetService<MongoProductService>();
+            ////vvvv.Create(new List<MongoProduct>()
+            ////{
+            ////    new MongoProduct()
+            ////    {
+            ////        ProductID = "M456",
+            ////        ProductName ="豬肉"
+            ////    },
+            ////    new MongoProduct()
+            ////    {
+            ////        ProductID = "M789",
+            ////        ProductName ="雞肉"
+            ////    },
+            ////    new MongoProduct()
+            ////    {
+            ////        ProductID ="M012",
+            ////        ProductName = "兔肉"
+            ////    }
+            ////});
+            //var finall = vvvv.Get();
+            //var findone = vvvv.Get("M789");
+            //findone.ProductName = "肌肉雞肉";
+            //vvvv.Update("M789", findone);
             return service;
         }
     }

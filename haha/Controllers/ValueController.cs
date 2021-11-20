@@ -25,7 +25,7 @@ namespace haha.Controllers
             
         }
         [HttpPost]
-        public async Task<IActionResult> start([FromBody] List<string> vs)
+        public IActionResult start([FromBody] List<string> vs)
         {
             List<string> vs1 = new List<string>();
             vs1.AddRange(vs);
@@ -49,7 +49,7 @@ namespace haha.Controllers
             return Ok();
         }
         [HttpGet]
-        public async Task<IActionResult> stop()
+        public IActionResult stop()
         {
             // _hostedBroadcaster.StopAsync(new CancellationToken());
             subscription?.Dispose();

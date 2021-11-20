@@ -4,6 +4,27 @@
         <name>haha</name>
     </assembly>
     <members>
+        <member name="M:haha.Controllers.FileDownloadController.GetDataFromHealthData">
+            <summary>
+             取得爬蟲後的資料
+            </summary>
+            <remarks>  Json file  </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.FileDownloadController.ConvertJsonToTrainTxt(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            轉換 Json 檔至 txt 檔
+            </summary>
+            <remarks> .txt file </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:haha.Controllers.FileDownloadController.GetBullshitTrain">
+            <summary>
+            轉換 Json 檔至 txt 檔
+            </summary>
+            <remarks> .txt file </remarks>
+            <returns></returns>
+        </member>
         <member name="M:haha.Controllers.GroupController.GetGroups">
             <summary>
             取得所有群體

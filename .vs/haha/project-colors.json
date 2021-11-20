@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "850db3f7-fd6e-4d26-9301-a0e9590787d1": {
+      "ProjectGuid": "850db3f7-fd6e-4d26-9301-a0e9590787d1",
+      "DisplayName": "haha",
+      "ColorIndex": 0
+    },
+    "6130a553-2dbf-4d28-b9a9-807fcf2dc3d9": {
+      "ProjectGuid": "6130a553-2dbf-4d28-b9a9-807fcf2dc3d9",
+      "DisplayName": "SQLClientRepository",
+      "ColorIndex": 1
+    },
+    "186fb966-549a-4cec-995e-2e605dda0dfc": {
+      "ProjectGuid": "186fb966-549a-4cec-995e-2e605dda0dfc",
+      "DisplayName": "zModelLayer",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "其他檔案",
+      "ColorIndex": -1
+    },
+    "fa03b2fa-22d3-4651-97c3-1f7e58c6362d": {
+      "ProjectGuid": "fa03b2fa-22d3-4651-97c3-1f7e58c6362d",
+      "DisplayName": "myGrpc",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

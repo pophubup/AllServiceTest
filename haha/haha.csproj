@@ -23,6 +23,7 @@
     <ProjectReference Include="..\zFireBaseRepository\zFireBaseRepository.csproj" />
     <ProjectReference Include="..\zFluentAPIRepository\zFluentAPIRepository.csproj" />
     <ProjectReference Include="..\zGoogleCloudStorageClient\zGoogleCloudStorageClient.csproj" />
+    <ProjectReference Include="..\zGrapQLRepository\zGrapQLRepository.csproj" />
     <ProjectReference Include="..\zIdentityServerRepository\zIdentityServerRepository.csproj" />
     <ProjectReference Include="..\zLineBotRepository\zLineBotRepository.csproj" />
     <ProjectReference Include="..\zPostgreSQLRepository\zPostgreSQLRepository.csproj" />

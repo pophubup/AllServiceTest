@@ -21,6 +21,7 @@ using zPostgreSQLRepository;
 using haha.Hubs;
 
 using MongodbClientRepository;
+using zGrapQLRepository;
 
 namespace haha
 {
@@ -37,11 +38,10 @@ namespace haha
         public void ConfigureServices(IServiceCollection services)
         {
          
-           //services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
-       
+            //services.AddNeo4jCleint(Configuration.GetSection("Neo4j").Get<Neo4jAuth>());
             services.AddMSQLjCleint(Configuration["SQL:connectionstring"]);
             services.AddPostgreSQLClient(Configuration);
-            //services.AddMongoDBCleint(Configuration);
+            services.AddMongoDBCleint(Configuration);
             services.AddAzureServices();
             services.AddFireBaseService();
             services.AddGoogleStorageService();
@@ -51,6 +51,7 @@ namespace haha
             services.AddAutoMapperService();
             services.AddIdentityServices(Configuration["SQL:IdentityConnection"]);
             services.AddSignalR();
+            services.AddGrapQLClient(Configuration["SQL:NpqSQLConn"]);
             services.AddCors(options =>
             {
                 options.AddPolicy("Apis", builder =>
@@ -59,12 +60,9 @@ namespace haha
                 });
                 options.AddPolicy("Hub", builder =>
                 {
-                    builder.WithOrigins("http://localhost:8080/").AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowCredentials()
-        .SetIsOriginAllowed((host) => true);
-        });
+                    builder.WithOrigins("http://localhost:8080/").AllowAnyHeader().AllowAnyMethod().AllowCredentials().SetIsOriginAllowed((host) => true);
                 });
+            });
            
             services.AddControllers().AddNewtonsoftJson(options  => {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
@@ -116,8 +114,8 @@ namespace haha
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers().RequireCors("Apis");
-                endpoints.MapHub<ChatHub>("/chat").RequireCors("Hub");
+                endpoints.MapControllers();
+                endpoints.MapGraphQL();
             });
         }
     }
