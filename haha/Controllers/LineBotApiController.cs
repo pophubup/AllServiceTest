@@ -18,6 +18,7 @@ namespace haha.Controllers
         {
       
             _func = func;
+             
 
 
         }
